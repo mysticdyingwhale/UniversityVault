@@ -1,0 +1,160 @@
+{
+  "main": {
+    "id": "9646681225cc7df4",
+    "type": "split",
+    "children": [
+      {
+        "id": "c3602592956e442e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "CS/Data Structures and Algorithms 1134/Searching Algorithms.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "af5d000f839be4d2",
+    "type": "split",
+    "children": [
+      {
+        "id": "b001bc81e3d6be99",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d5af9a640801ac6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "37f71459438b5aba",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "829210d08429d077",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6a9e675aebbd3632",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b51032e9f9cbd43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea0b66f5b7c69fc0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CS/Data Structures and Algorithms 1134/Searching Algorithms.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6b01443818996efd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CS/Data Structures and Algorithms 1134/Searching Algorithms.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3e515c52845afc20",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4c9d0aabffeb7c73",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CS/Data Structures and Algorithms 1134/Searching Algorithms.md"
+              }
+            }
+          },
+          {
+            "id": "babe160a39f89986",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "608b76e857feaf23",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "0d5af9a640801ac6",
+  "lastOpenFiles": [
+    "CS/Data Structures and Algorithms 1134/Dynamic Arrays.md",
+    "CS/Data Structures and Algorithms 1134/Recursion.md",
+    "CS/Data Structures and Algorithms 1134/Searching Algorithms.md",
+    "CS/Data Structures and Algorithms 1134/Iterators and Generators.md",
+    "CS/Data Structures and Algorithms 1134/Algorithms.md",
+    "CS/Data Structures and Algorithms 1134/Linked List.md",
+    "CS/Data Structures and Algorithms 1134/Memory Images.md",
+    "CS/Data Structures and Algorithms 1134/Runtime Analysis.md",
+    "CS/Data Structures and Algorithms 1134/Static VS Dynamic Languages.md",
+    "Engineering/Lecture 1.md"
+  ]
+}
