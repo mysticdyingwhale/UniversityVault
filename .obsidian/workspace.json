@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/Math/Discrete Math/Theorems, Proofs, and Definitions.md",
+                "file": "University/CS/C++/Basics of C++.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/Math/Discrete Math/Theorems, Proofs, and Definitions.md",
+                "file": "University/CS/C++/Basics of C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/Math/Discrete Math/Theorems, Proofs, and Definitions.md",
+                "file": "University/CS/C++/Basics of C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/Math/Discrete Math/Theorems, Proofs, and Definitions.md"
+                "file": "University/CS/C++/Basics of C++.md"
               }
             }
           }
@@ -184,15 +184,16 @@
   },
   "active": "7a0e3fa15c38a744",
   "lastOpenFiles": [
-    "University/Linguistics/Language LING-UA 1/Morphology & Syntax.md",
+    "University/CS/C++/Classes.md",
     "University/Math/Discrete Math/Theorems, Proofs, and Definitions.md",
+    "README.md",
+    "University/Linguistics/Language LING-UA 1/Morphology & Syntax.md",
     "University/CS/C++/Inheritance.md",
     "University/CS/C++/Pointers.md",
     "University/CS/C++/Smart Pointers.md",
     "University/CS/C++/STL.md",
     "University/CS/C++/Templates.md",
     "University/CS/Data Structures and Algorithms 1134/Linked Lists.md",
-    "University/CS/C++/Classes.md",
     "University/CS/C++/Lambda Functions.md",
     "University/CS/C++/Function Pointers.md",
     "University/CS/C++/Basics of C++.md",
@@ -217,7 +218,6 @@
     "University/CS/Data Structures and Algorithms 1134/Runtime Analysis.md",
     "University/CS/Data Structures and Algorithms 1134/Searching Algorithms.md",
     "University/CS/Data Structures and Algorithms 1134/Stacks & Queues.md",
-    "University/CS/Data Structures and Algorithms 1134/Algorithms.md",
     "University/Math/Discrete Math",
     "University/Linguistics/Sound & Language LING-UA 11",
     "University/Linguistics/Language LING-UA 1",

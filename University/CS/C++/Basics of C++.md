@@ -30,6 +30,7 @@ int main(){
 ```
 
 - `using namespace std;` allows for reference to `cout` and other symbols without typing out `std::`
+- Best practice not to use
 - Outputs can be chained 
 	- `endl` - end of line character
 		- full reference: `std::endl`
