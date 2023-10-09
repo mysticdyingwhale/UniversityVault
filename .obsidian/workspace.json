@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/CS/CSO/C.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/CS/CSO/C.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/CS/CSO/C.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/CS/CSO/C.md"
+                "file": "README.md"
               }
             }
           },
@@ -159,11 +159,11 @@
   },
   "active": "3672755d0bc29d7b",
   "lastOpenFiles": [
-    "University/Linguistics/Sound & Language LING-UA 11/Airstreams in Other Languages.md",
+    "University/Linguistics/Sound & Language LING-UA 11/English Consonants and Vowels.md",
     "University/CS/CSO/C.md",
+    "University/Linguistics/Sound & Language LING-UA 11/Airstreams in Other Languages.md",
     "University/CS/CSO",
     "University/Linguistics/Sound & Language LING-UA 11/Consonants of the World.md",
-    "University/Linguistics/Sound & Language LING-UA 11/English Consonants and Vowels.md",
     "University/Linguistics/Sound & Language LING-UA 11/Vocal Tract Anatomy.md",
     "University/Math/Discrete Math/Conditional Statements & Boolean Algebra.md",
     "University/Math/Discrete Math/Combinatorics.md",
