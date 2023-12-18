@@ -17,6 +17,8 @@ If-Then truth table (If A then B):
 | Case 4 | False       | True        | Possible         |
 
 
+"If A then B" can be rewritten as NOT(A) OR B.
+
 ### Writing If-Then Proofs
 
 1. Rewrite statements as an if-then statement
@@ -75,6 +77,20 @@ A contrapositive statement example:
 
 ## Vacuous Truth
 
-Statements of the form "If A, then B" in which condition A are impossible are known as vacuous truths.
+Statements of the form "If A, then B" in which condition A are impossible are known as vacuous truths. 
 
 
+### Important Properties
+
+- Commutative - x AND y  = y AND x,  x OR y = y OR x
+- Associative - (x AND y) AND z  = x AND (y AND z),  (x OR y) OR z  = x OR (y OR z)
+- Identity - x AND TRUE  = x, x OR False  = x
+- Double Negative - NOT(NOT x) = x
+- Idempotency - x AND x = x, x OR x = x
+- Distributive - x AND (y OR z) = (x AND y )OR (x AND z),  x OR (y AND z) = (x OR y )AND (x OR z)
+	- x AND NOT x = FALSE, x OR NOT x = TRUE
+- DeMorgan's Laws: NOT(x AND y) = (NOT x) OR (NOT y), NOT(x OR y) = (NOT x) AND (NOT y)
+
+Tautology : always TRUE
+Contradiction : always FALSE
+Contingency : some TRUE, some FALSE

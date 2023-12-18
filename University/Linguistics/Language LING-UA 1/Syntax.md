@@ -96,6 +96,13 @@ The complementizer (C) turns a sentence in to something that will serve as the c
 > S denotes sentence, typically wont be used
 
 
+## Tree Building Rules
+
+- S consists of VP and NP
+- NP consists of either just N, N Det N, or N PP
+- PP consists of either just P, P NP, or P PP
+- VP consists of either just V, V NP, V PP, V NP PP, V CP, or V NP CP
+- 
 ## X-Bar Schema
 
 
@@ -107,7 +114,8 @@ To assign more articulated structures to phrases, make predictions about what ki
 X' : X-Bar
 
 
-#### Heads
+
+### Heads
 Each phrasal category has a head that determines the syntactic nature of the phrase.
 
 The head is a lexical or functional category.
@@ -148,6 +156,40 @@ Heads are always small - lexical categories like N, or functional categories lik
 
 Complements of a head are always full phrases (XP). Specifiers are also always full phrases, but for this class it isn't necessary to explore that. 
 
+### Complements
+
+Complements have a tighter relationship with the head than the specifier:
+
+- Heads determine if complements are obligatory
+- Heads impose restrictions on their complements
+	- They select for particular categories (NP,CP, VP etc.) and often for semantic properties (abstract, concrete, etc.)
+- Specifiers are rarely obligatory
+- Heads don't tend to impose strong restrictions on specifiers.
+
+
+A head may have one or more complements:
+
+"The dog barked"
+V head does not require a complement
+
+"The dog barked at me"
+V head has an optional complement (PP in this case)
+
+\*"Bees make"
+V head requires an NP complement
+
+"Bees make honey"
+
+\*"Bees make of honey"
+Wrong compl. category.
+
+### Specifiers
+
+Specifiers are mostly optional.
+
+"Sue \[VP: quickly washed her hands]"
+Quickly is a specifier for the VP, but it is optional
+
 #### Replacing Sentence (S)
 
 The head of a sentence is Tense (T), which hosts the present/past/future tense feature or an auxiliary. 
@@ -156,7 +198,6 @@ The head of a sentence is Tense (T), which hosts the present/past/future tense f
 ![[Pasted image 20231009030147.png]]
 ![[Pasted image 20231009030201.png]]
 
-
 To simplify the process:
 
 - We can omit the intermediate X' level when the head doesn't have both a specifier and a complement (VP-V instead of VP-V'-V)
@@ -164,7 +205,6 @@ To simplify the process:
 - Sometimes, we may dispense with T-T'-TP and C-C'-CP and use S= NP + VP instead (if instructions say to)
 
 ## Universal Grammar and Head Directionality
-
 
 Most people have syntactic competence in at least one language. Human language must be both extremely different and similar to each other. 
 
@@ -205,24 +245,28 @@ SOV Languages: Japanese, Persian, Turkish
 
 The rest are less common.
 
-"Hanako saw Yuki"
+ENG:
+SVO: "Hanako saw Yuki"
 
+JP:
 SOV: Hanako ga Yuki o mita
 Hanako Yuki saw
 
+
+AR:
 VSO: Ra'at Hanako Yuki
 Saw Hanako Yuki
 
 ### Universal Grammar Parameters
 
-"The null subject" parameter:
+##### "The null subject" parameter:
 
 Can unstressed subject pronouns be silent?
 
 Not in English: (Where did go? Where went?)
 Yes in Italian (Dove è andato?)
 
-"The head directionality" parameter:
+##### "The head directionality" parameter:
 
 Do heads precede or follow their complements?
 
@@ -233,7 +277,7 @@ Do heads precede or follow their complements?
 **Head Final**
 ![[Pasted image 20231009033255.png]]
 
-"The wh-fronting" parameter
+##### "The wh-fronting" parameter
 Must question words occur at the beginning of the clause?
 
 Yes, one per clause in English (**Who** did Mary introduce to **whom**?)

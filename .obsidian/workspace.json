@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "University/CS/CSO/UNIX.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "97c5a6b70a4ba28b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University/Math/Discrete Math/Contrapositive, Contradiction, Smallest Counterexample.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 271.5
   },
   "right": {
     "id": "a715981c950f1fd5",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "University/Math/Discrete Math/Contrapositive, Contradiction, Smallest Counterexample.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "University/Math/Discrete Math/Contrapositive, Contradiction, Smallest Counterexample.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "University/Math/Discrete Math/Contrapositive, Contradiction, Smallest Counterexample.md"
               }
             }
           },
@@ -143,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5,
-    "collapsed": true
+    "width": 301.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -157,51 +169,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3672755d0bc29d7b",
+  "active": "97c5a6b70a4ba28b",
   "lastOpenFiles": [
-    "University/Linguistics/Sound & Language LING-UA 11/English Consonants and Vowels.md",
-    "University/CS/CSO/C.md",
-    "University/Linguistics/Sound & Language LING-UA 11/Airstreams in Other Languages.md",
-    "University/CS/CSO",
-    "University/Linguistics/Sound & Language LING-UA 11/Consonants of the World.md",
-    "University/Linguistics/Sound & Language LING-UA 11/Vocal Tract Anatomy.md",
-    "University/Math/Discrete Math/Conditional Statements & Boolean Algebra.md",
     "University/Math/Discrete Math/Combinatorics.md",
+    "University/Math/Discrete Math/Pigeonhole Principle & Comparing Infinite Sets.md",
     "University/Math/Discrete Math/Theorems, Proofs, and Definitions.md",
+    "University/Math/Discrete Math/Subgraphs & Connections.md",
     "University/Math/Discrete Math/Set Theory.md",
     "University/Math/Discrete Math/Relations.md",
-    "University/Linguistics/Language LING-UA 1/Syntax.md",
-    "University/Linguistics/Language LING-UA 1/Morphology.md",
-    "University/PastedImages/Pasted image 20231009033255.png",
-    "University/PastedImages/Pasted image 20231009033239.png",
-    "University/PastedImages/Pasted image 20231009033236.png",
-    "University/PastedImages/Pasted image 20231009030201.png",
-    "University/PastedImages/Pasted image 20231009030147.png",
-    "University/PastedImages/Pasted image 20231009030135.png",
-    "University/CS/C++/Basics of C++.md",
-    "University/PastedImages/Pasted image 20231009023757.png",
-    "University/PastedImages/Pasted image 20231009023150.png",
-    "University/PastedImages/Pasted image 20231008005236.png",
-    "University/CS/C++/Classes.md",
-    "README.md",
+    "University/Math/Discrete Math/Sample Space & Uniform Probability.md",
+    "University/Math/Discrete Math/Contrapositive, Contradiction, Smallest Counterexample.md",
+    "University/Math/Discrete Math/Conditional Statements & Boolean Algebra.md",
+    "University/Math/Discrete Math/Expectation and Variance.md",
+    "University/Math/Discrete Math/Functions & Composition.md",
+    "University/Math/Discrete Math/Induction.md",
+    "University/Math/Discrete Math/Graphs.md",
+    "University/Math/Discrete Math/Dividing and GCD.md",
+    "University/Math/Discrete Math/Conditional Probability.md",
+    "University/CS/CSO/(x64) Arrays and Structs.md",
+    "University/CS/CSO/(x64) Assembly Basics.md",
+    "University/CS/CSO/Binary.md",
+    "University/PastedImages/Pasted image 20231217235707.png",
+    "University/CS/CSO/(x64) Arrays.md",
+    "University/CS/CSO/Floating Point Representation.md",
+    "University/CS/CSO/Fixed Point Representation.md",
+    "Binary Representation.md",
+    "University/CS/CSO/UNIX.md",
     "University/CS/C++/Inheritance.md",
-    "University/CS/C++/Pointers.md",
-    "University/CS/C++/Smart Pointers.md",
-    "University/CS/C++/STL.md",
-    "University/CS/C++/Templates.md",
-    "University/CS/Data Structures and Algorithms 1134/Linked Lists.md",
-    "University/CS/C++/Lambda Functions.md",
-    "University/CS/C++/Function Pointers.md",
-    "University/CS/C++/Functors.md",
-    "University/CS/C++/File IO.md",
-    "University/PastedImages/Pasted image 20230615000007.png",
-    "University/CS/Data Structures and Algorithms 1134/Static VS Dynamic Languages.md",
-    "University/Data Structures and Algorithms 1134",
-    "University/IB/Data Structures and Algorithms 1134",
-    "University/IB",
-    "University/Math/Discrete Math",
-    "University/Linguistics/Sound & Language LING-UA 11",
-    "University/Linguistics/Language LING-UA 1",
-    "University/Linguistics"
+    "University/Linguistics/Language LING-UA 1/Syntax.md",
+    "Logic Gates.md",
+    "University/PastedImages/Pasted image 20231217170727.png",
+    "University/PastedImages/Pasted image 20231217164514.png",
+    "University/PastedImages/Pasted image 20231217164505.png",
+    "University/PastedImages/Pasted image 20231217160532.png",
+    "University/PastedImages/Pasted image 20231217150904.png",
+    "University/PastedImages/Pasted image 20231217142522.png",
+    "University/PastedImages/Pasted image 20231213230808.png",
+    "University/PastedImages/Pasted image 20231213230041.png",
+    "University/PastedImages/Pasted image 20231201212039.png",
+    "University/PastedImages/Pasted image 20211219152334.png.crdownload",
+    "University/PastedImages/Pasted image 20211219152320.png.crdownload",
+    "University/PastedImages/Pasted image 20211219152148.png.crdownload",
+    "University/PastedImages/Pasted image 20211219135705.png.crdownload",
+    "University/PastedImages/Pasted image 20211219155913.png.crdownload",
+    "University/PastedImages/Pasted image 20211219155859.png.crdownload",
+    "University/PastedImages/Pasted image 20211219155532.png.crdownload",
+    "University/PastedImages/Pasted image 20211219155506.png.crdownload",
+    "University/CS/CSO",
+    "University/Data Structures and Algorithms 1134"
   ]
 }

@@ -2,6 +2,19 @@
 
 Morphology is the study of word formation. 
 
+
+## Signs
+
+##### Indexical Signs
+Natural connection between form and meaning
+
+##### Symbolic Signs
+Conventional (arbitrary) connection.
+
+##### Iconic Signs
+Conventional with similarity.
+
+Linguistic signs are symbolic, as the connection between form and meaning are conventional.
 ### Roots, Stems, Affixes
 
 A morpheme is the smallest **meaningful** unit in language. 
