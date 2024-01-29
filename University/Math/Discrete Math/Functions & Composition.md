@@ -50,8 +50,6 @@ A bijective function is a function which is both onto and one-to-one.
 
 To prove it just prove that it is one-to-one, and that it is onto.
 
-
-
 ## Inverse 
 
 The inverse relation of a function $f : A \rightarrow B$, denoted by $f^{-1}$ is the relation $f^{-1}$ defined by $f^{-1} = \{(yRx) : (xRy) \in f \} \subseteq B \times A$ . 
