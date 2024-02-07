@@ -20,9 +20,9 @@ Given any $U \subset V$ (not necessarily a subspace), we have $$\text{span}(U)= 
 >$\text{span}(U) \subset V$
 
 
-Claim: $\text{span}(U)$ is a subspace of $V$.
+**Claim:** $\text{span}(U)$ is a subspace of $V$.
 
-Proof: $\text{span}(U)$ is closed under addition and scalar multiplication by definition. For any $x \in U$, $0 = 0 \cdot x \in \text{span}(U)$ so that $0 \in \text{span}(U)$. Therefore $\text{span}(U)$ is a subspace of $V$.
+**Proof:** $\text{span}(U)$ is closed under addition and scalar multiplication by definition. For any $x \in U$, $0 = 0 \cdot x \in \text{span}(U)$ so that $0 \in \text{span}(U)$. Therefore $\text{span}(U)$ is a subspace of $V$.
 
 
 #### Example

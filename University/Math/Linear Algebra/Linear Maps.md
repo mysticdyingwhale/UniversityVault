@@ -119,9 +119,29 @@ We have shown that $\text{null } T$ contains 0, and is closed under addition and
 
 #### Injective
 
+**Definition:** A function $T: V \rightarrow W$ is injective if $Tu = Tv$ implies $u=v$. 
 
+Basically, $T$ is injective if and only if it maps distinct inputs to distinct outputs. 
+
+##### Zero
+
+**Claim:** Let $T \in \mathcal{V,W}$. Then $T$ is injective if and only if $\text{null }T = \{0\}$/
+
+**Proof:** 
 #### Range and Surjectivity
 
+**Definition:** For $T \in \mathcal{L}(V,W)$, the range of $T$ is the subset of $W$ consisting of those vectors that are equal to $Tv$ for some $v \in V$:
+$$\text{range }V = \{Tv : v \in V\}$$
+
+#### Range Is a Subspace
+
+**Claim:** if $T \in \mathcal{L}(V,W)$, then $\text{range }T$ is a subspace of $W$
+
+**Proof:**  If $T \in \mathcal{L}(V,W)$. Then $T(0)=0$, which implies that $0 \in \text{range }T$. 
+
+If $w_1,w,2 \in \text{range }T$, then there exists $v_1,v_2 \in V$ such that $Tv_1= w_1$ and $Tv_2=w_2$. Thus $$T(v_1+v_2)=Tv_1+Tv_2 = w_1+w_2.$$
+Hence $w_1+w_2 \in \text{range }T$. Thus $\text{range }T$ is closed under addition. If $w \in \text{range }T$ and $\lambda \in \mathbb{F}$, then there exists $v \in V$ such that $Tv = w$. Thus $$T(\lambda v) = \lambda Tv = \lambda w$$
+Hence $\lambda w \in \text{range }T$. Thus $\text{range }T$ is closed under scalar multiplication. Thus, $\text{range }T$ contains $0$, is closed under addition and scalar multiplication. Thus $\text{range }T$ is a subspace of $W$.  
 
 #### Fundamental Theorem of Linear Maps
 
