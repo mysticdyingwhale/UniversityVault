@@ -80,3 +80,37 @@ When the function returns, these steps are essentially reversed, with the Stack 
 ![[Pasted image 20240126234811.png|400]]
 
 
+## System Calls
+
+A mechanism for user-level programs to ask the system to do things for it.
+
+Essentially, a syscall is how a computer program requests a service from the kernel of the OS it is executed on. 
+
+Processes are typically not given direct kernel access for security reasons, and syscalls are a way for the OS to regulate access when a process needs it.
+
+Examples:
+
+- `int fd = open(const char* path, int flags)`
+- `int rc = write(int fd, const void*, size_t s)`
+- `int rc = read(int fd, void*, size_t s)` 
+
+###### How command line works:
+```C
+while(1){
+	write(1,"$ ", 2);
+	readcommand(command,args); //parse input
+	if((prd==fork())==0) //child?
+		{ 
+		execute(command, args,0);
+		}
+	else if(pid > 0) //parent?
+	{
+		wait(0);
+	}else
+	{
+		perror("failed to fork");
+	}
+}
+```
+
+

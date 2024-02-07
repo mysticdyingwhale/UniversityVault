@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/CS/OS/Processes.md",
+                "file": "University/Math/Linear Algebra/Linear Maps.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/CS/OS/Processes.md",
+                "file": "University/Math/Linear Algebra/Linear Maps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/CS/OS/Processes.md",
+                "file": "University/Math/Linear Algebra/Linear Maps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/CS/OS/Processes.md"
+                "file": "University/Math/Linear Algebra/Linear Maps.md"
               }
             }
           },
@@ -183,53 +183,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f43eb19efb8d272d",
+  "active": "07912705283164b6",
   "lastOpenFiles": [
-    "README.md",
-    "University/Math/Linear Algebra/Dimension.md",
     "University/Math/Linear Algebra/Linear Independence.md",
+    "University/Math/Linear Algebra/Dimension, Basis.md",
     "University/Math/Linear Algebra/Vector Space.md",
+    "University/Math/Linear Algebra/Matrices, Invertibility.md",
+    "University/Math/Linear Algebra/Linear Maps.md",
+    "University/CS/OS/Shell.md",
     "University/CS/OS/Processes.md",
+    "University/CS/OS/Concurrency & Synchronisation.md",
+    "University/PastedImages/Pasted image 20240205120746.png",
     "University/CS/CSO/(x64) Assembly Basics.md",
     "University/CS/CSO/(x64) Arrays and Structs.md",
+    "University/CS/Data Structures and Algorithms 1134/Sorting Algorithms.md",
+    "University/CS/Data Structures and Algorithms 1134/Hash Tables.md",
+    "University/CS/Data Structures and Algorithms 1134/Linked Lists.md",
+    "University/CS/Data Structures and Algorithms 1134/Priority Queues & Heaps.md",
+    "University/CS/Data Structures and Algorithms 1134/Maps.md",
+    "University/CS/Data Structures and Algorithms 1134/Recursion.md",
+    "University/CS/Data Structures and Algorithms 1134/Iterators and Generators.md",
+    "University/CS/Data Structures and Algorithms 1134/Copying.md",
+    "University/CS/Data Structures and Algorithms 1134/Binary Search Trees.md",
+    "University/CS/C++/Inheritance.md",
+    "University/CS/C++/Functors.md",
+    "University/CS/C++/Function Pointers.md",
+    "University/CS/C++/STL.md",
+    "University/CS/C++/Pointers.md",
+    "University/CS/C++/Classes.md",
+    "University/CS/C++/File IO.md",
+    "University/Linguistics/Phonological Analysis",
     "University/PastedImages/Pasted image 20240126235256.png",
     "University/PastedImages/Pasted image 20240126234811.png",
-    "University/CS/CSO/C recap.md",
     "University/CS/OS",
-    "University/Math/Discrete Math/Set Theory.md",
-    "University/Math/Discrete Math/Sample Space & Uniform Probability.md",
-    "University/Math/Discrete Math/Pigeonhole Principle & Comparing Infinite Sets.md",
-    "University/Math/Discrete Math/Relations.md",
-    "University/Math/Discrete Math/Induction.md",
-    "University/Math/Discrete Math/Functions & Composition.md",
-    "University/Math/Discrete Math/Graphs.md",
-    "University/Math/Discrete Math/Conditional Probability.md",
-    "University/Math/Discrete Math/Conditional Statements & Boolean Algebra.md",
-    "University/Math/Discrete Math/Subgraphs & Connections.md",
-    "University/Math/Discrete Math/Theorems, Proofs, and Definitions.md",
     "University/PastedImages/Pasted image 20240122120758.png",
     "University/PastedImages/Pasted image 20240122115641.png",
     "University/Math/Linear Algebra",
-    "University/Math/Discrete Math/Dividing and GCD.md",
-    "University/Math/Discrete Math/Expectation and Variance.md",
-    "University/Math/Discrete Math/Combinatorics.md",
-    "University/Math/Discrete Math/Contrapositive, Contradiction, Smallest Counterexample.md",
-    "University/CS/CSO/Binary.md",
     "University/PastedImages/Pasted image 20231217235707.png",
-    "University/CS/CSO/(x64) Arrays.md",
-    "University/CS/CSO/Floating Point Representation.md",
     "University/PastedImages/Pasted image 20231217170727.png",
     "University/PastedImages/Pasted image 20231217164514.png",
     "University/PastedImages/Pasted image 20231217164505.png",
     "University/PastedImages/Pasted image 20231217160532.png",
-    "University/PastedImages/Pasted image 20231217150904.png",
     "University/PastedImages/Pasted image 20211219152334.png.crdownload",
     "University/PastedImages/Pasted image 20211219152320.png.crdownload",
     "University/PastedImages/Pasted image 20211219152148.png.crdownload",
     "University/PastedImages/Pasted image 20211219135705.png.crdownload",
     "University/PastedImages/Pasted image 20211219155913.png.crdownload",
     "University/PastedImages/Pasted image 20211219155859.png.crdownload",
-    "University/PastedImages/Pasted image 20211219155532.png.crdownload",
-    "University/PastedImages/Pasted image 20211219155506.png.crdownload"
+    "University/PastedImages/Pasted image 20211219155532.png.crdownload"
   ]
 }

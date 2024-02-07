@@ -2,15 +2,15 @@
 
 # Vector Space 
 
-Let $F$ denote a field (EG. $F= \mathbb{R}$  or $F = \mathbb{C}$ ). 
+Let $\mathbb{F}$ denote a field (EG. $\mathbb{F}= \mathbb{R}$  or $\mathbb{F} = \mathbb{C}$ ). 
 
 A 2D real-number vector $(a,b)$ would be defined as $\mathbb{R}^2 = \{(a,b)\ | a \in \mathbb{R}, b  \in \mathbb{R} \}$ 
 
 ### Definition
 
-A vector space $V$ over a field $F$ is a set that is closed under "scalar multiplication" and closed under "addition". 
+A vector space $V$ over a field $\mathbb{F}$ is a set that is closed under "scalar multiplication" and closed under "addition". 
 
-That is, $\alpha \in F, x \in V$ then $\alpha \in V$ (closed under scalar multiplication), and $x,y \in V$ then $x+y \in V$ (closed under addition).
+That is, $\alpha \in \mathbb{F}, x \in V$ then $\alpha \in V$ (closed under scalar multiplication), and $x,y \in V$ then $x+y \in V$ (closed under addition).
 
 It is also required that:
 
@@ -19,9 +19,9 @@ It is also required that:
 - $\exists 0 \in V$ such that $x+0 = x \forall x \in V$ (additive)
 - $\forall x \in V$, $\exists (-x) \in V$ such that $x + (-x) = 0$ (additive inverse)
 - $\forall x \in V, 1 \cdot x = x$ such that 1 is the multiplicative identity in $F$. 
-- $\forall a,b \in F$ and $x \in V$, $(a,b)x = a(bx)$ (associativity of scalar multiplication)
-- $\forall a \in F$ and $x,y \in V$, $a(x+y) = ax+ay$ (distributive)
-- $\forall a,b \in F$ and $x \in V$, $(a+b)x = ax+bx$ (distributive) 
+- $\forall a,b \in \mathbb{F}$ and $x \in V$, $(a,b)x = a(bx)$ (associativity of scalar multiplication)
+- $\forall a \in \mathbb{F}$ and $x,y \in V$, $a(x+y) = ax+ay$ (distributive)
+- $\forall a,b \in \mathbb{F}$ and $x \in V$, $(a+b)x = ax+bx$ (distributive) 
 
 >[!NOTE]
 >This definition exposes the linearity of vector spaces
@@ -45,7 +45,7 @@ With addition defined this way, $P_n$ is a vector space.
 
 ### Proofs
 
-Theorem: A vector space $V$ over a field $F$ has a unique additive identity.
+Theorem: A vector space $V$ over a field $\mathbb{F}$ has a unique additive identity.
 
 Proof: Let $O, \tilde{O}$ be additive identities on $V$.  Then, $$\tilde{O} = \tilde{O} + O$$Since $O$ is an additive identity, order doesn't matter, so $\tilde{O} + O = O + \tilde{O}$ . Since $\tilde O$ is an additive identity $O + \tilde{O} = O$.  Thus, $\tilde O = O$. Therefore $V$ has a unique additive identity. 
 
@@ -57,19 +57,19 @@ Proof: Let $x \in V$ and suppose $\hat x, \tilde x \in V$ such that $x + \tilde 
 >We will typically denote the additive inverse as $-x$, and when we write $x-y$ we mean $x + (-y)$.
 
 
-Theorem: $0 \cdot v = 0$ for every $v \in V$. ($0$ is scalar, $v$ is a vector.)
+**Theorem:** $0 \cdot v = 0$ for every $v \in V$. ($0$ is scalar, $v$ is a vector.)
 
-Proof: $0v = (0+0)v = 0v+0v$. Adding additive inverse $-0v$ to both sides gives the result, ..., thus $0v = 0$. 
+**Proof:** $0v = (0+0)v = 0v+0v$. Adding additive inverse $-0v$ to both sides gives the result, ..., thus $0v = 0$. 
 
-Theorem: $a0 = 0$ for every $a \in F$ 
+**Theorem:** $a0 = 0$ for every $a \in \mathbb{F}$ 
 
-Proof: For $a \in F$ we have $0 = a0 + (-a0)=a(0+0) + (-a0) = a0 + a0 + (-a0) = a0+(a0+(-a0)) = a0 + 0 = a0$ 
+**Proof:** For $a \in \mathbb{F}$ we have $0 = a0 + (-a0)=a(0+0) + (-a0) = a0 + a0 + (-a0) = a0+(a0+(-a0)) = a0 + 0 = a0$ 
 
 Adding additive inverse and using additive inverse property.
 
-Theorem: $(-1)x = -x$ $\forall x \in V$ .
+**Theorem:** $(-1)x = -x$ $\forall x \in V$ .
 
-Proof: For every $x \in V$ we have:
+**Proof: **For every $x \in V$ we have:
 
 $x + (-1)x=1 \cdot x + (-1) \cdot x = (1+(-1))x = 0x = 0$.
 
@@ -82,7 +82,7 @@ Definition: A subset $U$ of $V$ ($U \subseteq V$) is called a subspace of $V$ if
 
 Theorem: A subset $U \subset V$ is a subspace if and only if $U$ satisfies the following:
 1. $U$ is closed under addition ($x+y  \in U$ if $x,y \in U$) 
-2. $U$ is closed under scalar multiplication ($\alpha \in F, x \in U$, then $\alpha x \in U)$ 
+2. $U$ is closed under scalar multiplication ($\alpha \in \mathbb{F}, x \in U$, then $\alpha x \in U)$ 
 3. $0 \in U$ 
 
 Proof: ($\implies$) Suppose $U$ is a vector space. Conditions (1) and (2) hold immediately by definition. Suppose $U$ contains some additive identity $\tilde 0$. However, $0$ is unique in $V$ so $\tilde 0 = 0$. Thus (3) holds.
@@ -141,7 +141,7 @@ When every element of $V$ has a unique expression as $x = u_1+u_2 + ... + u_m$, 
 
 For $u_1 \in U_1, u_2 \in U_2, ..., u_m \in U_m$ we write: $$V = U_1 \oplus U_2 \oplus ... \oplus U_m$$ and we say $V$ is the direct sum of $u_1, ..., u_m$ 
 
-Suppose $U_1, U_2, ..., U_m \subset V$ be subspaces of $V$. Then $U_1 + U_2 + ... + U_m = W$ is a direct sum if and only if $u_1 + u+2 + ...+u_m =0$ Then $u_j = 0$ for each $j = 1,2,...,m$
+Suppose $U_1, U_2, ..., U_m \subset V$ be subspaces of $V$. Then $U_1 + U_2 + ... + U_m = W$ is a direct sum if and only if $u_1 + u_2 + ...+u_m =0$ Then $u_j = 0$ for each $j = 1,2,...,m$
 
 #### Basic Examples:
 

@@ -1,11 +1,4 @@
 #linguistics 
-
-
-
-$$\frac{dp}{dr} = \frac{-2V^2R(R+r)}{(R+r)^4}$$
-$$=\frac{-2V^2R}{(R+r)^3} $$
-
-
 ## Consonants
 
 ### Bilabial:

@@ -3,16 +3,16 @@
 # Linear Combinations
 
 A linear combination of a list $v_1, v_2, ..., v_m \in V$ of vectors is a vector of the form $$a_1v_1+a_2v_2+...+a_mv_m \in V$$
-for $a_1,a_2,...,a_m \in F$.
+for $a_1,a_2,...,a_m \in \mathbb{F}$.
 
 
 For example, from a linear combination of $\{1,x,x^2\}$, $$f(x) = a_0 \cdot 1 + a_1 \cdot x + a_2 \cdot x^2$$
-where $a_0, a_1, a_2 \in F$. That is any quadratic polynomial. We say $\{1,x,x^2\}$ "span". 
+where $a_0, a_1, a_2 \in \mathbb{F}$. That is any quadratic polynomial. We say $\{1,x,x^2\}$ "span". 
 $P_2 = \{\text{set of all polys degree} \leq 2 \}$ 
 
 The set of all linear combinations of $v_1, v_2, ..., v_m \in V$ is called the span of $v_1, v_2, ..., v_m$, and is denoted 
 
-$$\text{span}(v_1, v_2, ..., v_m) = \{a_1v_1+a_2v_2+...+a_mv_m|a_1,a_2,...,a_m \in F\}$$
+$$\text{span}(v_1, v_2, ..., v_m) = \{a_1v_1+a_2v_2+...+a_mv_m|a_1,a_2,...,a_m \in \mathbb{F}\}$$
 sometimes also written as $\text{span}\{v_1,...,v_m\}$
 
 Given any $U \subset V$ (not necessarily a subspace), we have $$\text{span}(U)= \text{the set of all linear combinations of elements of U}$$
@@ -56,7 +56,7 @@ $x^2-1 = (-1) \cdot 1 + 0 \cdot x + 1 \cdot x^2$
 
 ## Linearly Independent
 
-A list $v_1, v_2,...,v_m \in V$ is linearly independent if the **only choice** of $a_1,a_2,...a_m \in F$ such that $a_1v_1+a_2v_2+...+a_mv_m = 0$ is $a_k = 0$  $\forall k$.  
+A list $v_1, v_2,...,v_m \in V$ is linearly independent if the **only choice** of $a_1,a_2,...a_m \in \mathbb{F}$ such that $a_1v_1+a_2v_2+...+a_mv_m = 0$ is $a_k = 0$  $\forall k$.  
 (you can only obtain 0 in any linear combination by making all scalars 0)
 
 we say $v_1,v_2,...v_m$ is linearly dependent if they are not linearly independent.

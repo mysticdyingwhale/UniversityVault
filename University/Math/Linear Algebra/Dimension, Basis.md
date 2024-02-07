@@ -26,7 +26,7 @@ This is a contradiction, as $u_{n+1},...,u_m\in V$ but cannot be in $\text{span}
 
 Thus $m \leq n$.
 
-## Basis
+# Basis
 
 **Definition:** A basis for a vector space $V$ is a linearly independent subset $U \subset V$ such that $\text{span}(U) = V$. 
 
@@ -39,19 +39,18 @@ $\{1,x,x^2-1\}$ is also a basis for $P_2$.
 
 $\{1,x^2\}$ is not a basis for $P_2$, as you can not obtain $x \in P_2$.  $\text{span}(\{1,x^2\}) \neq P_2$ 
 
-$\{1,x,x^2,x^2-1\}$ is also not a basis of $P_2$, as it is a linearly dependent set, even if its span is $P_2$. 
-
+$\{1,x,x^2,x^2-1\}$ is also not a basis of $P_2$, as it is a linearly dependent set, even if its span is $P_2.$  
 #### When is a list a basis?
 
-**Claim:** $U =\{u_1,...,u_n\}\subset V$ is a basis for $V$ if and only if every $v \in V$ can be written uniquely as $V = a_1u_1+a_2u_2+...+a_mu_m$ for $a_k \in F$.
+**Claim:** $U =\{u_1,...,u_n\}\subset V$ is a basis for $V$ if and only if every $v \in V$ can be written uniquely as $V = a_1u_1+a_2u_2+...+a_mu_m$ for $a_k \in \mathbb{F}$.
 
-**Proof:** $(\implies)$ Suppose $U$ is a basis and suppose $v\in V$ can be expressed as $V  = a_1u_1+...+a_mu_m=b_1u_1+...b_nu_n$ for some $a_k,b_k \in F$ where at least one such $a_j \neq b_j$.
+**Proof:** $(\implies)$ Suppose $U$ is a basis and suppose $v\in V$ can be expressed as $V  = a_1u_1+...+a_mu_m=b_1u_1+...b_nu_n$ for some $a_k,b_k \in \mathbb{F}$ where at least one such $a_j \neq b_j$.
 
 Then, $0 = V-V = (a_1u_1+...+a_mu_m)-(b_1u_1+...b_nu_n) = (a_1-b_1)u_1+(a_2-b_2)u_2+...+(a_n-b_n)u_n$
 
 Since $\{u_1,...,u_n\}$ are linearly independent we must have $a_k-b_k=0$ for each $k=1,...,n$. Thus $a_k=b_k$ for each $k$ and $v \in V$ has a unique expansion in terms of $U$.
 
-$(\impliedby)$ Suppose $v \in V$ can be uniquely written as $V = a_1u_1+...+a_nu_n$, $a_k \in F$. 
+$(\impliedby)$ Suppose $v \in V$ can be uniquely written as $V = a_1u_1+...+a_nu_n$, $a_k \in \mathbb{F}$. 
 
 If $V=0$, then $0=a_1u_1+...+a_nu_n$ where clearly, the one choice is $a_k=0$ for each $k=1,...,n$. 
 
@@ -85,7 +84,6 @@ Then, $\text{span}(u_1, ...,u_n,v_1,...,v_m) =V$
 We can prove this set with the claim (Every spanning list can be reduced to a basis for a vector space) to get a basis containing $u_1,...,u_n$. (These don't get removed since they are linearly independent)
 
 **Claim:** If $V$ has a finite spanning subset, then every basis has the same length (# of elements)
-
 
 #### Dimension
 
