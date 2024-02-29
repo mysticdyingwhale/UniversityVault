@@ -74,7 +74,7 @@ Suppose $S,T \in \mathcal{L}(V,W)$ and $\lambda \in F$. The sum $S+T$ and the pr
 
 With the operations of addition and scalar multiplication defined above, $\mathcal{L}(V,W)$ is a vector space.
 
-**Proof:** 
+
 ### Algebraic Properties of linear maps
 
 **Associativity:** $(T_1 T_2)T_3 = T_1(T_2 T_3)$ whenever $T_1, T_2,T_3$ are linear maps such that their products make sense ($T_3$ maps into the domain of $T_1$, and $T_2$ maps into the domain of $T_1$)
@@ -83,10 +83,11 @@ With the operations of addition and scalar multiplication defined above, $\mathc
 
 **Distributive Properties:** $(S_1 + S_2)T = S_1 T + S_2 T$ and $S(T_1+T_2) = ST_1 + ST_2$ whenever $T, T_1, T_2 \in \mathcal{L}(U,V)$ and $S,S_1,S_2 \in \mathcal{L}(V,W)$. 
 
-**Proof:** 
+
 
 #### Zero
 
+(3.10)
 **Definition:** Suppose $T$ is a linear map from $V$ to $W$. Then $T(0)=0$
 
 **Proof:** By Additivity we have $T(0) = T(0+0) = T(0)+T(0)$. 
@@ -102,12 +103,13 @@ So $0 = T(0)+(T(0)+(-T(0)))$, $0 = T(0)$.
 
 #### Null space is subspace
 
+3.13
 **Definition**: Suppose $T \in \mathcal{L}(V,W)$. Then $\text{null }T$ is a subspace of $V$.
 
 
 **Proof**: 
 
-**Zero**: Because $T$ is a linear map, $T(0) = 0$ (by[[Linear Maps#Zero| Zero]])). Thus, $0 \in \text{null }T$. 
+**Zero**: Because $T$ is a linear map, $T(0) = 0$ (by [[Linear Maps, Range, Null Space#Zero|3.10]])). Thus, $0 \in \text{null }T$. 
 
 **Addition**: Suppose $u,v \in \text{null }T$. Then $T(u+v) = Tu + Tv = 0+0 = 0$. Hence $u+v \in \text{null } T$. Thus $\text{null }T$ is closed under addition. 
 
@@ -119,31 +121,126 @@ We have shown that $\text{null } T$ contains 0, and is closed under addition and
 
 #### Injective
 
+3.14
 **Definition:** A function $T: V \rightarrow W$ is injective if $Tu = Tv$ implies $u=v$. 
 
 Basically, $T$ is injective if and only if it maps distinct inputs to distinct outputs. 
 
 ##### Zero
 
-**Claim:** Let $T \in \mathcal{V,W}$. Then $T$ is injective if and only if $\text{null }T = \{0\}$/
+3.15
+**Claim:** Let $T \in \mathcal{V,W}$. Then $T$ is injective if and only if $\text{null }T = \{0\}$
 
-**Proof:** 
+**Proof:** ($\implies$) First, suppose $T$ is injective. We want to prove that $\text{null }T = \{0\}$. We already know that $\{0\} \subseteq \text{null }T$ by [[Linear Maps, Range, Null Space#Zero|3.10]] . To prove the inclusion in the other direction, suppose $v \in \text{null }T$. Then $$T(v)=0=T(0).$$
+Because $T$ is injective, the equation above implies $v=0$. Thus we can conclude that $\text{null }T = \{0\}$ as desired.
+$(\impliedby)$ Suppose $\text{null }T=\{0\}$. We want to prove that $T$ is injective. To do this, suppose $u,v \in V$ and $Tu=Tv$. Then $0 =Tu-Tv=T(u-v)$. 
+
+So $u-v \in \text{null }T=\{0\}$, hence $u-v=0$, which implies that $u=v$. Hence, $T$ is injective, as desired.
 #### Range and Surjectivity
 
 **Definition:** For $T \in \mathcal{L}(V,W)$, the range of $T$ is the subset of $W$ consisting of those vectors that are equal to $Tv$ for some $v \in V$:
-$$\text{range }V = \{Tv : v \in V\}$$
+$$\text{range }T = \{Tv : v \in V\}$$
 
 #### Range Is a Subspace
-
+3.18
 **Claim:** if $T \in \mathcal{L}(V,W)$, then $\text{range }T$ is a subspace of $W$
 
 **Proof:**  If $T \in \mathcal{L}(V,W)$. Then $T(0)=0$, which implies that $0 \in \text{range }T$. 
 
-If $w_1,w,2 \in \text{range }T$, then there exists $v_1,v_2 \in V$ such that $Tv_1= w_1$ and $Tv_2=w_2$. Thus $$T(v_1+v_2)=Tv_1+Tv_2 = w_1+w_2.$$
+If $w_1,w_2 \in \text{range }T$, then there exists $v_1,v_2 \in V$ such that $Tv_1= w_1$ and $Tv_2=w_2$. Thus $$T(v_1+v_2)=Tv_1+Tv_2 = w_1+w_2.$$
 Hence $w_1+w_2 \in \text{range }T$. Thus $\text{range }T$ is closed under addition. If $w \in \text{range }T$ and $\lambda \in \mathbb{F}$, then there exists $v \in V$ such that $Tv = w$. Thus $$T(\lambda v) = \lambda Tv = \lambda w$$
 Hence $\lambda w \in \text{range }T$. Thus $\text{range }T$ is closed under scalar multiplication. Thus, $\text{range }T$ contains $0$, is closed under addition and scalar multiplication. Thus $\text{range }T$ is a subspace of $W$.  
 
+#### Surjective
+
+**Definition:** A function $T: V \rightarrow W$ is called surjective if its range equals $W$. 
+
 #### Fundamental Theorem of Linear Maps
 
-#### Examples
+**Definition:** Suppose $V$ is finite dimensional and $T \in \mathcal{L}(V,W)$. Then $\text{range }T$ is finite-dimensional and $\text{dim }V = \text{dim null }T+\text{dim range }T$ 
 
+**Proof:** Let $u_1,...,u_m$ be a basis of $\text{null }T$, thus $\text{dim null }T=m$. The linearly independent list $u_1,...,u_m$ can be extended to a basis $$u_1,...,u_m,v_1,...,v_n$$ of $V$ (as every linearly independent list of vectors in finite-dimensional space can be extended to a basis). Thus $\text{dim }V = m+n$. 
+
+We must now show that $\text{range }T$ is finite dimensional and $\text{dim range }T=n$. We will do this by proving that $Tv_1,...,Tv_n$ is a basis of $\text{range }T$.
+
+Let $v \in V$. Because $u_1,...,u_m,v_1,...,v_n$ spans $V$, we can write $$v=a_1u_1+...+a_mu_m+b_1v_1+....+b_nv_n,$$where all $a_k,b_k \in \mathbb{F}$. Applying $T$ to both sides of the equation we get $$Tv = b_1Tv_1+...+b_nTv_n,$$ where the terms of the form $Tu_k$ disappeared because each $u_k$ is in $\text{null }T$. The last equation implies that the list $Tv_1,...,Tv_n$ spans $\text{range }T$. In particular, $\text{range }T$ is finite-dimensional.
+
+To show that $Tv_1,...,Tv_n$ is linearly independent, suppose $c_1,...,c_n \in \mathbb{F}$ and $$c_1Tv_1+...+c_nTv_n=0.$$ Then, $T(c_1v_1+...+c_nv_n)=0$. Hence $c_1v_1+...+c_nv_n \in \text{null }T$. Because $u_1,...,u_m$ spans $\text{null }T$, we write $$c_1v_1+...+c_nv_n= d_1u_1+...+d_mu_m$$ for all $d_k \in \mathbb{F}$.
+
+This implies that all $c_k, d_k=0$ because $u_1,...,u_m,v_1,...,v_m$ is linearly independent. Thus $Tv_1,...,Tv_n$ is linearly independent and hence a basis of $\text{range }T$ as desired.
+
+
+#### Linear map to a lower-dimensional space is not injective
+
+**Claim:** Suppose $V,W$ are finite dimensional vector spaces such that $\text{dim }V > \text{dim }W$. Then no linear map from $V$ to $W$ is injective.
+
+**Proof:** Let $T \in \mathcal{L}(V,W).$ Then $$\text{dim null }T = \text{dim }V- \text{dim range }T \text{ (by fundamental theorem)}$$$$  \geq \text{dim }V - \text{dim }W \text{ (by dimension of a subspace)}$$$$ >0$$
+>[!NOTE] Recall: 
+>dimension of a subspace: 
+>If $U \subseteq V$ is a subspace then $\text{dim}(U) \leq \text{dim}(V)$ 
+ 
+
+This means that $\text{null }T$ contains vectors other than 0. Thus, $T$ is not injective (since $T$ is injective if and only if $\text{null }T = \{0\}$)
+
+
+#### Linear map to a higher dimensional space is not surjective
+
+**Claim:** Suppose $V,W$ are finite dimensional vector spaces such that $\text{dim }V < \text{dim }W$. Then no linear map from $V$ to $W$ is surjective.
+
+**Proof:** Let $T \in \mathcal{L}(V,W)$. Then $$\text{dim range }T = \text{dim }V - \text{dim null }T \text{ (by fundamental theorem)}$$ $$\leq \text{dim }V$$$$< \text{dim }W$$
+
+Since $\text{dim range }T < \text{dim }W$, $\text{range }T \neq W$, thus $T$ is not surjective. 
+
+#### Homogeneous systems of linear equations
+
+**Homogeneous:** the constant term on the right side of each equation below is 0.
+
+Fix positive integers $m,n$ and let $A_{j,k} \in \mathbb{F}$ for $j=1,...,m$ and $k=1,...,n$. 
+
+Consider the homogeneous system of linear equations:
+
+$$\sum_{k=1}^n A_{1,k}x_k=0$$ $$\vdots$$
+$$\sum_{k=1}^n A_{m,k}x_k=0$$
+
+$x_1 = ... = x_n = 0$ is a solution of the system of equations above. Lets see if there are any others.
+
+$$T(x_1,...,x_n) = (\sum_{k=1}^n A_{1,k}x_k,...,\sum_{k=1}^n A_{m,k}x_k)$$
+
+The equation $T(x_1,...,x_n)=0$ (0 being the additive identity of $\mathbb{F}^m$, the list of length $m$ of all 0s) is the same as the homogeneous system of linear equations above. 
+
+
+We want to know if $\text{null }T$ is strictly bigger than $\{0\}$, which is equivalent to $T$ not being injective (since $T$ is injective if and only if $\text{null }T = \{0\}$).
+
+
+**Claim:** A homogeneous systems of linear equations with more variables than equations has nonzero solutions.
+
+**Proof:** By the discussion above, $T$ is a linear map from $\mathbb{F}^n$ to $\mathbb{F}^m$ , and we have a homogeneous system of $m$ linear equations with $n$ variables $x_1,...,x_n$. Since a linear map to a lower-dimensional space is not injective we see that $T$ is not injective if $n > m$.
+
+
+
+
+#### Inhomogeneous systems of linear equations
+
+**Inhomogeneous:** the constant term on the right side of at least one equation below does not equal 0.
+
+We consider the question of whether an inhomogeneous system of linear equations has no solutions for some choice of the constant terms.
+
+Fix positive integers $m,n$, and let $A_{j,k} \in \mathbb{F}$ for all $j=1,...,m$ and $k=1,...,n$. For $c_1,..,c_m \in \mathbb{F}$, consider the system of linear equations:
+
+$$\sum_{k=1}^n A_{1,k}x_k=c_1$$
+$$\vdots$$
+$$\sum_{k=1}^n A_{m,k}x_k=c_n$$
+Is there some choice of $c_1,...,c_n \in \mathbb{F}$ such that no solution exists to the above.
+
+
+Define $T : \mathbb{F}^n \rightarrow \mathbb{F}^m$. $T(x_1,...,x_n) = (c_1,...,c_m)$ is the same system of equations as for the homogeneous system of equations. We want to know if $\text{range }T \neq \mathbb{F}^m$. 
+
+So, what condition ensures that $T$ is not surjective?
+
+**Claim:** An inhomogeneous system of linear equations with more equations than variables has no solution for some choice of the constant terms
+
+**Proof:** Use the notation and result from above. Thus $T$ is a linear map from $\mathbb{F}^n$ to $\mathbb{F}^m$, and we have a system of $m$ equations with $n$ variables $x_1,...,x_n$. 
+
+Since a linear map to a higher-dimensional space is not surjective we see that $T$ is not surjective if $n < m$.
+
+ For example, take an inhomogeneous system of five linear equations with four variables. It has no solution for some choice of the constant terms.

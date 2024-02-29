@@ -16,10 +16,10 @@ It is also required that:
 
 - $\forall x,y \in V, x+y = y+x$  (commutativity of addition)
 - $\forall x,y,z \in V, (x+y)+z = x+(y+z)$ (associativity of addition)
-- $\exists 0 \in V$ such that $x+0 = x \forall x \in V$ (additive)
+- $\exists 0 \in V$ such that $x+0 = x$  $\forall x \in V$ (additive)
 - $\forall x \in V$, $\exists (-x) \in V$ such that $x + (-x) = 0$ (additive inverse)
 - $\forall x \in V, 1 \cdot x = x$ such that 1 is the multiplicative identity in $F$. 
-- $\forall a,b \in \mathbb{F}$ and $x \in V$, $(a,b)x = a(bx)$ (associativity of scalar multiplication)
+- $\forall a,b \in \mathbb{F}$ and $x \in V$, $(ab)x = a(bx)$ (associativity of scalar multiplication)
 - $\forall a \in \mathbb{F}$ and $x,y \in V$, $a(x+y) = ax+ay$ (distributive)
 - $\forall a,b \in \mathbb{F}$ and $x \in V$, $(a+b)x = ax+bx$ (distributive) 
 

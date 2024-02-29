@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/CS/CSO/(x64) Assembly Basics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "07912705283164b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University/Math/Linear Algebra/temp.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/Math/Linear Algebra/temp.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/Math/Linear Algebra/temp.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/Math/Linear Algebra/temp.md"
+                "file": "README.md"
               }
             }
           },
@@ -183,16 +171,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "07912705283164b6",
+  "active": "97c5a6b70a4ba28b",
   "lastOpenFiles": [
+    "University/Math/Linear Algebra/Rec 2.md",
+    "University/Math/Linear Algebra/Linear Maps, Range, Null Space.md",
+    "University/Math/Linear Algebra/Matrices.md",
+    "University/Math/Linear Algebra/Vector Space.md",
+    "University/Math/Linear Algebra/Linear Independence.md",
+    "University/Math/Linear Algebra/Invertibility.md",
+    "University/Math/Linear Algebra/Dimension, Basis.md",
+    "University/Math/Discrete Math/Combinatorics.md",
+    "README.md",
+    "University/HW4.md",
     "University/CS/OS/Concurrency & Synchronisation.md",
+    "University/Linguistics/Sound & Language/English Consonants and Vowels.md",
+    "University/Math/Discrete Math/Set Theory.md",
+    "University/Math/Discrete Math/Theorems, Proofs, and Definitions.md",
+    "University/Math/Discrete Math/Subgraphs & Connections.md",
+    "University/Math/Discrete Math/Conditional Statements & Boolean Algebra.md",
     "University/Math/Linear Algebra/temp.md",
     "University/CS/OS/Processes.md",
-    "University/Math/Linear Algebra/Linear Independence.md",
-    "University/Math/Linear Algebra/Dimension, Basis.md",
-    "University/Math/Linear Algebra/Vector Space.md",
-    "University/Math/Linear Algebra/Matrices, Invertibility.md",
-    "University/Math/Linear Algebra/Linear Maps.md",
     "University/CS/OS/Shell.md",
     "University/PastedImages/Pasted image 20240205120746.png",
     "University/CS/CSO/(x64) Assembly Basics.md",
@@ -202,16 +200,6 @@
     "University/CS/Data Structures and Algorithms 1134/Linked Lists.md",
     "University/CS/Data Structures and Algorithms 1134/Priority Queues & Heaps.md",
     "University/CS/Data Structures and Algorithms 1134/Maps.md",
-    "University/CS/Data Structures and Algorithms 1134/Recursion.md",
-    "University/CS/Data Structures and Algorithms 1134/Iterators and Generators.md",
-    "University/CS/Data Structures and Algorithms 1134/Copying.md",
-    "University/CS/Data Structures and Algorithms 1134/Binary Search Trees.md",
-    "University/CS/C++/Inheritance.md",
-    "University/CS/C++/Functors.md",
-    "University/CS/C++/Function Pointers.md",
-    "University/CS/C++/STL.md",
-    "University/CS/C++/Pointers.md",
-    "University/CS/C++/Classes.md",
     "University/Linguistics/Phonological Analysis",
     "University/PastedImages/Pasted image 20240126235256.png",
     "University/PastedImages/Pasted image 20240126234811.png",
