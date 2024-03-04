@@ -14,7 +14,7 @@ im $f = \{b \in B: \exists a, (a,b) \in f \}$
 
 $f : A \rightarrow B$ means dom $f = A$, im $f \subseteq B$
 
-Think of image as the range based on the domain.
+Basically range.
 ## Proof
 
 Given $f : A \rightarrow B$ :

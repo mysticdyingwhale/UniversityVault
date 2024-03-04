@@ -205,31 +205,3 @@ In other words, column $k$ of $AB$ equals $A$ times column $k$ of $B$.
 
 **Proof:**
 
-### Column–Row Factorization and Rank of a Matrix
-
-**Definition:** Suppose $A$ is an $m$-by-$n$ matrix with entries in $\mathbb{F}$.
-- The column rank of $A$ is the dimension of the span of columns of $A$ in $\mathbb{F}^{m,1}$ 
-- The row rank of $A$ is the dimension of the span of rows of $A$ in $\mathbb{F}^{1,n}$ 
-
-If $A$ is an $m$-by-$n$ matrix, then the column rank of $A$ is at most $n$ and the column rank of $A$ is also at most $m$ ($\text{dim }\mathbb{F}^{m,1}=m$). The row rank is also at most $\text{min }\{m,n\}$
-
-
-#### Transpose
-
-**Definition:** The transpose of a matrix $A$, denoted by $A^t$, is the matrix obtained from $A$ by interchanging rows and columns.
-
-Specifically, if $A$ is an $m$-by-$n$ matrix, then $A^t$ is the $n$-by-$m$ matrix whose entries are given by the equation $$(A^t)_{k,j}=A_{j,k}$$
-#### Column–row factorization
-
-**Claim:** Suppose $A$ is an $m$-by-$n$ matrix with entries in $\mathbb{F}$ and column rank $c \geq 1$ . Then there exists an $m$-by-$c$ matrix $C$ and a $c$-by-$n$ matrix $R$, both with entries within $\mathbb{F}$, such that $A=CR$. 
-
-**Proof:**
-#### Column rank equals row rank
-
-**Claim:** Suppose $A \in \mathbb{F}^{m,n}$. Then the column rank of $A$ equals the row rank of $A$.
-
-**Proof:**
-
-#### Rank
-
-**Definition:** The rank of a matrix $A \in \mathbb{F}^{m,n}$ is the column rank of $A$.

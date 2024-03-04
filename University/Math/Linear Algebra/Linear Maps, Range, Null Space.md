@@ -126,7 +126,7 @@ We have shown that $\text{null } T$ contains 0, and is closed under addition and
 
 Basically, $T$ is injective if and only if it maps distinct inputs to distinct outputs. 
 
-##### Zero
+##### Null Space is zero if injective
 
 3.15
 **Claim:** Let $T \in \mathcal{V,W}$. Then $T$ is injective if and only if $\text{null }T = \{0\}$
