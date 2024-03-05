@@ -1,6 +1,5 @@
-#cs 
-
 # Concurrency
+#cs 
 
 ## Threads & Forks
 
@@ -63,11 +62,11 @@ Condition variables are not actually variables. Think of it like a queue, where 
 
 The two main condition variable operations:
 - `wait()`
-	- .
+	- pauses thread and waits to be woken
 - `signal()`
-	- .
+	- Wakes one waiting thread
 - `broadcast()`
-	- .
+	- Wakes all waiting threads
 
 
 #### Rules of Concurrent Programming

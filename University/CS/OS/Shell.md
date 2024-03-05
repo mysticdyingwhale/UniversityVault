@@ -1,6 +1,5 @@
-#cs 
-
 # Shell
+#cs 
 
 The shell is a program that creates [[Processes|processes]]. It is the humans interface to the computer. GUIs are another kind of shell.
 

@@ -1,6 +1,5 @@
-#cs 
-
 # Processes
+#cs 
 
 Can be understood in two ways:
 - **From the process's POV** 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/Math/Linear Algebra/Duality.md",
+                "file": "University/Linguistics/Phonological Analysis/Rule Ordering.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "image",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/Math/Linear Algebra/Duality.md",
+                "file": "University/Linguistics/Phonological Analysis/Rule Ordering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/Math/Linear Algebra/Duality.md",
+                "file": "University/Linguistics/Phonological Analysis/Rule Ordering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/Math/Linear Algebra/Duality.md"
+                "file": "University/Linguistics/Phonological Analysis/Rule Ordering.md"
               }
             }
           },
@@ -160,15 +160,24 @@
   },
   "active": "3672755d0bc29d7b",
   "lastOpenFiles": [
+    "University/Linguistics/Phonological Analysis/Phonemic Analysis.md",
+    "University/Linguistics/Phonological Analysis/Rule Ordering.md",
+    "University/CS/OS/Virtual Memory.md",
+    "University/PastedImages/Pasted image 20240304164753.png",
+    "University/CS/OS/Processes.md",
+    "University/Math/Discrete Math/Combinatorics.md",
+    "University/Math/Discrete Math/Conditional Probability.md",
+    "University/CS/OS/Shell.md",
+    "University/CS/OS/Concurrency & Synchronisation.md",
+    "University/Math/Linear Algebra/Dimension, Basis.md",
+    "University/Math/Linear Algebra/Duality.md",
     "University/Math/Linear Algebra/Invertibility.md",
     "University/Math/Linear Algebra/L. Combinations, L. Independence.md",
     "University/Math/Discrete Math/Functions & Composition.md",
-    "University/Math/Linear Algebra/Duality.md",
     "University/Math/Linear Algebra/Matrices.md",
     "University/Math/Linear Algebra/Linear Maps, Range, Null Space.md",
     "University/Math/Linear Algebra/Eigenvalues.md",
     "University/Math/Linear Algebra/Polynomials.md",
-    "University/Math/Linear Algebra/Dimension, Basis.md",
     "University/Math/Linear Algebra/Vector Space.md",
     "2024-03-01.md",
     "Untitled.canvas",
@@ -180,15 +189,7 @@
     "University/Math/Discrete Math/Induction.md",
     "README.md",
     "University/Math/Linear Algebra/Rec 2.md",
-    "University/Math/Discrete Math/Combinatorics.md",
     "University/HW4.md",
-    "University/CS/OS/Concurrency & Synchronisation.md",
-    "University/Linguistics/Sound & Language/English Consonants and Vowels.md",
-    "University/Math/Discrete Math/Set Theory.md",
-    "University/Math/Discrete Math/Theorems, Proofs, and Definitions.md",
-    "University/Math/Discrete Math/Subgraphs & Connections.md",
-    "University/Math/Discrete Math/Conditional Statements & Boolean Algebra.md",
-    "University/Math/Linear Algebra/temp.md",
     "University/PastedImages/Pasted image 20240205120746.png",
     "University/Linguistics/Phonological Analysis",
     "University/PastedImages/Pasted image 20240126235256.png",
@@ -201,7 +202,6 @@
     "University/PastedImages/Pasted image 20231217170727.png",
     "University/PastedImages/Pasted image 20231217164514.png",
     "University/PastedImages/Pasted image 20231217164505.png",
-    "University/PastedImages/Pasted image 20231217160532.png",
     "University/PastedImages/Pasted image 20211219152334.png.crdownload",
     "University/PastedImages/Pasted image 20211219152320.png.crdownload",
     "University/PastedImages/Pasted image 20211219152148.png.crdownload",
