@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/Linguistics/Phonological Analysis/Rule Ordering.md",
+                "file": "University/CS/OS/Scheduling.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/Linguistics/Phonological Analysis/Rule Ordering.md",
+                "file": "University/CS/OS/Scheduling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/Linguistics/Phonological Analysis/Rule Ordering.md",
+                "file": "University/CS/OS/Scheduling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/Linguistics/Phonological Analysis/Rule Ordering.md"
+                "file": "University/CS/OS/Scheduling.md"
               }
             }
           },
@@ -145,7 +145,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 250.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,25 +160,27 @@
   },
   "active": "3672755d0bc29d7b",
   "lastOpenFiles": [
-    "University/Linguistics/Phonological Analysis/Phonemic Analysis.md",
-    "University/Linguistics/Phonological Analysis/Rule Ordering.md",
     "University/CS/OS/Virtual Memory.md",
-    "University/PastedImages/Pasted image 20240304164753.png",
+    "University/CS/OS/Scheduling.md",
+    "University/CS/OS/Concurrency & Synchronisation.md",
+    "University/CS/OS/Shell.md",
+    "University/Math/Linear Algebra/Eigenvalues.md",
     "University/CS/OS/Processes.md",
+    "University/Math/Linear Algebra/Invariant Subspaces.md",
+    "University/Math/Linear Algebra/Invertibility.md",
+    "University/Math/Linear Algebra/Vector Space.md",
+    "University/Math/Linear Algebra/Duality.md",
+    "University/Math/Linear Algebra/Matrices.md",
+    "University/Linguistics/Phonological Analysis/Rule Ordering.md",
+    "University/Linguistics/Phonological Analysis/Phonemic Analysis.md",
+    "University/PastedImages/Pasted image 20240304164753.png",
     "University/Math/Discrete Math/Combinatorics.md",
     "University/Math/Discrete Math/Conditional Probability.md",
-    "University/CS/OS/Shell.md",
-    "University/CS/OS/Concurrency & Synchronisation.md",
     "University/Math/Linear Algebra/Dimension, Basis.md",
-    "University/Math/Linear Algebra/Duality.md",
-    "University/Math/Linear Algebra/Invertibility.md",
     "University/Math/Linear Algebra/L. Combinations, L. Independence.md",
     "University/Math/Discrete Math/Functions & Composition.md",
-    "University/Math/Linear Algebra/Matrices.md",
     "University/Math/Linear Algebra/Linear Maps, Range, Null Space.md",
-    "University/Math/Linear Algebra/Eigenvalues.md",
     "University/Math/Linear Algebra/Polynomials.md",
-    "University/Math/Linear Algebra/Vector Space.md",
     "2024-03-01.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
@@ -188,8 +190,6 @@
     "University/Math/Linear Algebra/Linear Independence.md",
     "University/Math/Discrete Math/Induction.md",
     "README.md",
-    "University/Math/Linear Algebra/Rec 2.md",
-    "University/HW4.md",
     "University/PastedImages/Pasted image 20240205120746.png",
     "University/Linguistics/Phonological Analysis",
     "University/PastedImages/Pasted image 20240126235256.png",

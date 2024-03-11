@@ -68,6 +68,10 @@ The two main condition variable operations:
 - `broadcast()`
 	- Wakes all waiting threads
 
+A monitor is one mutex + one or more cond variables
+### Spinlocks
+
+
 
 #### Rules of Concurrent Programming
 
@@ -76,3 +80,40 @@ The two main condition variable operations:
 - A thread in `wait()` must be prepared to be restarted at any time, not just when another thread calls `signal()`
 	- `while(not safe to proceed){wait();}`
 - Don't call `sleep()`
+
+### Steps to take
+
+1. Getting Started
+	- Identify units of concurrency 
+	- Identify chunks of state
+	- Write down high-level main loop of each thread
+	- Separate threads from objects
+2.  Write down the synchronization constraints and the kind (mutual exclusion or scheduling)
+3. Create a lock or CV for each constraint 
+4. Write the methods, using the locks and CVs
+
+### Deadlocks
+
+A deadlock occurs when all four of these conditions are present:
+- Mutual exclusion
+- Hold and wait
+- No preemption
+- Circular wait
+
+What can be done about deadlock:
+- Ignore it
+- Detect and recover
+- Avoid algorithmically
+- Negate one of the four conditions
+- Static/dynamic detection tools
+
+
+### Performance issues and tradeoffs
+
+- Invoking spinlocks/mutexes can be expensive
+- Coarse locks limit parallelism 
+- Fine-grained locks lead to complexity and hence bugs
+
+
+Programmability issues:
+- Loss of modularity

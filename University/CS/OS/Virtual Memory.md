@@ -43,3 +43,6 @@ The page table is conceptually a map from the VPN (Virtual Page Number) to the P
 
 
 TLB is ..
+
+
+

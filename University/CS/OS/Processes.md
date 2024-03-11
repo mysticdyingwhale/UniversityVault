@@ -113,3 +113,8 @@ while(1){
 ```
 
 
+### Atomic operations
+
+An atomic operation executes without the interruption of any other process in between their execution phase. 
+
+They execute at the lowest level (hence the name) and cant be broken down further.
