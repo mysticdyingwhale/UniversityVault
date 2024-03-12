@@ -13,8 +13,43 @@ Take the example of `$ ls`:
 Shell will use [[Processes#System Calls|system calls]] `wait()` or `waitpid()` to wait for the end of a process.
 
 
-
+## Shell Commands
 ### `ls` (list)
+
+Lists all files/directories in named directory.
+
+#### -R
+
+Recursively lists all files, directories, subfiles and subdirectories in named directory
+
+#### -a
+
+Lists all files/dirs, including hidden files/dirs.
+
+#### -l
+
+Lists all files in long format
+
+- Field 1: File permissions
+	- -rwxrwxrwx
+	- read write execute permissions for user, group, and others in order
+- Field 2: Number of Links
+- Field 3: Owner
+- Field 4: Group
+- Field 5: Size
+- Field 6: Last modified data/time
+- Field 7: File name
+
+#### -1
+Lists one file per line
+### grep
+
+
+
+### sort
+
+### head
+
 
 
 

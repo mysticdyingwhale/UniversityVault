@@ -58,7 +58,9 @@ Implementing Critical Sections for a single CPU machine:
 
 Mutex are mutually-exclusive variables. Critical sections surrounded by mutexes can only be executed one thread at a time. A single mutex can be used to wrap multiple critical sections.
 
-Once a thread has entered a critical section via `mutex.acquire()`, invariants (shared resources) can be violated.
+Once a thread has entered a critical section via `mutex.acquire()`, invariants (shared resources) can be violated, and access to them becomes mutually excusive to the thread.
+
+When a thread exits a critical section via `mutex.release()`, access shared resources is restored.
 
 ### Condition Variables
 
@@ -72,12 +74,11 @@ The two main condition variable operations:
 - `broadcast()`
 	- Wakes all waiting threads
 
-A monitor is one mutex + one or more cond variables
+A monitor is one mutex + one or more condition variables
 #### Spinlocks
 
 If a lock is not available, the thread employs busy-waiting (spinning), where it continuously checks until the lock becomes available.
 Other locking mechanisms that might put the thread to sleep while it waits for the lock to be released.
-
 
 ### Deadlocks
 
@@ -94,13 +95,11 @@ What can be done about deadlock:
 - Negate one of the four conditions
 - Static/dynamic detection tools
 
-
 ### Performance issues and tradeoffs
 
 - Invoking spinlocks/mutexes can be expensive
 - Coarse locks limit parallelism 
 - Fine-grained locks lead to complexity and hence bugs
-
 
 Programmability issues:
 - Loss of modularity

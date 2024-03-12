@@ -176,11 +176,30 @@ Disadvantages:
 	- Chance of winning next quantum is $\frac {t_i} T$ 
 	- Tickets not used up
 
-https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l10.txt
+Controls long-term average proportion of CPU for each process.
 
+It can also group processes hierarchically for control:
+- Subdivide lottery tickets
+- Can model as currency, so there can be an exchange rate between real currency and lottery tickets
+
+Other features:
+- Deals with starvation
+	- If you have one ticket you will make progress)
+- Adding one high-prio job will not starve the others
+- Adding/Deleting jobs affects all jobs proportionally
+- Can transfer tickets between processes
+	- If a client is waiting for a server it can donate tickets to the server so it can run
+- Ticket inflation for processes that don't use their whole quantum
+
+
+Disadvantages:
+- latency unpredictable
+- High expected error
 
 
 #### Stride Scheduling
+
+Stride scheduling was made to address these disadvantages
 
 Each job in the system has a stride, which is inverse in proportion to the number of tickets it has. 
 
@@ -198,8 +217,39 @@ In the most basic case, each process’s `vruntime` increases at the same rate, 
 
 When a scheduling decision occurs, CFS will pick the process with the lowest `vruntime` to run next.
 
-https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l10.txt
+
 
 ### Scheduling Lessons
 
-https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l10.txt
+Scheduling comes up all over the place
+- m requests share n resources
+- Disk: which read/write request to do next?
+- Memory: which process to take physical page from?
+
+In the modern day, scheduling problems are not so relevant when you can upgrade to a faster CPU/faster network.
+
+Here are some exceptions:
+- Websites and large-scale networks often cannot be made fast enough to handle peak demand so scheduling becomes important again
+- Some scheduling decisions have non-linear effects on the systems behaviour overall, not just different performance for different users
+- Real-time systems
+	-  soft real time: miss deadline and CD or MPEG decode will skip
+	- hard real time: miss deadline and plane will crash
+
+Scheduling decisions shouldn't effect a programs results in principle
+- Its rare to be able to calculate the best scheduling
+- Instead, we build the kernel so that it's correct to context switch and restore at any time, so then any schedule will get the right answer for a program
+
+Cases where scheduling can affect correctness:
+- Multimedia: delay too long and the results will look/sound wrong
+- Web server: delay too long and users give up
+
+### Three Main Lessons
+
+1. Know your goals, write them down
+2.  Compare against optimal, even if optimal can't be built
+3. There are actually many different schedulers in the system that interact:
+	- Mutexes implicitly make scheduling decisions
+	- Interrrupts likewise...
+	- Disk scheduler doesn't know how to favour one process' I/O over another
+	- Network scheduler doesn't know how to favour one process' packets over another
+	- etc..
