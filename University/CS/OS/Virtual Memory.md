@@ -22,7 +22,7 @@ When a process tries to perform a load at address 0 (a virtual address), the OS,
 - Effective use of resources
 - Sharing
 
-
+https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l11.txt
 Translation of the virtual and physical addresses is done by the MMU (hardware). The OS sets up data structures that the hardware 'sees', associated per-process.
 
 ## Paging
@@ -31,7 +31,7 @@ Paging is the process of dividing memory (virtual + physical) into fixed-size ch
 
 Page Size: x86-64: 4096B = 4KB = $2^{12}$ bytes
 
-
+https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l11.txt
 ### The Page Table
 
 The page table is conceptually a map from the VPN (Virtual Page Number) to the PPN (Physical Page Number)
@@ -42,7 +42,9 @@ The page table is conceptually a map from the VPN (Virtual Page Number) to the P
 
 
 
-TLB is ..
+### Virtual Memory on `x86-64`
 
+https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l12.txt
+### Page Faults
 
-
+https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l13.txt

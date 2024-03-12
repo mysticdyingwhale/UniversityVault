@@ -14,7 +14,6 @@ Scheduling decisions happen when a process/thread:
 
 #### Preemptive scheduling vs non-preemptive scheduling
 
-
 Preemptive scheduling is used when a process: 
 - switches from the running state to the ready state
 - switches from the waiting state to the ready state
@@ -24,7 +23,6 @@ Resources are allocated to the process for a limited amount of time and then tak
 The process is placed back in the ready queue if that process still has CPU burst time remaining. 
 
 That process stays in the ready queue till it gets its next chance to execute.
-
 
 Non-preemptive scheduling is used when:
 - A process terminates
@@ -47,47 +45,147 @@ Context switching has a cost:
 - CPU time in kernel (save and restore registers, switch address spaces)
 - Indirect costs (TLB shootdowns, processor cache, OS caches)
 
+
+
 ### Scheduling Disciplines
 
 - Assume first that the process/threads do no I/O (unrealistic, we relax it later)
+
+
+##### FCFS (first come first served)/FIFO
+- run job until its done
+- Example:
+	- P1 needs 24s, P2 needs 3s, P3 needs 3s
+	- $\frac{\text{3 processes}}{24+3+3} = \frac{\text{3 processes}}{30s} = 0.1 \text{proc/sec}$ throughput
+	- $\frac{24+27+30}{3}= 27s$ avg time taken
+- Very high average turnaround
   
-- FCFS (first come first served)/FIFO
-	- run job until its done
+- Advantages:
+	- Simple
+	- No starvation
+	- Few context switches
+- Disadvantage:
+	- Short jobs get stuck behind long ones
+
+![[Pasted image 20240312015912.png]]
+
+
+#### SJF (Shortest Job First) / STCF (Shortest Time to Completion First)
+##### SJF: Choose job with shortest upcoming CPU burst
+  ![[Pasted image 20240312015925.png]]
+##### STCF: preemptive version of SJF
+- We preempt our longer job until a shorter job arrives, then let those jobs run and place the rest of the longer job at the end of the queue 
+  
+- Advantages:
+	- Disk utilisation
+	- Optimal average turnaround
+	- Low overhead
+- Disadvantages:
+	- Long running jobs can get starved
+	- Does not optimize response time, only turnaround time
+	- Requires future prediction
+	  
+![[Pasted image 20240312015750.png]]
+#### RR (Round Robin) 
+- Also called Time Slicing
+- Add a timer
+- Instead of running jobs to completion, run for a time slice (scheduling quantum)
+- After each quantum we switch to the next job and rotate.
+
+- Advantages:
+	- Fair allocation of CPU across jobs
+	- Low avg response time when job lengths vary
+	- Good for output time if small number of jobs
+- Disadvantages
+	- What if jobs are same length?
 	- Example:
-		- P1 needs 24s, P2 needs 3s, P3 needs 3s
-		- $\frac{\text{3 processes}}{24+3+3} = \frac{\text{3 processes}}{30s} = 0.1 \text{proc/sec}$ throughput
-		- $\frac{24+27+30}{3}= 27s$ avg time taken
-	- Very high average turnaround
-	  
-- SJF (Shortest Job First) / STCF (Shortest Time to Completion First)
-	- SJF: Choose job with shortest upcoming CPU burst
-	- STCF: preemptive version of SJF
-		- We preempt 
-	  
-- RR (Round Robin) 
-	- Also called Time Slicing
-	- Add a timer
-	- Instead of running jobs to completion, run for a time slice (scheduling quantum)
-	- Scheduling Quantum:
-		- What if jobs are the same length?
-		- Example
-			- 2 jobs of 50 time units each, quantum is 1
-			- Average time taken: 99.5 quanta
-			- With FCFS: 75 quanta
-	- After each quantum
+		- 2 jobs of 50 time units each, quantum is 1
+		- Average time taken: 99.5 quanta
+		- With FCFS: 75 quanta
+
+![[Pasted image 20240312015516.png]]
+
+#### Picking Quantum Size
+
+- Want it to be much larger than context switch cost
+- Majority of bursts should be less than the quantum
+- Too small and spend too much time context switching
+- Too large and response time suffers
+- Typically 10-100ms
 
 ### Incorporating I/O
 
+A scheduler has a decision to make when a job initiates an I/O request, because the currently running job won't be using the CPU during I/O
+
+- It is blocked waiting for I/O completion.
+
+It also has a decision to make when the I/O is completed. 
+
+When that occurs, a system interrupt is raised and the OS runs and moves the process that issued the I/O from blocked back to the ready state.
+
+In the below example, A runs for 10ms then issues an I/O request that takes 10ms, and B takes 50ms with no I/O.  
+
+We run A first as it is shorter (STCF), then while waiting for A's I/O we run a slice of B
+
+![[Pasted image 20240312020655.png]]
+
+
+##### Disk Utilization
+
+To calculate disk utilization for a given job:
+
+$$\frac{\text{disk time - CPU time}}{\text{CPU time}}$$
 
 ### Priority Scheme
 
+Give every process a number (set by admin) and give the CPU to the process with the highest priority (lowest or highest number depending on scheme). 
 
+Can be done preemptively or non-preemptively.
+
+It is generally a bad idea to use strict priority because of starvation of low priority tasks.
+
+The solution to this starvation is to increase a process's priority as it waits.
 ### MLFQ
 
-The multi-level feedback queue
+The multi-level feedback queue divides processes into multiple queues based on their priority levels. 
 
+There are three main ideas:
+
+ - Multiple Queues: Each with a different priority
+ - Round Robin within each queue: flush a priority level before moving on to the next one
+ - Feedback: Process' priority changes, eg: based on how little or much it's used in the CPU
+##### Basic Rules:
+
+- Rule 1: If Priority(A) > Priority(B), A runs
+- Rule 2: if Priority(A) = Priority(B), A&B run in Round Robin
+
+Advantages:
+- Approximates SRTCF (shortest remaining time to completion)
+Disadvantages:
+- Can't donate priority
+- Not very flexible
+- Not good for real-time or multimedia
+- Can be gameable: user puts in meaningless I/O to keep job prio high
 ### Lottery and Stride Scheduling
 
+#### Lottery Scheduling
+
+- Issue lottery tickets to processes
+	- Let $p_i$ have $t_i$ tickets
+	- $T$ = total # of tickets, $T = \sum t_i$ 
+	- Chance of winning next quantum is $\frac {t_i} T$ 
+	- Tickets not used up
+
+https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l10.txt
+
+
+
+#### Stride Scheduling
+
+Each job in the system has a stride, which is inverse in proportion to the number of tickets it has. 
+
+We call this value the stride of each process; every time a process runs, we will increment a counter for it (called its pass value) by its stride to track its global progress.
+https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l10.txt
 ### Linux : CFS (Completely Fair Scheduler)
 
 Implements fair-share scheduling using a form of stride scheduling, a deterministic fair-share scheduler.
@@ -99,9 +197,9 @@ It does so through a simple counting-based technique known as virtual runtime (`
 In the most basic case, each process’s `vruntime` increases at the same rate, in proportion with physical (real) time. 
 
 When a scheduling decision occurs, CFS will pick the process with the lowest `vruntime` to run next.
-#### Stride Scheduling
 
-Each job in the system has a stride, which is inverse in proportion to the number of tickets it has. 
+https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l10.txt
 
-We call this value the stride of each process; every time a process runs, we will increment a counter for it (called its pass value) by its stride to track its global progress.
+### Scheduling Lessons
 
+https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l10.txt

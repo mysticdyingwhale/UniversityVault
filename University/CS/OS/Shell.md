@@ -11,3 +11,12 @@ Take the example of `$ ls`:
 - ![[Processes#How command line works]]
 
 Shell will use [[Processes#System Calls|system calls]] `wait()` or `waitpid()` to wait for the end of a process.
+
+
+
+### `ls` (list)
+
+
+
+
+

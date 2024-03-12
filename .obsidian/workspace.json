@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/CS/OS/Scheduling.md",
+                "file": "University/CS/OS/Virtual Memory.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/CS/OS/Scheduling.md",
+                "file": "University/CS/OS/Virtual Memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/CS/OS/Scheduling.md",
+                "file": "University/CS/OS/Virtual Memory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/CS/OS/Scheduling.md"
+                "file": "University/CS/OS/Virtual Memory.md"
               }
             }
           },
@@ -160,12 +160,19 @@
   },
   "active": "3672755d0bc29d7b",
   "lastOpenFiles": [
-    "University/CS/OS/Virtual Memory.md",
-    "University/CS/OS/Scheduling.md",
-    "University/CS/OS/Concurrency & Synchronisation.md",
-    "University/CS/OS/Shell.md",
-    "University/Math/Linear Algebra/Eigenvalues.md",
     "University/CS/OS/Processes.md",
+    "University/CS/OS/Scheduling.md",
+    "University/CS/OS/Virtual Memory.md",
+    "University/CS/OS/Concurrency.md",
+    "University/CS/OS/Shell.md",
+    "Pasted image 20240312020655.png",
+    "Pasted image 20240312015925.png",
+    "Pasted image 20240312015923.png",
+    "Pasted image 20240312015912.png",
+    "Pasted image 20240312015750.png",
+    "Pasted image 20240312015516.png",
+    "University/CS/OS/Therac-25.md",
+    "University/Math/Linear Algebra/Eigenvalues.md",
     "University/Math/Linear Algebra/Invariant Subspaces.md",
     "University/Math/Linear Algebra/Invertibility.md",
     "University/Math/Linear Algebra/Vector Space.md",
@@ -188,20 +195,12 @@
     "University/CS/CSO/UNIX.md",
     "Binary Representation.md",
     "University/Math/Linear Algebra/Linear Independence.md",
-    "University/Math/Discrete Math/Induction.md",
-    "README.md",
     "University/PastedImages/Pasted image 20240205120746.png",
     "University/Linguistics/Phonological Analysis",
     "University/PastedImages/Pasted image 20240126235256.png",
     "University/PastedImages/Pasted image 20240126234811.png",
     "University/CS/OS",
-    "University/PastedImages/Pasted image 20240122120758.png",
-    "University/PastedImages/Pasted image 20240122115641.png",
     "University/Math/Linear Algebra",
-    "University/PastedImages/Pasted image 20231217235707.png",
-    "University/PastedImages/Pasted image 20231217170727.png",
-    "University/PastedImages/Pasted image 20231217164514.png",
-    "University/PastedImages/Pasted image 20231217164505.png",
     "University/PastedImages/Pasted image 20211219152334.png.crdownload",
     "University/PastedImages/Pasted image 20211219152320.png.crdownload",
     "University/PastedImages/Pasted image 20211219152148.png.crdownload",
