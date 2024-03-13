@@ -78,6 +78,22 @@ Think of it like:
 - There is in the sky a 2^36 sized array that maps the virtual address to a physical page
 - table\[36-bit virtual page number] = 20-bit physical page number
 
+
+A page table entry contains:
+- 40 bits representing the physical address of the page or the next page table
+- Some bits that contain flags and optimization metadata
+- Bottom 3 bits, containing:
+	- Present/Not Present flag
+		- Is the page present in physical memory? If not trigger page fault
+	- Read/Write
+		- Specifies whether the page can be written to or only read from.
+	- User/Kernel
+		- Determines the privilege level required to access the page. 
+			- Kernel mode allows full access to hardware resources 
+			- User mode restricts access to prevent accidental or malicious system damage.
+
+The OS sets these to indicate protection and the hardware enforces them.
+
 #### Multi-level Page Tables
 
 The key idea is to represent the page table as a tree:
@@ -103,6 +119,22 @@ Example:
 
 If asked "what piece of address space is described by a given page table entry?":
 - Look at how many bits are on the 'left'
+
+#### Helpful reminders
+
+Each entry in the L1 page table corresponds to 512GB of virtual address space
+
+Each entry in the L2 page table corresponds to 1 GB of virtual address space
+
+Each entry in the L3 page table corresponds to 2 MB of virtual address space
+
+Each entry in the L2 page table corresponds to 1 page ((4 KB) of virtual address space
+
+
+So the L4 page table is responsible for translating 2 MB of virtual memory.
+
+
+Each page table itself consumes 4KB of physical memory
 #### Alternatives and Tradeoffs
 
 There are some tradeoffs between:
@@ -150,9 +182,115 @@ Assuming a 48-bit address:
 
 #### Mapping
 
-We have to map 48-bit number (virtual address) to 52-bit number (physical address), at the granularity of ranges of 2^{12}
+We have to map 48-bit number (virtual address) to 52-bit number (physical address), at the granularity of ranges of $2^{12}$ 
 
 ### Page Table Structures
+
+### TLB
+
+The MMU has to go out to memory on every memory reference (walking the page tables)
+
+The make this fast we need a cache, which is where TLB comes in.
+
+The TLB (Translation Lookaside Buffer) is hardware that stores the recent translations of virtual addresses to physical memory.
+
+The TLB's algorithm works as follows:
+- First, extract the VPN from the virtual address and check if the TLB holds the translation for this VPN
+	- If it does, we have a TLB hit, which means the TLB holds the translation
+		- We can now extract the page frame number (PFN) from the relevant TLB entry, form our desired physical address and access memory.
+	- If it doesn't, we have a TLB miss
+		- The hardware accesses the page table to find the translation
+		- Assuming the virtual memory reference is valid and accessible, it updates the TLB with the translation
+		- Once the TLB is updated the hardware retries the instruction.
+
+A page table entry is marked invalid when the page has not been allocated by the process and thus should not be accessed by it. 
+
+If a process attempts to access an invalid page it will be killed. 
+
+This info is stored as a valid bit
+
+A TLB valid bit simply refers to whether or not a TLB entry has a valid translation within it.
+
+A typical TLB Entry contains:
+- `VPN | PFN | other bits`
+	- Valid bit
+	- Protection bits (read/write/execute)
+	- Address-space identifier
+	- Dirty bit
+	- etc...
+
+
+TLB miss does not imply page fault and vice versa.
+
 ### Page Faults
 
-https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l13.txt
+
+A page fault occurs when an illegal reference is made. 
+
+A reference is illegal, either because it's not mapped in the page tables or because there is a protection violation.
+
+This requires the OS to get involved.
+
+#### Mechanics
+
+The processor constructs a trap frame and transfers execution to an interrupt or trap handler
+
+
+```C
+		    ss     [stack segment; ignore]
+		    rsp    [former value of stack pointer]
+		    rflags [former value of rflags]
+		    cs     [code segment; ignore]
+                    rip    [instruction that caused the trap]
+           %rsp --> [error code]
+	       %rip now points to code to handle the trap
+```
+
+Error code:
+- U/S: user mode fault / supervisor mode fault
+- R/W: access was read / access was write
+- P: not-present page / protection violation
+
+When page fault happens, the kernel sets up the process's page entries properly, or terminates the process.
+
+
+
+#### Uses for Page Faults
+
+Best example is when we overcommit physical memory.
+
+Your program thinks it has 64GB for example, but the hardware only has 16GB. The secondary storage would then be used to store memory pages.
+
+Advantage:
+- Address space looks huge
+Disadvantage:
+- Very slow access to 'paged' memory
+
+- On a page fault, the kernel reads in the faulting page
+- The kernel may need to send a page to the disk, which only happens if both:
+	- The kernel is out of memory
+	- The page that it selects to write out is dirty
+
+
+Other uses:
+- Store memory pages across the network! (Distributed Shared Memory)
+	- On page fault, the page fault handler retrieves the page from another machine
+- Copy-on-write
+	- When creating a copy of a process, copy its page tables instead of its memory, and mark the pages as read-only
+	- When a write happens, a page fault results. 
+		- At that point, the kernel allocates a new page, copies the memory over, and restarts the user program to do a write
+	- Used in `fork()`,`mmap()` etc..
+- Accounting
+	- To sample what % of memory pages are written to in a time slice
+	- Mark a fraction as not present, measure fault frequency
+- Demand Paging
+- Growing the stack
+- BSS page allocation
+- Shared text, libraries, memory
+
+#### Costs
+
+What does paging from the disk cost?
+$$\text{Average Memory Access Time (AMAT)} = (1-p) * \text{memory access time} + p * \text{page fault time}$$, where $p$ is prob. of page fault.
+
+Page faults are very expensive.

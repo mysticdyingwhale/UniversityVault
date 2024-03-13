@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1237bb7708622487",
+        "id": "a08f80f455ea3acf",
         "type": "tabs",
         "children": [
           {
-            "id": "3672755d0bc29d7b",
+            "id": "560afc11e073d70f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -158,14 +158,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3672755d0bc29d7b",
+  "active": "560afc11e073d70f",
   "lastOpenFiles": [
+    "University/CS/OS/Scheduling.md",
+    "University/CS/OS/Virtual Memory.md",
     "University/PastedImages/Pasted image 20240312170947.png",
     "University/CS/OS/Concurrency.md",
     "University/CS/OS/Processes.md",
-    "University/CS/OS/Scheduling.md",
     "University/CS/OS/Shell.md",
-    "University/CS/OS/Virtual Memory.md",
     "University/PastedImages/Pasted image 20240312020655.png",
     "University/PastedImages/Pasted image 20240312015925.png",
     "University/PastedImages/Pasted image 20240312015923.png",
@@ -199,7 +199,6 @@
     "University/PastedImages/Pasted image 20240205120746.png",
     "University/Linguistics/Phonological Analysis",
     "University/PastedImages/Pasted image 20240126235256.png",
-    "University/PastedImages/Pasted image 20240126234811.png",
     "University/CS/OS",
     "University/Math/Linear Algebra",
     "University/PastedImages/Pasted image 20211219152334.png.crdownload",

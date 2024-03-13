@@ -53,18 +53,18 @@ Context switching has a cost:
 
 
 ##### FCFS (first come first served)/FIFO
-- run job until its done
+- Run job until its done
 - Example:
 	- P1 needs 24s, P2 needs 3s, P3 needs 3s
 	- $\frac{\text{3 processes}}{24+3+3} = \frac{\text{3 processes}}{30s} = 0.1 \text{proc/sec}$ throughput
 	- $\frac{24+27+30}{3}= 27s$ avg time taken
 - Very high average turnaround
   
-- Advantages:
+- **Advantages:**
 	- Simple
 	- No starvation
 	- Few context switches
-- Disadvantage:
+- **Disadvantage:**
 	- Short jobs get stuck behind long ones
 
 ![[Pasted image 20240312015912.png]]
@@ -76,27 +76,25 @@ Context switching has a cost:
 ##### STCF: preemptive version of SJF
 - We preempt our longer job until a shorter job arrives, then let those jobs run and place the rest of the longer job at the end of the queue 
   
-- Advantages:
-	- Disk utilisation
+- **Advantages:**
+	- Low Disk utilization
 	- Optimal average turnaround
 	- Low overhead
-- Disadvantages:
+- **Disadvantages:**
 	- Long running jobs can get starved
 	- Does not optimize response time, only turnaround time
 	- Requires future prediction
 	  
 ![[Pasted image 20240312015750.png]]
 #### RR (Round Robin) 
-- Also called Time Slicing
-- Add a timer
 - Instead of running jobs to completion, run for a time slice (scheduling quantum)
 - After each quantum we switch to the next job and rotate.
 
-- Advantages:
+- **Advantages:**
 	- Fair allocation of CPU across jobs
 	- Low avg response time when job lengths vary
 	- Good for output time if small number of jobs
-- Disadvantages
+- **Disadvantages**
 	- What if jobs are same length?
 	- Example:
 		- 2 jobs of 50 time units each, quantum is 1
@@ -159,9 +157,10 @@ There are three main ideas:
 - Rule 1: If Priority(A) > Priority(B), A runs
 - Rule 2: if Priority(A) = Priority(B), A&B run in Round Robin
 
-Advantages:
+**Advantages:**
 - Approximates SRTCF (shortest remaining time to completion)
-Disadvantages:
+
+**Disadvantages:**
 - Can't donate priority
 - Not very flexible
 - Not good for real-time or multimedia
@@ -182,7 +181,7 @@ It can also group processes hierarchically for control:
 - Subdivide lottery tickets
 - Can model as currency, so there can be an exchange rate between real currency and lottery tickets
 
-Other features:
+**Advantages:**
 - Deals with starvation
 	- If you have one ticket you will make progress)
 - Adding one high-prio job will not starve the others
@@ -192,8 +191,8 @@ Other features:
 - Ticket inflation for processes that don't use their whole quantum
 
 
-Disadvantages:
-- latency unpredictable
+**Disadvantages:**
+- Latency unpredictable
 - High expected error
 
 
@@ -204,7 +203,7 @@ Stride scheduling was made to address these disadvantages
 Each job in the system has a stride, which is inverse in proportion to the number of tickets it has. 
 
 We call this value the stride of each process; every time a process runs, we will increment a counter for it (called its pass value) by its stride to track its global progress.
-https://cs.nyu.edu/~mwalfish/classes/24sp/lectures/l10.txt
+
 ### Linux : CFS (Completely Fair Scheduler)
 
 Implements fair-share scheduling using a form of stride scheduling, a deterministic fair-share scheduler.
