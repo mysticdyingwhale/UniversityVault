@@ -132,7 +132,7 @@ We run A first as it is shorter (STCF), then while waiting for A's I/O we run a 
 
 To calculate disk utilization for a given job:
 
-$$\frac{\text{disk time - CPU time}}{\text{CPU time}}$$
+$$\text{disk util }=\frac{\text{disk time}}{\text{disk time + CPU time}}$$
 
 ### Priority Scheme
 

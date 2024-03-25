@@ -8,8 +8,6 @@ It had 2 therapeutic modes, Electron mode and Photon mode.
 
 The hazard of dual-mode machines is that when the turntable is in the wrong position, the flattener is misaligned causing high output dose rates.
 
-
-
 ### Causes
 
 - Decided to not duplicate hardware safety mechanisms and interlocks in favour of software versions
@@ -31,8 +29,6 @@ The device regularly malfunctioned without affecting the patient which masked th
 Machine inspections found nothing wrong so the issue was misdiagnosed.
 
 AECL did not comply with suggested/directed orders. (malfunction behavior & potentiometer)
-
-
 
 
 ### Summary 

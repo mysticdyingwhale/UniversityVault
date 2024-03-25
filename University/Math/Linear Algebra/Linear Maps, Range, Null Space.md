@@ -1,7 +1,5 @@
-#math 
-
 # Linear Maps
-
+#math 
 
 **Definition:** Let $V,W$ be vector spaces over the field $\mathbb{F}$. A function $V \rightarrow W$ is said to be a linear map if any two vectors $u,v \in V$ and any scalar $\lambda \in \mathbb{F}$ meet the following conditions:
 - $T(u+v) = T(u) + T(v)$ for all $u,v \in V$ (Additivity)

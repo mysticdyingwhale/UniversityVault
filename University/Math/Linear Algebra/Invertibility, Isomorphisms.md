@@ -1,5 +1,5 @@
-#math 
 # Invertibility
+#math 
 
 **Definition:** Let $T \in \mathcal{L}(V,W)$. We say that $T$ is invertible if there exists an $S \in \mathcal{L}(V,W)$ such that $$S(T(v))= v$$ for all $v \in V$, and $$S(T(w))=w$$ for all $w \in W$. 
 
@@ -88,16 +88,6 @@ This means that each finite dimensional space is isomorphic to $\mathbb{F}^n$ wh
  
 
 
-
-
-#### $\mathcal{L}(V,W)$ and $\mathbb{F}^{m,n}$ are isomorphic
-
-
-**Claim:**
-
-**Proof:**
-
-
 ### Column–Row Factorization and Rank of a Matrix
 
 #### Matrix Rank
@@ -110,3 +100,7 @@ Think of matrix multiplication as forming linear combinations of columns or rows
 - Row Rank of $A \text{dim span(rows of A)}$  
 
 Turns out, col rank = row rank so just say rank.
+
+
+**Claim:** If $A \in \mathbb{F}^{m,n}$ is the matrix of $T \in \mathcal{L}(V,W)$ and $A_j \in \mathbb{F}^m$ is the $j$-th column of $A$, then $$\text{dim (span }\{A_1,...,A_n\}) = \text{dim (}R(T) = \text{rank}$$
+**Proof:** 

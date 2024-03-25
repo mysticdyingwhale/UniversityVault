@@ -1,6 +1,5 @@
-#math 
-
 # Vector Space 
+#math 
 
 Let $\mathbb{F}$ denote a field (EG. $\mathbb{F}= \mathbb{R}$  or $\mathbb{F} = \mathbb{C}$ ). 
 

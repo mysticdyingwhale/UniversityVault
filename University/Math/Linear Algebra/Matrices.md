@@ -1,6 +1,5 @@
-#math 
-
 # Matrices
+#math 
 
 **Definition:** Suppose $m$ and $n$ are non-negative integers. An $m$ by $n$ matrix $A$ is a rectangular array of elements of $\mathbb{F}$ with $m$ rows and $n$ columns.
 

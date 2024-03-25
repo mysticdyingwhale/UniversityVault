@@ -237,13 +237,13 @@ The processor constructs a trap frame and transfers execution to an interrupt or
 
 
 ```C
-		    ss     [stack segment; ignore]
-		    rsp    [former value of stack pointer]
-		    rflags [former value of rflags]
-		    cs     [code segment; ignore]
-                    rip    [instruction that caused the trap]
-           %rsp --> [error code]
-	       %rip now points to code to handle the trap
+ss     [stack segment; ignore]
+rsp    [former value of stack pointer]
+rflags [former value of rflags]
+cs     [code segment; ignore]
+rip    [instruction that caused the trap]
+%rsp --> [error code]
+%rip now points to code to handle the trap
 ```
 
 Error code:
@@ -253,14 +253,11 @@ Error code:
 
 When page fault happens, the kernel sets up the process's page entries properly, or terminates the process.
 
-
-
 #### Uses for Page Faults
 
 Best example is when we overcommit physical memory.
 
 Your program thinks it has 64GB for example, but the hardware only has 16GB. The secondary storage would then be used to store memory pages.
-
 Advantage:
 - Address space looks huge
 Disadvantage:

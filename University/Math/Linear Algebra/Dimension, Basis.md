@@ -1,5 +1,5 @@
-#math 
 # Dimension
+#math 
 ## Replacement Theorem
 
 **Definition:** Suppose $U = \{u_1,...,u_m\} \subset V$ are linearly independent. Let $W = \{w_1,w_2,...,w_n\} \subset V$ with $\text{span}(W)= V$ . Then $m \leq n$. 

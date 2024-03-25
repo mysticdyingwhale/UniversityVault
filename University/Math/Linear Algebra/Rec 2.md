@@ -1,3 +1,4 @@
+# Rec 2
 #math 
 
 Suppose $V,W$ are finite dimensional, where $\text{dim }V \geq \text{dim }W \geq 2$.  Show that $A = \{T \in \mathcal{L}(V,W) : \text{T is not surjective}\}$ is not a subspace of $\mathcal{L}(V,W)$

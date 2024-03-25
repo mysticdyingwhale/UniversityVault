@@ -1,6 +1,5 @@
-#math 
-
 # Linear Combinations
+#math 
 
 A linear combination of a list $v_1, v_2, ..., v_m \in V$ of vectors is a vector of the form $$a_1v_1+a_2v_2+...+a_mv_m \in V$$
 for $a_1,a_2,...,a_m \in \mathbb{F}$.
