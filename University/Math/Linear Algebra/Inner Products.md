@@ -110,9 +110,9 @@ This inequality holds iff one of $u,v$ is a non-negative real multiple of anothe
 **Proof:** We have $$||u+v||^2 = \langle u+v,u+v \rangle = \langle u,u \rangle + \langle v,v\rangle  + \langle u,v \rangle + \langle v,u \rangle$$
 $$$$
 
-#### Parallelogram Inequality
+#### Parallelogram Equality
 
-**Claim:** Suppose $u,v \in V$. Then $$||u+v|| \leq ||u|| + ||v||$$
+**Claim:** Suppose $u,v \in V$. Then $$||u+v||^2 + ||u-v||^2  = 2(||u||^2 + ||v||^2)$$
 
 **Proof:** 
 ## Orthonormality
