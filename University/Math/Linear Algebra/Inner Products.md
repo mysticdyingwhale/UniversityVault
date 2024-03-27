@@ -27,10 +27,10 @@ Recall that if $\lambda = a+bi, a,b \in \mathbb{R}$ then:
 - Definiteness: $\langle v, v\rangle =0$ iff $v = 0$
 - Additivity in first slot: $\langle u+v,w \rangle = \langle u,w \rangle + \langle v,w \rangle$ for all $u,v,w \in V$ 
 - Homogeneity in the first slot: $\langle \lambda u,v \rangle = \lambda \langle u,v \rangle$ for all $\lambda \in \mathbb{F}, u,v \in V$ 
-- Conjugate symmetry: $\langle u,v \rangle = \overline{\langle u,v \rangle}$ for all $u,v \in V$ 
+- Conjugate symmetry: $\langle u,v \rangle = \overline{\langle v,u \rangle}$ for all $u,v \in V$ 
 
 
-Basic Properties of the inner product:
+Basic properties of the inner product:
 
  1. For each fixed $v \in V$, the function that takes $u \in V$ to $\langle u,v \rangle$ is a linear map $V \rightarrow \mathbb{F}$ 
 2. $\langle 0,v\rangle = 0$ for all $v \in V$
@@ -76,13 +76,14 @@ Working with norms squared is usually easier than working with norms.
 **Definition:** Two vectors $u,v \in V$ are called orthogonal if $\langle u,v \rangle=0$
 
 #### Orthogonality of 0
-**Claim:** 0 is orthogonal to every vector in $V$, and 0 is the only vector in $V$ that is orthogonal to itself.
+
+**Theorem:** 0 is orthogonal to every vector in $V$, and 0 is the only vector in $V$ that is orthogonal to itself.
 
 **Proof:** Recall that $\langle 0,v \rangle = 0$ for all $v \in V$, and that if $v \in V$ and $\langle v,v \rangle=0$, then $v = 0$ by definition of inner product.
 
 #### Pythagorean Theorem
 
-**Claim:** Suppose $u,v \in V$. If $u,v$ are orthogonal vectors, then $$||u+v||^2 = ||u||^2+||v||^2.$$
+**Theorem:** Suppose $u,v \in V$. If $u,v$ are orthogonal vectors, then $$||u+v||^2 = ||u||^2+||v||^2.$$
 **Proof:** Suppose $\langle u,v \rangle = 0$. Then $||u+v||^2 = \langle u+v,u+v \rangle = \langle u,u \rangle + \langle u,v\rangle + \langle v,u\rangle + \langle v,v \rangle = ||u||^2 + ||v||^2$
 
 
@@ -100,6 +101,20 @@ Then $u = cv + w$, $\langle w,v \rangle = 0$.
 Multiply both sides by $||v||^2$ to get $$||u||^2 \space ||v||^2 \geq |\langle u,v \rangle|^2$$
 
 We take the square root to get $$|\langle u,v \rangle | \leq ||u||\text{ }||v||.$$
+
+#### Triangle Inequality
+
+**Claim:** Suppose $u,v \in V$. Then $$||u+v|| \leq ||u||+||v||$$
+This inequality holds iff one of $u,v$ is a non-negative real multiple of another.
+
+**Proof:** We have $$||u+v||^2 = \langle u+v,u+v \rangle = \langle u,u \rangle + \langle v,v\rangle  + \langle u,v \rangle + \langle v,u \rangle$$
+$$$$
+
+#### Parallelogram Inequality
+
+**Claim:** Suppose $u,v \in V$. Then $$||u+v|| \leq ||u|| + ||v||$$
+
+**Proof:** 
 ## Orthonormality
 
 A list of vectors is called orthonormal if each vector in the list has norm 1 and is orthogonal to all other vectors in the list.
@@ -142,7 +157,7 @@ Basic Properties:
 
 
 
-####
+#### V is direct sum of subspace and its orthogonal complement
 
 **Theorem:** Suppose $U$ is a fin-dim subspace of $V$. Then $V = U \oplus U^\perp$ 
 

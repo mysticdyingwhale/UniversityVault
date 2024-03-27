@@ -81,7 +81,7 @@ Suppose $U = \{u_1,u_2,u_3,...,u_m\} \subset V$ is a linearly dependent list in 
 - (a) $u_j \in \text{span}(U \backslash  \{u_j\})$  ($u_j$ is an element of the span of $U$ without $u_j$)
 - (b) $\text{span}(U \backslash \{u_j\}) = \text{span} (U)$ (The span of $U$ excluding $u_j$ is the same as the span of $U$)
 
-Proof: Since $U$ is linearly dependent there exists $a_1, a_2,...,a_m \in F$ such that $a_1u_1+a_2u_2+...+a_mu_m = 0$ and at least one $a_j \neq 0$. We can rewrite this as $$u_ja_j = -(a_1u_1+a_2u_2+...+u_{j-1}a_{j-1}+u_{j+1}a_{j+1}+...+a_mu_m)$$Then,
+**Proof:** Since $U$ is linearly dependent there exists $a_1, a_2,...,a_m \in F$ such that $a_1u_1+a_2u_2+...+a_mu_m = 0$ and at least one $a_j \neq 0$. We can rewrite this as $$u_ja_j = -(a_1u_1+a_2u_2+...+u_{j-1}a_{j-1}+u_{j+1}a_{j+1}+...+a_mu_m)$$Then,
  $$u_j = -\frac{a_1}{a_j}u_1 - ... - \frac{a_{j-1}}{a_j}u_{j-1}- \frac{a_{j+1}}{a_j}u_{j+1} - ... - \frac{a_{m}}{a_j}u_{m}$$
 That is, $u_j$ can be written as a linear combination of vectors $\{u_1,u_2,...,u_{j-1}, u_{j+1},...,u_m\}$, so $u_j \in \text{span}(U \backslash \{u_j\})$, proving (a). 
 
@@ -92,10 +92,12 @@ It is straightforward to show $\text{span}\{U \backslash \{u_j\}\}$ is a subset 
 
 We now show  $\text{span}\{U\} \subseteq \text{span}\{U \backslash \{u_j\}\}$. To that end, let $v \in \text{span}\{U\}$. Then there exists $b_1,b_2,...,b_m \in F$ such that $V = b_1u_1+b_2u_2+...+b_{j-1}u_{j-1}+b_ju_j+b_{j+1}u_{j+1}+...+b_mu_m$ . 
 
-Substituting $u_j = -\frac{a_1}{a_j}u_1 - ... - \frac{a_{j-1}}{a_j}u_{j-1}- \frac{a_{j+1}}{a_j}u_{j+1} - ... - \frac{a_{m}}{a_j}u_{m}$ into this expression gives $V = (b_1-\frac{b_1a_1}{a_j}u_1+...+(b_{j-1}-\frac{b_{j-1}a_{j-1}}{a_j}u_{j-1})++(b_{j+1}-\frac{b_{j+1}a_{j+1}}{a_j}u_{j+1}) + ... +(b_m-\frac{b_ma_m}{a_j}u_m)$  
-Then $v \in \text{span}\{U \backslash \{u_j\}\}$ by definition. This gives us $\text{span}\{U\} \subseteq \text{span}\{U \backslash \{u_j\}\}$. 
+Substituting $$u_j = -\frac{a_1}{a_j}u_1 - ... - \frac{a_{j-1}}{a_j}u_{j-1}- \frac{a_{j+1}}{a_j}u_{j+1} - ... - \frac{a_{m}}{a_j}u_{m}$$ into this expression gives $$V = (b_1-\frac{b_1a_1}{a_j}u_1+...+(b_{j-1}-\frac{b_{j-1}a_{j-1}}{a_j}u_{j-1})++(b_{j+1}-\frac{b_{j+1}a_{j+1}}{a_j}u_{j+1}) + ... +(b_m-\frac{b_ma_m}{a_j}u_m)$$  
+Then $v \in \text{span}\{U \backslash \{u_j\}\}$ by definition. 
+
+This gives us $\text{span}\{U\} \subseteq \text{span}\{U \backslash \{u_j\}\}$. 
 
 Finally, $\text{span}\{U\} = \text{span}\{U\backslash\{u_j\}\}$
 
 
- This means that $a_1v_1+a_2v_2+...+a_mv_m =-w(a_1+_2+...+a_m)$. Here
+This means that $a_1v_1+a_2v_2+...+a_mv_m =-w(a_1+_2+...+a_m)$. Here

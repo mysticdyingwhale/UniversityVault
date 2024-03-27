@@ -20,7 +20,7 @@ Thus, $S_1 = S_2$.
 
 **Proof:** ($\implies$) Let $T \in \mathcal{L}(V,W)$ be invertible. 
 
-**Injectivity:** Let $u,v \in V$ such that $T(u) = T(v)$. 
+**Injectivity:** Let $u,v \in V$ such that $Tu = Tv$. 
 
 $$u  = I(u) = T^{-1}(T(u)) = T^{-1}(T(v))=I(v)=v$$
 

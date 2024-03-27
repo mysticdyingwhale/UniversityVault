@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/CS/OS/Virtual Memory.md",
+                "file": "University/Math/Linear Algebra/hw7 temp transfer.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/CS/OS/Virtual Memory.md",
+                "file": "University/Math/Linear Algebra/hw7 temp transfer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/CS/OS/Virtual Memory.md",
+                "file": "University/Math/Linear Algebra/hw7 temp transfer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/CS/OS/Virtual Memory.md"
+                "file": "University/Math/Linear Algebra/hw7 temp transfer.md"
               }
             }
           },
@@ -160,24 +160,26 @@
   },
   "active": "560afc11e073d70f",
   "lastOpenFiles": [
+    "University/Math/Linear Algebra/Inner Products.md",
+    "University/Math/Linear Algebra/hw7 temp transfer.md",
+    "University/Math/Linear Algebra/Invertibility, Isomorphisms.md",
+    "University/Math/Linear Algebra/Invariant Subspaces.md",
+    "University/Math/Linear Algebra/L. Combinations, L. Independence.md",
+    "University/Math/Linear Algebra/Polynomials.md",
+    "University/Math/Linear Algebra/Vector Space.md",
+    "University/Math/Linear Algebra/Matrices.md",
+    "University/Math/Linear Algebra/Linear Independence.md",
+    "University/Math/Linear Algebra/Linear Maps, Range, Null Space.md",
+    "University/Math/Linear Algebra/Duality.md",
+    "University/PastedImages/Pasted image 20240327002126.png",
+    "University/CS/OS/Virtual Memory.md",
     "University/CS/OS/Processes.md",
     "University/CS/OS/Scheduling.md",
     "University/CS/OS/Shell.md",
     "University/CS/OS/Therac-25.md",
-    "University/Math/Linear Algebra/Duality.md",
-    "University/CS/OS/Virtual Memory.md",
     "University/CS/OS/Concurrency.md",
-    "University/Math/Linear Algebra/Inner Products.md",
-    "University/Math/Linear Algebra/Invariant Subspaces.md",
     "University/Math/Linear Algebra/Dimension, Basis.md",
     "University/Math/Linear Algebra/Rec 2.md",
-    "University/Math/Linear Algebra/Matrices.md",
-    "University/Math/Linear Algebra/Polynomials.md",
-    "University/Math/Linear Algebra/Linear Maps, Range, Null Space.md",
-    "University/Math/Linear Algebra/Linear Independence.md",
-    "University/Math/Linear Algebra/L. Combinations, L. Independence.md",
-    "University/Math/Linear Algebra/Invertibility, Isomorphisms.md",
-    "University/Math/Linear Algebra/Vector Space.md",
     "University/Math/Linear Algebra/Eigenvalues.md",
     "University/PastedImages/Pasted image 20240312170947.png",
     "University/PastedImages/Pasted image 20240312020655.png",
@@ -196,10 +198,8 @@
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
-    "University/CS/CSO/UNIX.md",
     "University/PastedImages/Pasted image 20240205120746.png",
     "University/Linguistics/Phonological Analysis",
-    "University/PastedImages/Pasted image 20240126235256.png",
     "University/CS/OS",
     "University/Math/Linear Algebra",
     "University/PastedImages/Pasted image 20211219152334.png.crdownload",

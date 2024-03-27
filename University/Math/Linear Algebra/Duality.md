@@ -27,3 +27,8 @@ For each $j$. Thus $\phi_j$ are linearly independent.
 
 **Definition:** Suppose $T \in \mathcal{L}(V,W)$. The dual map of $T$ is $T' \in \mathcal{L}(W',V')$ defined for each $\phi \in W'$ by $$T'(\phi) = \phi \cdot T$$
 That is, $(T' \phi) v = \phi (Tv)$.
+
+
+
+
+**Lemma:** For any $T \in \mathcal{L}(V,W)$, $\text{dim }(R(T')) = \text{dim }(R(T)')$ 
