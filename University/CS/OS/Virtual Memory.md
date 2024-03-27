@@ -291,3 +291,14 @@ What does paging from the disk cost?
 $$\text{Average Memory Access Time (AMAT)} = (1-p) * \text{memory access time} + p * \text{page fault time}$$, where $p$ is prob. of page fault.
 
 Page faults are very expensive.
+
+
+
+## Page Replacement Policies
+
+
+FIFO: Eject the oldest page
+
+MIN (OPT): Eject the entry that won't be referenced for the longest time.
+
+LRU: 
