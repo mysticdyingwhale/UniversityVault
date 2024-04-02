@@ -140,33 +140,33 @@ Then $v \in (U^\perp)^\perp \subseteq U$. So $U = (U^\perp)^\perp$
 
 ### Orthogonal Projection
 
-**Definition:** Suppose $U \subseteq V$ is finite-dimensional. The orthogonal projection of $V$ onto $U$ is $P_u \in \mathcal{L}(V)$ such that for all $v \in V$ where $v = u+w, u \in U, w \in U^\perp$ then $$P_u(v)=u$$
+**Definition:** Suppose $U \subseteq V$ is finite-dimensional. The orthogonal projection of $V$ onto $U$ is $P_U \in \mathcal{L}(V)$ such that for all $v \in V$ where $v = u+w, u \in U, w \in U^\perp$ then $$P_U(v)=u$$
 
-$P_u(v) = \langle v, \frac{u}{||u||}\rangle \cdot \frac{u}{||u||} = \frac{\langle v,u \rangle}{||u||}u = tu$
+$P_U(v) = \langle v, \frac{u}{||u||}\rangle \cdot \frac{u}{||u||} = \frac{\langle v,u \rangle}{||u||}u = tu$
 
 
-Here, $P_u(v)$ minimizes $||v-tu||$ over $t \in \mathbb{F}$ 
+Here, $P_U(v)$ minimizes $||v-tu||$ over $t \in \mathbb{F}$ 
 
 
 Basic properties of $P_u$:
 
-1. $P_u \in \mathcal{L}(V,U)$
-2. $P_u (u) = u$ for all $u \in U$
-3. $P_u (w) = 0$ for all $w \in U^\perp$
-4. $\text{range }(P_u ) = U$
-5. $\text{null }(P_u ) = U^\perp$
-6. $(v - P_u (v)) \in U^\perp$ for all $v \in V$
-7. $P_u^2 = P_u$
-8. $||P_u (v)|| \leq ||v||$ for all $v \in V$
-9. If $\{e_1,...,e_m\}$ is an orthonormal basis for $U$ and $v \in V$ then $P_u (v) = \langle v,e_1\rangle e_1 + ... + \langle v,e_m \rangle e_m$ 
+1. $P_U \in \mathcal{L}(V,U)$
+2. $P_U (u) = u$ for all $u \in U$
+3. $P_U (w) = 0$ for all $w \in U^\perp$
+4. $\text{range }(P_U) = U$
+5. $\text{null }(P_U) = U^\perp$
+6. $(v - P_U(v)) \in U^\perp$ for all $v \in V$
+7. $(P_U)^2 = P_U$
+8. $||P_U (v)|| \leq ||v||$ for all $v \in V$
+9. If $\{e_1,...,e_m\}$ is an orthonormal basis for $U$ and $v \in V$ then $P_U (v) = \langle v,e_1\rangle e_1 + ... + \langle v,e_m \rangle e_m$ 
 
 **Proof:**
 
 1. Routine proof, addition, scalar multiplication
    
-2. Let $u \in U$. Then $u=u+0$ where $0 \in U^\perp$ . So $P_u(u)=u$ 
+2. Let $u \in U$. Then $u=u+0$ where $0 \in U^\perp$ . So $P_U(u)=u$ 
    
-3. Let $w \in U^\perp$. Then $w = 0+w$ where $0 \in U$. By definition $P_u(w) =0$
+3. Let $w \in U^\perp$. Then $w = 0+w$ where $0 \in U$. By definition $P_U(w) =0$
    
 4. By definition $\text{range }(P_u) \subseteq U$. Since $u = P_u(u)$ for all $u \in U$ we also have $u \in \text{range }(P_u)$ so that $u \in \text{range }(P_u)$.
    

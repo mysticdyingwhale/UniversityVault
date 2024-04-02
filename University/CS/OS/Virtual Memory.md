@@ -128,7 +128,7 @@ Each entry in the L2 page table corresponds to 1 GB of virtual address space
 
 Each entry in the L3 page table corresponds to 2 MB of virtual address space
 
-Each entry in the L2 page table corresponds to 1 page ((4 KB) of virtual address space
+Each entry in the L2 page table corresponds to 1 page (4 KB) of virtual address space
 
 
 So the L4 page table is responsible for translating 2 MB of virtual memory.

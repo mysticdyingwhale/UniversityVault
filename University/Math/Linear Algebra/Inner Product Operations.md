@@ -11,7 +11,6 @@
 for every $v \in V$ and every $w \in W$
 
 
-
 #### Adjoint of a linear map is a linear map
 
 **Claim:** If $T \in \mathcal{L}(V,W)$, then $T^* \in \mathcal{L}(V,W)$.
