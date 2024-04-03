@@ -109,9 +109,9 @@
 \begin{enumerate}
 \setItemnumber{5}
 
-\item .
+\item Since $T$ shifts all vectors to the right by one place,
 
-\item .
+\item ($\implies$) Assuming $U^\perp$ is invariant under $T^*$, x
 
 \item \begin{enumerate}
 \item .
@@ -120,7 +120,7 @@
 
 \item \begin{enumerate}
 \item .
-\item $T$ is normal, meaning it commutes with its transpose such that $TT* = T*T$. Although being self-adjoint implies that $T$ is normal, the opposite is not true, as it can be normal without being self-adjoint as is the case here.
+\item $T$ is normal, meaning it commutes with its transpose such that $TT^* = T^*T$. Although being self-adjoint implies that $T$ is normal, the opposite is not true, as it can be normal without being self-adjoint as is the case here.
 \end{enumerate}
 
 \end{enumerate}

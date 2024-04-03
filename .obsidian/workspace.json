@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cd291822e808a469",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University/Math/Linear Algebra/temp.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,15 +171,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "560afc11e073d70f",
+  "active": "cd291822e808a469",
   "lastOpenFiles": [
+    "University/Math/Linear Algebra/Duality.md",
     "University/Math/Linear Algebra/Inner Product Operations.md",
+    "University/Math/Linear Algebra/Invariant Subspaces.md",
     "University/Math/Linear Algebra/temp.md",
     "University/Math/Linear Algebra/Rec 5.md",
-    "University/Math/Linear Algebra/Invariant Subspaces.md",
     "University/Math/Linear Algebra/Orthonormality.md",
     "University/Math/Linear Algebra/Dimension, Basis.md",
-    "University/Math/Linear Algebra/Duality.md",
     "University/Math/Linear Algebra/Inner Products.md",
     "University/Math/Linear Algebra/Invertibility, Isomorphisms.md",
     "University/Math/Linear Algebra/Linear Maps, Range, Null Space.md",
