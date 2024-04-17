@@ -85,9 +85,20 @@ Since $\text{dim }V = \text{dim }W$, $T$ being surjective implies that $T$ is in
 
 
 This means that each finite dimensional space is isomorphic to $\mathbb{F}^n$ where $n = \text{dim }V$.
- 
 
 
+**Claim:** Let $\mathbb{F}^{m,n} =\mathbb{F}^{m \times n}$ be the vector space of $m \times n$ matrices. Note that $\text{dim }(\mathbb{F}^{m,n}) = mn$. 
+
+If $\text{dim }(V) = n, \text{dim }(W) = m$, then $\mathcal{L}(V,W)$ is isomorphic to $\mathbb{F}^{m,n}$.
+
+
+**Proof:** Let $\{v_1,...,v_n\}$ be a basis for $V$, $\{w_1,...,w_m\}$ be a basis for $W$. We know the mapping $T \in \mathcal{L}(V,W)$ to its matrix is linear. We call this mapping $\mathcal{M}(T)$ and show it is 1-1 and onto:
+
+(Injective) If $\mathcal{M}(T) =0$ then $T(v_j) = 0$ for all $j$, so $T=0$ since $v_j$ is a basis. Then $\text{null }(\mathcal{M}) =\{0\}$ and $\mathcal{M}$ is injective.
+
+(Surjective) Let $A \in \mathbb{F}^{m,n}$ and define $T \in \mathcal{L}(V,W)$ via $$T(v_k) = \sum_{i=1}^m A_{jk}w_j$$ for all $k$. Then $A = \mathcal{M}(T)$ and so $\mathcal{M}$ is onto.
+
+Since $\text{dim }(\mathbb{F}^{m,n})=mn < \infty$ and $\mathcal{M}$ is one-to-one and onto, $\mathcal{M}$ is an isomorphism.
 ### Column–Row Factorization and Rank of a Matrix
 
 #### Matrix Rank

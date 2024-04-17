@@ -10,6 +10,29 @@
 **Definition:** Suppose $T \in \mathcal{L}(V,W)$. The adjoint of $T$ is the function $T^*: W \rightarrow V$ such that $$\langle Tv,w \rangle = \langle v, T^* w \rangle$$
 for every $v \in V$ and every $w \in W$
 
+### Linear Functionals
+
+**Definition:** A linear functional on $V$ is a linear map from $V$ to $\mathbb{F}$. The dual space of $V$, denoted by $V'$, is the vector space of all linear functionals on $V$.
+
+In other words, $V' = \mathcal{L}(V,\mathbb{F})$
+
+
+
+### Riesz-Representation Theorem
+
+**Definition:** Suppose $V$ is finite-dimensional and $\varphi$ is a linear functional on $V$. Then there exists a unique $v \in V$ such that $\varphi(u) = \langle u,v \rangle$  for all $u \in V$  
+
+In other words, in an inner product space any functional can be identified with a vector in $V$. 
+
+
+**Example:** Let $T : \mathbb{R}^3 \rightarrow \mathbb{R}^2$ be defined by $$T(x_1,x_2,x_3) = (x_2+3x_3,2x_1)$$
+
+Suppose $(y_1,y_2) \in \mathbb{R}^2$. Then $$\langle T(x_1,x_2,x_3),(y_1,y_2)\rangle = \langle (x_2+3x_3,2x_1),(y_1,y_2)\rangle$$$$= (x_2+3x_3)y_1+2x_1y_2 = 2x_1y_2+x_2y_1+3x_3y_1$$
+$$ = \langle (x_1,x_2,x_3),(2y_2,y_1,3y_1)\rangle$$
+
+Then $T^*(y_1,y_2) = (2y_2,y_1,3y_1)$.
+
+Note $T^* \in \mathcal{L}(W,V)$
 
 #### Adjoint of a linear map is a linear map
 
@@ -115,3 +138,30 @@ $$\iff ||T^*v||^2 = ||Tv||^2 \space \forall \space v \in V $$
 3. $V = \text{null }T \oplus \text{range }T$
 4. $T - \lambda I$ is normal for all $\lambda \in \mathbb{F}$ 
 5. If $v \in V, \lambda \in \mathbb{F}$ then $Tv = \lambda v \iff T^*v = \overline \lambda T^*v$
+
+
+**Proof:** 
+
+
+
+
+**Theorem:** Suppose $T \in \mathcal{L}(V)$ is normal. Then the eigenvectors corresponding to distinct  eigenvalues are orthogonal.
+
+**Proof:**
+
+
+### Spectral Theorem
+
+Recall that for any $T \in \mathcal{L}(V)$, if $\mathbb{F} = \mathbb{C}$ there exists an [[Orthonormality#Orthonormal Basis|orthonormal basis]] such that $\mathcal{M}(T)$ is [[UT, Diagonal Matrices#Upper Triangular|upper triangular]]. 
+
+We say that $T$ is diagonizable if $\mathcal{M}(T)$ is diagonal for some basis of $V$, which occurs if and only if we have a basis consisting of eigenvectors.
+
+
+Consider the polynomial $x^2+bx+c$, $b,c \in \mathbb{R}$. Completing the square gives $$x^2+bx+c = (x+\frac b2)^2+ (c-\frac {b^2}4) \geq c - \frac{b^2}4$$
+If $b^2 < 4c$ then $$x^2+bx+c \geq c - \frac{b^2}4 > 0$$
+So that $(x^2+bx+c)$ is an invertible real number. We can generalize:
+
+
+**Lemma:** Suppose $T \in \mathcal{L}(V)$ is self-adjoint and $b,c \in \mathbb{R}$ such that $b^2 < 4c$. Then $T^2+bT+cI$ is an invertible operator.
+
+**Proof:**
