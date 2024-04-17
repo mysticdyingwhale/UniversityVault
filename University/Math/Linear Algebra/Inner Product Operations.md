@@ -31,7 +31,7 @@ Thus $T^* \in \mathcal{L}(V,W)$
 
 Suppose $T \in \mathcal{L}(V,W)$. Then:
 
-1. $(S+T)^* = S^* + T^*$ for all $S \in \mathcal{V,W}$
+1. $(S+T)^* = S^* + T^*$ for all $S \in \mathcal{L}(V,W)$
 2. $(\lambda T)^* = \overline \lambda T^*$ for all $\lambda \in \mathbb{F}$ 
 3. $(T^*)^* = T$
 4. $(ST)^* = T^*S^*$ for all $s \in \mathcal{L}(W,U)$, $U$ is a fin-dim inner product space over $\mathbb{F}$
