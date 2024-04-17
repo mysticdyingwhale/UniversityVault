@@ -62,7 +62,7 @@ A virtual address is 32-bits, which means that the virtual address space is $2^{
 
 VPN is 20 bits, which means there are $2^{20}$ virtual pages. The offset is 12 bits, which means page size is $2^{12}$ bits = 4KB.
 
-### The Page Table
+### Page Tables
 
 The page table is conceptually a map from the VPN (Virtual Page Number) to the PPN (Physical Page Number)
 
