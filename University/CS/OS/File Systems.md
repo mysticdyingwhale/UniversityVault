@@ -8,7 +8,6 @@
 - Gives a way to map from human-friendly names to "names" (directories)
 - Can be implemented on the disk, over networks, in memory, in NVRAM (non-volatile RAM), on tape, or with paper
 
-
 ### Files
 
 - From user POV:
@@ -152,3 +151,58 @@ Notes about inodes:
 - Written back when modified and file closed or time elapses
 
 ### Directories
+
+
+
+## Crash Recovery
+
+
+### Logging
+
+#### Undo Logging
+
+Not used in isolation by any file system
+
+Key Idea: log contains information on how to rollback any changes made  to data. 
+
+Mechanically, during normal operations:
+1. Write a `TxBegin` entry to the log
+2. For each operation, write instructions for how to undo any updates made to a block.  
+	- These instructions might include the original data in the block. 
+	- In-place changes to the block can be made right after these instructions have been persisted.
+3.  Wait for in-place changes (what we refer to as checkpointing) to finish for all blocks
+4. Write a `TxEnd` entry into the block, thereby committing the transaction.
+	- This implies that if a transaction is committed then all changes have been written to the actual data structures of the file system
+
+
+During crash recovery:
+
+1. Scan the log to find all uncommitted transactions, these are the ones where a `TxnBegin` entry is present but not a `TxEnd` entry.
+2.  For each such transaction check to see whether the undo entry is valid.  This is usually done through the use of a checksum
+	- A crash might occur before the undo entry has been successfully written
+		- The actual changes corresponding to this entry would have not been written to disk, so ignoring the entry is safe
+	- Trying to undo using a partially complete entry might result in data corruption
+		- Using this entry would be **unsafe**.
+3. Apply all valid undo entries found, in order to restore the disk to a consistent state.
+
+For undo logs, logs are generally scanned from the end of the log:
+
+Advantage:
+- Changes can be checkpointed to disk as soon as the undo log has been updated. This is beneficial when the amount of buffer cache is low
+Disadvantage:
+- A transaction is not committed until all dirty blocks have been flushed to their in-place targets
+
+## RPC, Client Server
+
+Truly-transparent RPC not possible because server is remote
+- Server can crash
+
+
+## NFS
+
+
+![[Pasted image 20240417161100.png|500]]
+
+### Caching
+
+Writes must put their data on disk (or persistently) before the server responds to the client. 

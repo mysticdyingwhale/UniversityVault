@@ -150,18 +150,3 @@ $$\iff ||T^*v||^2 = ||Tv||^2 \space \forall \space v \in V $$
 **Proof:**
 
 
-### Spectral Theorem
-
-Recall that for any $T \in \mathcal{L}(V)$, if $\mathbb{F} = \mathbb{C}$ there exists an [[Orthonormality#Orthonormal Basis|orthonormal basis]] such that $\mathcal{M}(T)$ is [[UT, Diagonal Matrices#Upper Triangular|upper triangular]]. 
-
-We say that $T$ is diagonizable if $\mathcal{M}(T)$ is diagonal for some basis of $V$, which occurs if and only if we have a basis consisting of eigenvectors.
-
-
-Consider the polynomial $x^2+bx+c$, $b,c \in \mathbb{R}$. Completing the square gives $$x^2+bx+c = (x+\frac b2)^2+ (c-\frac {b^2}4) \geq c - \frac{b^2}4$$
-If $b^2 < 4c$ then $$x^2+bx+c \geq c - \frac{b^2}4 > 0$$
-So that $(x^2+bx+c)$ is an invertible real number. We can generalize:
-
-
-**Lemma:** Suppose $T \in \mathcal{L}(V)$ is self-adjoint and $b,c \in \mathbb{R}$ such that $b^2 < 4c$. Then $T^2+bT+cI$ is an invertible operator.
-
-**Proof:**
