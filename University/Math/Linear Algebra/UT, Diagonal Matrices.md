@@ -76,8 +76,6 @@ Suppose $k \in \{2,...,n\}$. Then $(T - \lambda_kI)v_k \in \text{span }(v_1,...,
 Thus $T  - \lambda_kI$ maps $\text{span }(v_1,...,v_k)$ into $\text{span }(v_1,...,v_{k-1})$ because
 
 
-
-
 **Lemma:** Suppose $V$ is fin-dim and $T \in \mathcal{L}(V)$. 
 
 Then $T$ has an upper triangular matrix with respect to some basis of $V$ if and only if the minimal polynomial of $T$ is $(z-\lambda_1)...(z-\lambda_m)$ for some $\lambda_1,...,\lambda_m \in \mathbb{F}$

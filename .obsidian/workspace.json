@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/Math/Linear Algebra/Spectral Theorem, Positive Operators.md",
+                "file": "University/Math/Linear Algebra/Isometries, Unitary Operators.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#math",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/Math/Linear Algebra/Spectral Theorem, Positive Operators.md",
+                "file": "University/Math/Linear Algebra/Isometries, Unitary Operators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/Math/Linear Algebra/Spectral Theorem, Positive Operators.md",
+                "file": "University/Math/Linear Algebra/Isometries, Unitary Operators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/Math/Linear Algebra/Spectral Theorem, Positive Operators.md"
+                "file": "University/Math/Linear Algebra/Isometries, Unitary Operators.md"
               }
             }
           },
@@ -160,36 +160,38 @@
   },
   "active": "cd291822e808a469",
   "lastOpenFiles": [
+    "Untitled.md",
+    "University/Math/Linear Algebra/Isometries, Unitary Operators.md",
+    "University/Math/Linear Algebra/L. Combinations, L. Independence.md",
+    "University/Math/Linear Algebra/Rec 2.md",
+    "University/Math/Linear Algebra/Linear Systems.md",
+    "University/Math/Linear Algebra/Invertibility, Isomorphisms.md",
+    "University/Math/Linear Algebra/Linear Maps, Range, Null Space.md",
+    "University/Math/Linear Algebra/Polynomials, Invariant Subspaces.md",
     "University/Math/Linear Algebra/Singular Value Decomposition.md",
+    "University/CS/OS/Putting It All Together.md",
+    "University/Math/Linear Algebra/Determinants.md",
+    "University/Math/Linear Algebra/Rec idk.md",
+    "University/Math/Linear Algebra/Untitled",
+    "University/Math/Linear Algebra/Inner Products.md",
+    "University/Math/Linear Algebra/UT, Diagonal Matrices.md",
+    "University/Math/Linear Algebra/Vector Space.md",
     "University/Math/Linear Algebra/Spectral Theorem, Positive Operators.md",
+    "University/Math/Linear Algebra/Orthonormality.md",
     "University/Math/Linear Algebra/Matrices.md",
     "University/Math/Linear Algebra/Inner Product Operations.md",
+    "University/Math/Linear Algebra/Duality.md",
+    "University/Math/Linear Algebra/Dimension, Basis.md",
     "University/CS/OS/File Systems.md",
     "University/PastedImages/Pasted image 20240417161100.png",
-    "University/Math/Linear Algebra/Inner Products.md",
-    "University/Math/Linear Algebra/Dimension, Basis.md",
-    "University/Math/Linear Algebra/Duality.md",
-    "University/Math/Linear Algebra/Orthonormality.md",
     "University/Math/Linear Algebra/trsan.md",
     "University/CS/OS/Virtual Memory.md",
     "University/CS/OS/Therac-25.md",
-    "University/Math/Linear Algebra/Invertibility, Isomorphisms.md",
     "University/PastedImages/Pasted image 20240416183425.png",
     "University/PastedImages/Pasted image 20240416182203.png",
     "University/PastedImages/Pasted image 20240416182200.png",
     "University/PastedImages/Pasted image 20240416182038.png",
     "University/CS/OS/Concurrency.md",
-    "University/CS/OS/Context-Switching, User-level Threading.md",
-    "University/CS/OS/Scheduling.md",
-    "University/Linguistics/Sound & Language/Airstreams in Other Languages.md",
-    "University/Math/Linear Algebra/UT, Diagonal Matrices.md",
-    "University/Math/Linear Algebra/Polynomials, Invariant Subspaces.md",
-    "University/Math/Linear Algebra/L. Combinations, L. Independence.md",
-    "University/Math/Linear Algebra/Linear Maps, Range, Null Space.md",
-    "University/Math/Linear Algebra/Linear Independence.md",
-    "University/Math/Linear Algebra/Rec 5.md",
-    "University/Math/Linear Algebra/Vector Space.md",
-    "University/Math/Linear Algebra/temp.md",
     "University/PastedImages/Pasted image 20240327002126.png",
     "University/PastedImages/Pasted image 20240312170947.png",
     "University/PastedImages/Pasted image 20240312020655.png",
@@ -206,7 +208,6 @@
     "University/PastedImages/Pasted image 20211219152148.png.crdownload",
     "University/PastedImages/Pasted image 20211219135705.png.crdownload",
     "University/PastedImages/Pasted image 20211219155913.png.crdownload",
-    "University/PastedImages/Pasted image 20211219155859.png.crdownload",
-    "University/PastedImages/Pasted image 20211219155532.png.crdownload"
+    "University/PastedImages/Pasted image 20211219155859.png.crdownload"
   ]
 }
