@@ -112,3 +112,5 @@ Recall that $E(\lambda, T) = E_\lambda$ denotes the eigenspace of $T$ correspond
 2. $V$ has a basis consisting of eigenvectors
 3. $V = E(\lambda_1,T) \oplus ...\oplus E(\lambda_m,T)$ 
 4. $\text{dim }V = \sum_{k=1}^m \text{dim }(E(\lambda_k,T))$
+
+**Proof:**

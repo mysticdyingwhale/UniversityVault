@@ -1,8 +1,6 @@
 # Isometries & Unitary Operators
 #math 
 
-
-
 ## Isometries
 
 **Definition:** $S \in \mathcal{L}(V,W)$ is an isometry if $||Sv|| = ||v||$ for all $v \in V$.

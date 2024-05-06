@@ -135,32 +135,67 @@ We can pad the bases of $\text{null }A, \text{null }A^*$ to get the full SVD.
 
 ### Bessel's Inequality
 
-**Claim:**
+**Claim:** Let $\{e_1,...,e_m\}$ be an ON list in $V$. Then $$||v||^2 \geq |\langle e_1,v \rangle|^2 + ... + |\langle e_m, v\rangle|^2$$
 
-**Proof:**
+**Proof:** We can extend $\{e_1,...,e_m\}$ to a basis for $V$ via $\{e_1,...,e_m,e_{m+1},...e_n\}$ where $\text{dim }V = n$. 
+Then, $$||v||^2 = \sum_{k=1}^n |\langle v,e_k \rangle|^2 \geq \sum_{k=1}^m |\langle v,e_k \rangle|^2$$
 ## Consequences and Geometry
 
-**Claim:**
-
-**Proof:**
+**Claim:** Let $T \in \mathcal{L}(V,W)$. Let $\sigma_1$ be the largest singular value of $T$. Then $$||Tv|| \leq \sigma_1 ||v||$$ for all $v \in V$. 
 
 
+
+**Proof:** Let $\sigma_1,...,\sigma_m > 0$ be singular values of $T$ and $\{e_1,...,e_m\},\{f_1,...,f_m\}$  be ON lists in $V,W$ such that $$Tv=  \sigma_1\langle v,e_1 \rangle f_1 + ... +\sigma_m\langle v,e_m \rangle _m$$ By SVD. 
+
+Then, $$||Tv||^2 \leq \sigma_1 ^2 |\langle v,e_1 \rangle|^2 + ... + \sigma_m |\langle v,e_m \rangle|^2$$
+$$||Tv||^2\leq \sigma_1 ^2( |\langle v,e_1 \rangle|^2 + ... + |\langle v,e_m \rangle|^2)$$
+$$||Tv||^2 \leq \sigma_1^2 ||v||^2$$
+
+Taking square roots gives $||Tv|| \leq  \sigma_1 ||v||$. 
+
+This result tells us that the operator $T$ can at worst stretch/shrink a vector by a factor of $\sigma_1$. Equivalently, $$||Tv|| \leq \sigma_1$$ for all $v \in V$ such that $||v|| \leq 1$. 
+
+Note that $Te_1 = \sigma_1f_1$ in SVD so that $||Te_1||  = \sigma_1 ||f_1|| = \sigma_1$. That is there is a vector that makes the previous statement an equality such that $||Tv|| = \sigma_1$ so we have:
+
+$$\text{max}\{||Tv|| \space \big| v\in V \text{ and } ||v||\leq 1\} = \sigma_1$$
+
+This helps us define the norm of an operator/matrix:
 ### Norm
 
-**Definition:**
+**Definition:** Suppose $T\ \in \mathcal{L}(V,W)$. The norm of $T$, denoted by $||T||$ is defined by $$||T|| = \text{max}\{||Tv|| \space \big| v \in V \text{ and }||v|| \leq 1\}$$
+
+Thus an operator/matrix norm gives us a measure of how badly $T$ distorts/stretches space. 
 
 **Examples:**
+
+Consider $T \in \mathcal{L}(\mathbb R^2)$ such that $T(x,y) = (x-2y, x+2y)$. Then $$\mathcal{M}(T) =\begin{pmatrix}1 & -2 \\ 1 & 2 \end{pmatrix}$$ in the standard basis. 
+
+Note that $\mathcal{M}(T^*T) = \begin{pmatrix}1 & 1 \\ -2 & 2 \end{pmatrix}\begin{pmatrix}1 & -2 \\ 1 & 2 \end{pmatrix} = \begin{pmatrix} 2 & 0 \\ 0 & 8 \end{pmatrix}$ 
+
+Then $\sigma_1 = \sqrt 8 = 2 \sqrt 2, \sigma_2 = \sqrt 2$  with singular vectors $e_1 = (0,1),e_2 = (1,0)$.
+
+So we have $f_1 = \frac 1 {\sigma_1}Te_1 = \frac 1 {2\sqrt 2}(-2,2), f_2 = \frac 1 {\sqrt 2} (1,1)$ .
+
+That is, for any vector $v \in V$ we have $$Tv = 2\sqrt 2 \langle v,e_1\rangle f_1 + \sqrt 2 \langle v,e_2 \rangle f_2$$
+Note since we have all non-zero singular values we know that $T$ is invertible.
 
 
 #### Unit Ball
 
-**Definition:**
+**Definition:** The unit ball in $V$, denoted by $B$, is $$B = \{v \in V \big | \space ||v ||< 1\}$$Let $v \in B \subseteq \mathbb R^2$. By SVD we have
+$$Tv =2 \sqrt 2 \langle v,e_1 \rangle f_1  + \sqrt 2 \langle v,e_2 \rangle f_2.$$
+
+Then, $\langle Tv,f_1\rangle = 2\sqrt 2 \langle v,e_1 \rangle, \langle Tv, f_2 \rangle = \sqrt 2 \langle v,e_2 \rangle$.
+
+Then we have $$\frac{|\langle Tv,f_1 \rangle|^2}{{(2\sqrt2)^2}} + \frac{|\langle Tv,f_2 \rangle|^2}{{(\sqrt2)^2}} = |\langle v,e_1 \rangle|^2 + |\langle v,e_2 \rangle|^2 = ||v||^2 < 1$$This is the equation of an ellipse. 
 
 #### Ellipsoid
 
+**Definition:** Suppose $\{f_1,...,f_n\}$ an ON basis of $V$ and $\sigma_1 ,...\sigma_n$ are positive numbers. The ellipsoid $E(\sigma_1f_1,...,\sigma_nf_n)$ with principle axes $\sigma_1f_1,...,\sigma_nf_n$, is defined by  $$E(\sigma_1f_1,...,\sigma_nf_n) = \{v \in V \big | \sum_{k=1}^n \frac{(\langle v,f_k\rangle)^2}{(\sigma_k)^2}<1\}$$
+ 
 ### Determinants
 
-$\text{det }T =$ product of singular values. 
+$|\text{det }T| =$ product of singular values. 
 
 That is, $\text{det }T$ measures how you magnify the volume of the unit ball under $T$.
 

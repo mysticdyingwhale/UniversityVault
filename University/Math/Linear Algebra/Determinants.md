@@ -92,7 +92,6 @@ $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$
 Then $\tilde A_{1,1} = \begin{pmatrix} 5 & 6 \\ 8 & 9 \end{pmatrix}$ , $\tilde A_{1,3} = \begin{pmatrix} 4 & 5 \\ 7 & 8 \end{pmatrix}$ , $\tilde A_{3,2} = \begin{pmatrix} 1 & 3 \\ 4 & 6 \end{pmatrix}$ 
 
 
-
 Let $A =  \begin{pmatrix} 1 & 3 & -3 \\ -3 & -5 & 2 \\ -4 & 4 & -6 \end{pmatrix}$
 
 We compute $\text{det }A$ via cofactor expansion along the first row ($i=1$)
@@ -114,7 +113,7 @@ We have that $\text{det }I = 1$ Where $I$ is the identity. We can prove this by 
 Now assume the determinant of the $(n-1)\times(n-1)$ identity $I_{n-1}$ is 1 for some $n \geq 2$. 
 
 Via cofactor expansion along the first row $$\text{det }I_n = (-1)^{1+1}\cdot 1 \cdot \text{det }I_{n-1}+ (-1)^{1+1} \cdot 0 \cdot \text{det }I_n = \text{det }I_{n-1} = 1$$
-### Properties 
+### Summary 
 
 1. If $A \in \mathbb{F}^{n \times n}$ has a row consisting entirely of zeros, then $\text{det } A=0$, similarly with a column of zeros
 2. $A \in \mathbb{F}^{n \times n}, B$ obtained by swapping the rows of $A$ then $\text{det }B= - \text{det }A$

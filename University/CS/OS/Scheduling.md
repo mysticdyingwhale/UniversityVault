@@ -1,8 +1,7 @@
 # Scheduling
 #cs 
 
-### Sheduling
-#### Scheduling Decisions
+### Scheduling Decisions
 
 The OS has to decide which process (or thread) to run.
 

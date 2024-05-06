@@ -88,7 +88,6 @@ We then have $\text{range }A = \text{range }(AQ) \implies \text{rank }(AQ) = \te
 (2) and (3) are similar.
 
 
-
 **Corollary:** Elementary row and column operations are rank-preserving.
 
 **Proof:** If $B$ is obtained from $A$ by an elementary row operation, then there exists an elementary matrix $E$ such that $B = EA$. 
