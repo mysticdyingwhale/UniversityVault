@@ -1,3 +1,4 @@
+# Functors
 #cs 
 
 Functors (also known as function objects) are classes that behave like functions and can be customized to provide specific functionality.

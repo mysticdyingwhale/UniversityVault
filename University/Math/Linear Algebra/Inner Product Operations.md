@@ -57,7 +57,7 @@ Suppose $T \in \mathcal{L}(V,W)$. Then:
 1. $(S+T)^* = S^* + T^*$ for all $S \in \mathcal{V,W}$
 2. $(\lambda T)^* = \overline \lambda T^*$ for all $\lambda \in \mathbb{F}$ 
 3. $(T^*)^* = T$
-4. $(ST)^* = T^*S^*$ for all $s \in \mathcal{L}(W,U)$, $U$ is a fin-dim inner product space over $\mathbb{F}$
+4. $(ST)^* = T^*S^*$ for all $S \in \mathcal{L}(W,U)$, where $U$ is a fin-dim inner product space over $\mathbb{F}$
 5. $I^* = I$, $I$ is identity operator
 6. If $T$ is invertible, then $T^*$ is invertible and $(T^*)^{-1} = (T^{-1})^*$
 
@@ -65,11 +65,41 @@ Suppose $T \in \mathcal{L}(V,W)$. Then:
 
 **Proof:**
 
+1. If $S \in \mathcal{L}(V,W)$ then $\langle (S+T)v,w \rangle = \langle Sv,w \rangle + \langle Tv,w \rangle = \langle v,(S^*+T^*)w \rangle$
+2. If $\lambda \in \mathbb F$ then $\langle (\lambda T)v,w \rangle = \lambda \langle Tv,w \rangle = \lambda \langle v, T^*w \rangle  = \langle v , \overline \lambda T^*w \rangle$ 
+3. $\langle T^* w, v \rangle = \overline{\langle v, T^*w\rangle} = \overline{\langle Tv,w \rangle} = \langle w, Tv \rangle$
+4. Let $S \in \mathcal{L}(W,U)$ and $u\in U$. Then $\langle (ST)v,w \rangle = \langle Tv,S^*w \rangle  = \langle v, T^*S^*w \rangle$
+5. Let $u \in U$. Then $\langle Iu,v \rangle =\langle u,I^*v \rangle= \langle u,v \rangle$ So $I^*v = Iv = v$ for all $v$.
+6. Let $T$ be invertible. Then $TT^{-1}  = I = T^{-1}T$. We have $(T^{-1}T)^* = I^* = I$ and (4) gives $T^*(T^{-1})^*=I$. Similarly, $TT^{-1}=I$ gives $(T^{-1})^*T^* = I \implies (T^{-1})^* = (T^*)^{-1}$
+
+
+
 #### Null space and range of adjoint
 
 **Claim:** Suppose $T \in \mathcal{}(V,W)$. Then:
 
 1. $\text{null }T^* = (\text{range }T)^\perp$ 
+2. $\text{range }T^* = (\text{null }T)^\perp$
+3. $\text{null }T = (\text{range }T^*)^\perp$
+4. $\text{range }T = (\text{null }T^*)^\perp$
+
+**Proof:** Let $w \in W$. Then $w \in \text{null }T^* \iff T^*w = 0$
+$\iff \langle v, T^*w \rangle =0$ for all $v$
+$\iff \langle Tv,w \rangle  =0$ for all $v$
+$\iff w \in (\text{range }T)^\perp$ 
+
+Thus $\text{null }T^* = (\text{range }T)^\perp$. We also have $(\text{null }T^*)^\perp = ((\text{range }T)^\perp)^\perp = \text{range }T$ proving (4). Replacing $T$ with $T^*$ in (1) and (4) gives (2) and (3) respectively.
+
+### Conjugate Transpose
+
+**Definition:** Let $A \in \mathbb{F}^{m \times n}$. We say the conjugate transpose of $A$, denoted by $A^*$ is $$(A^*)_{jk} = A_{kj}$$
+**Example:** Given $A = \begin{pmatrix} 2 & 3+4i & 7 \\ 6 & 5 & 8i \end{pmatrix}$ 
+
+$A^* = \begin{pmatrix} 2 & 6 \\ 3 - 4i & 5 \\ 7 & -8i \end{pmatrix}$ 
+
+
+**Theorem:** Suppose $A \in \mathbb{F}^{m \times n}$ is the matrix of $T$ with [[Orthonormality|orthonormal]] bases $\{v_1,...,v_n\}$ for $V$ and $\{w_1,...,w_m\}$ for $W$. Then the matrix of $T^*$ in these bases is $A^* \in \mathbb{F}^{n \times m}$ 
+
 
 ### Self-Adjoint
 
@@ -86,20 +116,11 @@ Since $v \neq 0$, this means that $\lambda = \overline \lambda$ so $\lambda \in 
 
 
 #### Tv orthogonal to v for all v iff T=0
+
 **Claim:** If $\mathbb{F} = \mathbb{C}$ OR ($\mathbb{F} = \mathbb{R}$ and $T = T^*$) and $\langle Tv, v \rangle =0$ for all $v \in V$ then $T= 0$.
 
 **Example:** $T(x,y) = (-y,x)$ and $(x,y) \in \mathbb{R}^2$. Then $\langle Tv, v \rangle = 0$ for all $v \in V$ but $T \neq 0$ when $\mathbb{F} = \mathbb{R}$ 
 
-
-#### Null space and range of $T^*$ 
-
-**Claim:** Suppose $T \in \mathcal{L}(V,W)$. Then:
-- $\text{null }T^* = (\text{range }T)^\perp$
-- $\text{range }T^* = (\text{null }T)^\perp$
-- $\text{null }T = (\text{range }T^*)^\perp$
-- $\text{range }T = (\text{null }T^*)^\perp$
-
-**Proof:** 
 
 ### Normal
 
@@ -122,7 +143,7 @@ $T$ is not self-adjoint, but $$TT^*(x_1,x_2) = \begin{bmatrix}1 & i \\ 1 & 1 \en
 $$T^*T(x_1,x_2) = \begin{bmatrix}1 & 1 \\ -i & 1 \end{bmatrix} \begin{bmatrix} 1 & i \\ 1 & 1\end{bmatrix} = \begin{bmatrix} 2 & 1+i \\1-i & 2\end{bmatrix} \begin{bmatrix}x_1 \\ x_2\end{bmatrix}$$
 Since $TT^* = T^*T$,  $T$ is normal.
 
-**Claim:** An operator is normal iff $||Tv||^2 = ||T^*||^2$
+**Claim:** An operator is normal iff $||Tv||^2 = ||T^*v||^2$
 
 **Proof:** $T$ is normal iff for all $v \in V$ $$TT^* -T^*T = 0 \iff \langle (TT^* - T^*T)v,v)=0$$
 Since $TT^* - T^*T$ is self adjoint, this is true.
@@ -142,11 +163,21 @@ $$\iff ||T^*v||^2 = ||Tv||^2 \space \forall \space v \in V $$
 
 **Proof:** 
 
+1. Suppose $v \in V$. Then $v \in \text{null }T \iff ||Tv|| = 0 \iff ||T^*v || = 0 \iff v \in \text{null }T^*$
+2. $\text{range }T = (\text{null }T^*)^\perp = (\text{null }T)^\perp = \text{range }T^*$
+3. $V = \text{null }T \oplus (\text{null }T)^\perp = \text{null }T \oplus \text{range }T^* = \text{null }T \oplus \text{range }T$
+4. Suppose $\lambda \in \mathbb F$. Then $(T - \lambda I)(T - \lambda I)^* = (T - \lambda I)(T^* - \lambda I) = TT^* - \overline \lambda T -\lambda T^* + |\lambda|^2 I = T^*T - \overline \lambda T -\lambda T^* + |\lambda|^2 I = (T^* - \overline \lambda I)(T - \lambda I) = (T - \lambda I)^*(T - \lambda I)$ So that $T - \lambda I$ is normal
+5. Suppose $v \in V, \lambda \in \mathbb F$. Then $||(T - \lambda I)v|| = ||(T - \lambda I)^*v|| =  ||(T^* - \overline \lambda I)v||$ So that $||(T - \lambda I)v|| = 0 \iff ||(T^* - \overline \lambda I)v|| = 0$ so that $Tv = \lambda v \iff T^*v = \overline \lambda v$ 
 
+
+Note normality is essential for (5).
 
 
 **Theorem:** Suppose $T \in \mathcal{L}(V)$ is normal. Then the eigenvectors corresponding to distinct  eigenvalues are orthogonal.
 
-**Proof:**
+**Proof:** Let $\alpha, \beta \in \mathbb F$ be distinct eigenvalues of $T$ with eigenvectors $u,v \in V$. Then $Tu= \alpha v, Tv = \beta v$ and also $T^*v = \overline \beta v$. Then
+$$(\alpha - \beta)\langle u,v \rangle = \langle \alpha u,v \rangle - \langle u, \overline \beta v \rangle = \langle Tu,v \rangle - \langle u, T^*v \rangle = 0$$
+
+Since $\alpha \neq \beta$ we have $\langle u,v \rangle = 0$.
 
 

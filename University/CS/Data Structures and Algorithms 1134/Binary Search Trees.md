@@ -1,7 +1,5 @@
-#cs 
-
-
 # Binary Search Trees
+#cs 
 
 ## Definition
 

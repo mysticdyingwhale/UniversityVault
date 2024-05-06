@@ -1,7 +1,7 @@
 # Orthonormality
 #math 
 
-A list of vectors is called orthonormal if each vector in the list has norm 1 and is orthogonal to all other vectors in the list.
+**Definition:** A list of vectors is called orthonormal if each vector in the list has norm 1 and is orthogonal to all other vectors in the list.
 
 In other words, a list $e_1,...,e_m$ of vectors in $V$ is orthonormal if:
 

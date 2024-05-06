@@ -1,6 +1,5 @@
-#cs 
-
 # Searching Algorithms
+#cs 
 
 ## **Linear** Search
 

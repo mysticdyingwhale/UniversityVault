@@ -2,6 +2,7 @@
 #math 
 
 
+## Definition
 
 **Definition:** If $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathbb{F}^{2 \times 2}$, we define $$\text{det}(A) = |A| = ad-bc$$
 Where $\text{det}(A)$ is the determinant of $A$.
@@ -37,6 +38,10 @@ Note that $B \begin{pmatrix} 1 \\ -{\frac{3}{2}} \end{pmatrix} = \begin{pmatrix}
 Thus $\text{dim null }B \geq 1$ so that $B$ is not injective which implies that $B$ is not invertible. 
 
 It turns out the determinant gives us an easy check for invertibility:
+
+
+## Non-zero det iff invertible
+
 
 **Theorem:** Let $A \in \mathbb{F}^{2 \times 2}$. The determinant of $A$ is non-zero if and only if $A$ is invertible. 
 
@@ -123,60 +128,4 @@ Via cofactor expansion along the first row $$\text{det }I_n = (-1)^{1+1}\cdot 1 
 10. If $A,B$ are similar (there exists invertible $S$ s.t $B = SAS^{-1}$ ) then $\text{det }A = \text{det }B$
 	1. $\text{det }B = \text{det }(SAS^{-1}) = \text{det }S \cdot \text{det }A \cdot \text{det }S^{-1} = \text{det }S \cdot \text{det }A \cdot \frac{1} {\text{det }S} = \text{det }A$ 
 11. $\text{det }A = \lambda_1 \cdot ... \cdot \lambda_n$  where $\lambda_k$ is an eigenvalue of $A$ (assuming $\mathbb{F} = \mathbb{C}$), including repeat eigenvalues
-
-#### Cayley-Hamilton Theorem
-
-**Theorem**: Suppose $T \in \mathcal{L}(V)$ and $f$ is the characteristic poly of $T$. Then $f(T) = 0$.
-
-This is shared feature of characteristic individual poly. But these two polys are often the same.
-
-
-#### Algebraic Multiplicity
-
-**Definition:** Let $\lambda \in \mathbb{F}$ be an eigenvalue of a linear operator or a matrix with characteristic poly $f(\lambda)$. 
-
-The algebraic multiplicity of $\lambda$ is the largest positive integer $k$ such that $(t - \lambda)^k$ is a factor of $f(\lambda)$
-
-**Example:** $A = \begin{pmatrix}3 & 1 & 0 \\ 0 & 3 & 4 \\ 0 & 0 & 4 \end{pmatrix}$
-
-
-Then $$f(\lambda) = \text{det}(A - \lambda I) = \Bigg | \begin{pmatrix} 3 - \lambda & 1 & 0 \\ 0 & 3 - \lambda & 4 \\ 0 & 0 & 4- \lambda \end{pmatrix} \Bigg|$$ $$ = (3 - \lambda)^2 \cdot (4 - \lambda)$$
-
-Here $\lambda = 3$ has algebraic multiplicity $2, \lambda = 4$ has a multiplicity of $1$
-
-
-Word of caution: The algebraic multiplicity is distinct from the notion of the geometric multiplicity (The dimension of the eigenspace associated with an eigenvalue $\lambda$).
-
-It can be the case that we do not have enough eigenvectors to match the algebraic multiplicity.
-
-
-**Example:** Consider $$A = \begin{pmatrix}1 & 1 \\ 0 & 1 \end{pmatrix}$$
-The characteristic poly of $A$ is $$f(\lambda) = \text{det}(A -\lambda I) = \Bigg | \begin{pmatrix}1 - \lambda & 1 \\ 0 & 1 - \lambda \end{pmatrix} \Bigg | = (1 - \lambda)^2$$
-Then $1$ is the only eigenvalue with algebraic multiplicity. 
-
-
-Suppose $v = (v_1,v_2)$ is an eigenvector of $A$, I.E $Av = \lambda v = v$
-
-
-$$V = \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = Av = \begin{pmatrix}1 & 1 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} v_1 + v_2 \\ v_2 \end{pmatrix}$$
-
-Implying that $v_1 = v_1+v_2, v_2 = v_2$ so $v_2 = 0$ and $v_1$ can be anything.
-
-Then $v = \begin{pmatrix}1 \\ 0 \end{pmatrix}$ is an eigenvector of $A$. Note that we cannot have another eigenvector that is linearly independent of $\begin{pmatrix}1 \\ 0 \end{pmatrix}$ since $v_2 \equiv 0$
-
-Then $E(\lambda =1, A) = \text{span }\Bigg \{\begin{pmatrix}1 \\ 0 \end{pmatrix} \Bigg \}$
-Then $\text{dim }E(1,A) = 1 < 2$
-
-Where $\text{dim }E(1,A)$ is the geometric multiplicity of $\lambda = 1$.
-
-
-In fact, $A$ is not diagonalizable. Note:
-
-$$A^*A = \begin{pmatrix}1 & 0 \\ 1 & 1 \end{pmatrix}\begin{pmatrix}1 & 1 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix}1 & 1 \\ 1 & 2 \end{pmatrix}$$
-
-And $$AA^* =  \begin{pmatrix}1 & 1 \\ 0 & 1 \end{pmatrix} \begin{pmatrix}1 & 0 \\ 1 & 1 \end{pmatrix}  = \begin{pmatrix}2 & 1 \\ 1 & 1 \end{pmatrix}$$
-
-Note that $A^*A - AA^* \neq 0$ so that $A$ is not normal, $f(\lambda) = (1 - \lambda)^2,p(z)$ is $(1-\lambda)$ or $(1-\lambda)^2$
-
-
 

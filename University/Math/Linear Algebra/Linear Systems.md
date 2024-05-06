@@ -170,4 +170,4 @@ $$\left(
 **Claim:** Gaussian Elimination generates a matrix in RREF
 
 
-**Theorem:** Let $Ax = 0$ where $A \in \mathbb{F}^{m \times n}$. Let $k$ denote the set of all solutions to $Ax=0$ then $k2$
+**Theorem:** Let $Ax = 0$ where $A \in \mathbb{F}^{m \times n}$. 

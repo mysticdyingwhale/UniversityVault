@@ -1,3 +1,5 @@
+# Conditional Probability
+
 #math  
 
 Conditional Probability is a measure of the probability of an event occurring, given that another event has already occurred. You could say that it means that we have more available information.

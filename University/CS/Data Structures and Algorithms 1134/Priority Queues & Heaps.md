@@ -1,6 +1,6 @@
+# Priority Queues
 #cs 
 
-# Priority Queues
 
 A priority [[University/CS/Data Structures and Algorithms 1134/Stacks & Queues|Queue]] is an ADT in which every element is assigned a priority value, and the element with the highest value is served before ones with lower priority values. 
 

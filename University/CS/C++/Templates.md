@@ -1,3 +1,4 @@
+# Templates
 #cs 
 
 Templates allow for generic code that can work with many data types/classes, similar to [[Function Pointers]]. 

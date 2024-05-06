@@ -1,3 +1,4 @@
+# Smart Pointers
 #cs 
 
 Raw [[Pointers]] in C++ have many problems. If not handled properly they can lead to memory leaks, become dangling pointers or wild pointers, lead to buffer overflow or cause data inconsistency. 

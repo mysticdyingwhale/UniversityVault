@@ -1,3 +1,4 @@
+# Floating Point Representation
 #cs 
 
 Floating point representation exists because we cannot represent every single decimal value with [[Floating Point Representation]].
@@ -8,7 +9,7 @@ Floating point representation exists because we cannot represent every single de
    
 A typical floating point number would consist of 2 parts, the mantissa and the exponent, the sizes of which will be given to you in the exam.
 
-Think of the mantissa and exponent as the 'standard form' of [[Binary Representation]]. Below is an example in denary.
+Think of the mantissa and exponent as the 'standard form' of [[Binary]] representation. Below is an example in denary.
 ![Mantissa | 300](https://bournetocode.com/projects/AQA_A_Theory/pages/img/FPF.png)
 
 

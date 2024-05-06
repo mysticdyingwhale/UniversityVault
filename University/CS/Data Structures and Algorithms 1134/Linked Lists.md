@@ -1,6 +1,5 @@
-#cs
-
 # Linked Lists
+#cs
 
 A linked list is made up of nodes containing both data and a pointer pointing to the next node.
 

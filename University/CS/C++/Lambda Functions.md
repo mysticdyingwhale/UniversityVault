@@ -1,3 +1,4 @@
+# Lambda Functions
 #cs 
 
 A lambda function is an anonymous function that can be defined inline, without the need for a separate function declaration. 
