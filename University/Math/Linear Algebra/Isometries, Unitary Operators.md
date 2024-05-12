@@ -19,7 +19,7 @@ Note that $A^*A = \begin{bmatrix} sin \theta  & -cos \theta  \\ cos \theta & sin
 
 So, columns of $A$ are orthonormal. More generally, suppose $A\in \mathbb{F}^{m \times n}$ and $A^*A =I$ ($A$ has orthonormal columns). Then $$||Av|| = \langle Av,Av \rangle = \langle A^*Av, v\rangle = ||v||^2$$
 
-#### Charecterization of Isometries
+#### Characterization of Isometries
 
 **Claim**: Let $S \in \mathcal{L}(V,W)$, $\{e_1,...,e_n\}$ an ON basis of $V$, $\{f_1,...,f_m\}$ an ON basis of $W$. The following are equivalent:
 

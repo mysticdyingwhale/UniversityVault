@@ -1,8 +1,5 @@
-# Inner Product Operations
+# Self-Adjoint/Normal Operators
 #math 
-
-
-## Self-Adjoint/Normal Operators
 
 
 ### Adjoint

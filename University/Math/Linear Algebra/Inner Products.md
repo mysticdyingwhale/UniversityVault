@@ -44,7 +44,7 @@ Basic properties of the inner product:
 2. Every linear map takes 0 to 0, thus 2 follows from 1
 3. If $v \in V$, then the conjugate symmetry property in the definition of an inner product and 2 shows that $\langle v,0 \rangle = \overline{\langle 0,v \rangle} = \overline 0 = 0$ 
 4. Suppose $u,v,w \in V$. Then, $$\langle u,v+w \rangle = \overline{\langle v+w,u \rangle}$$$$=  \overline{\langle v,u\rangle + \langle w,u\rangle} = \overline{\langle v,u \rangle}+ \overline{\langle w,u\rangle} = \langle u,v\rangle + \langle  u,w\rangle $$
-5. Suppose $\lambda \in \mathbb{F}$ and $u,v \in V$. Then $$\langle u, \lambda v \rangle = \overline{ \langle \lambda v, u\rangle}$$ $$ = \overline{\lambda \langle v,u \rangle} = \overline{\lambda} \overline{\langle v, u \rangle} = \overline{\lambda} \langle u,v \rangle$$
+5. Suppose $\lambda \in \mathbb{F}$ and $u,v \in V$. Then $$\langle u, \lambda v \rangle = \overline{ \langle \lambda v, u\rangle}$$ $$ = \overline{\lambda \langle v,u \rangle} = \overline{\lambda \langle v, u \rangle} = \overline{\lambda} \langle u,v \rangle$$
 
 ### Norm 
 

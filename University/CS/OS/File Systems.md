@@ -1,14 +1,14 @@
 # File Systems
 #cs 
 
-### What does it do?
+## What does it do?
 
 - Provides persistence (don't go away)
 - Gives a way to 'name' a set of bytes on the disk (files)
 - Gives a way to map from human-friendly names to "names" (directories)
 - Can be implemented on the disk, over networks, in memory, in NVRAM (non-volatile RAM), on tape, or with paper
 
-### Files
+## Files
 
 - From user POV:
 	- A bunch of named bytes on the disk
@@ -37,7 +37,7 @@ We have seen translation/indirection before:
 	- in UNIX, file number is inode
 
 
-### Implementing Files
+## Implementing Files
 
 We want to meet the goal of having as few disk accesses as possible with minimal space overhead.
 
@@ -45,7 +45,7 @@ For now, we assume file metadata is known to the system.
 
 Access Patterns:
 
-- Sequential
+- Sequential:
 	- File data processed in sequential order
 	- Most common mode
 	- Ex: editor writes out new file, compiler reads in file, etc.
@@ -67,31 +67,36 @@ Helpful Observations:
 
 We want good sequential and good random access. The candidates are:
 
-- Contiguous Allocation
-	- Extent based
-	- When creating a file, make user pre-specify its length and allocate the space at once
-	- File metadata contains location and size
-	- (+)Simple
-	- (+)Fast access, both sequential and random
-	- (-)Fragmentation occurs
-- Linked Files
-	- Keep a linked list of free blocks
-	- Metadata contains a pointer to the file's first block
-	- Each block holds a pointer to the next one
-	- (+)No fragmentation
-	- (+)Sequential access easy (and likely fast)
-	- (-)Random access is a disaster
-	- (-)Pointers take up room in blocks; messes up alignment of data
-- Indexed Files
-	- ![[Pasted image 20240416182203.png|400]]
-	- Each file has an array holding all of its block pointers
-		- Like a [[Virtual Memory#Page Tables|page table]], so it shares similar issues
-	- Allocate array on file creation
-	- Allocate blocks on demand (free list)
-	- (+)Sequential and Random Access easy
-	- (-)Need to store the array
-	- large possible file size --> lots of unused entries in the block array
-	- large actual block size --> huge contiguous disk chunk needed
+### Contiguous Allocation
+
+- Extent based
+- When creating a file, make user pre-specify its length and allocate the space at once
+- File metadata contains location and size
+- (+)Simple
+- (+)Fast access, both sequential and random
+- (-)Fragmentation occurs
+
+### Linked Files
+
+- Keep a linked list of free blocks
+- Metadata contains a pointer to the file's first block
+- Each block holds a pointer to the next one
+- (+)No fragmentation
+- (+)Sequential access easy (and likely fast)
+- (-)Random access is a disaster
+- (-)Pointers take up room in blocks; messes up alignment of data
+  
+### Indexed Files
+
+![[Pasted image 20240416182203.png|400]]
+- Each file has an array holding all of its block pointers
+	- Like a [[Virtual Memory#Page Tables|page table]], so it shares similar issues
+- Allocate array on file creation
+- Allocate blocks on demand (free list)
+- (+)Sequential and Random Access easy
+- (-)Need to store the array
+- large possible file size --> lots of unused entries in the block array
+- large actual block size --> huge contiguous disk chunk needed
 
 We can solve this problem the same way we did for page tables:
 
@@ -106,20 +111,20 @@ inode contains:
 - Permissions
 - times for file access, file modification, and inode-change
 - link count (# directories containing file)
-- ptrs
-	- ptr 1  --> data block
-		ptr 2  --> data block
-		ptr 3  --> data block
+- pointers
+	- `ptr` 1  --> data block
+		`ptr` 2  --> data block
+		``ptr`` 3  --> data block
 		.....
-		ptr 11  --> indirect block 
-				      ptr --> 
-				      ptr --> 
-				      ptr --> 
-				      ptr -->
-				      ptr -->
-		ptr 12 --> indirect block
-		ptr 13 --> double indirect block
-		ptr 14 --> triple indirect block
+		`ptr` 11  --> indirect block 
+				      `ptr` --> 
+				      `ptr` --> 
+				      `ptr` --> 
+				      `ptr` -->
+				      `ptr` -->
+		`ptr` 12 --> indirect block
+		`ptr` 13 --> double indirect block
+		`ptr` 14 --> triple indirect block
 
 
 Just a tree. 
@@ -138,8 +143,7 @@ Negatives:
 
 
 Notes about inodes:
-
-- stored in a fixed-size array
+- Stored in a fixed-size array
 - Size of array fixed when disk is initialized; can't be changed
 - Multiple inodes in a disk block
 - Lives in known location
@@ -150,14 +154,17 @@ Notes about inodes:
 - When a file is opened, the inode brought in memory
 - Written back when modified and file closed or time elapses
 
-### Directories
+## Directories
 
 
-
+## Performance 
 ## Crash Recovery
 
+### Ad-hoc
 
-### Logging
+### Copy on Write
+
+### Journaling
 
 #### Undo Logging
 

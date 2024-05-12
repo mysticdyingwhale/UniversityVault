@@ -58,7 +58,7 @@ $(1 \implies 2)$
 **Claim:** Suppose $F = \mathbb{C}$ and $T \in \mathcal{L}(V)$. The following are equivalent:
 
 - $T$ is normal
-- $T$ has a diagonal matrix with some orthornomal basis of $V$
+- $T$ has a diagonal matrix with some orthonormal basis of $V$
 - $V$ has an orthonormal basis consisting of eigenvectors of $T$
 
 **Proof:**
@@ -71,7 +71,7 @@ $(1 \implies 2)$
 
 ## Positive Operators
 
-**Definition:** $T \in \mathcal{L}(V)$ is positive if $T$ is self-adjoint and $\langle Tv,T \rangle > 0$ for all $v \in V$. 
+**Definition:** $T \in \mathcal{L}(V)$ is positive if $T$ is self-adjoint and $\langle Tv,v \rangle > 0$ for all $v \in V$. 
 
 If $\mathbb F = \mathbb C$ we don't require self-adjoint.
 

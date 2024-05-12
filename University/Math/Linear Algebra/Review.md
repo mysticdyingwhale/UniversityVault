@@ -88,7 +88,7 @@ We now write out the SVD:
 
 $$Tv = \sigma_1 \langle v,e_1 \rangle f_1 + \sigma_2 \langle v,e_2 \rangle f_2 = 2\langle v, (0,1,0) \rangle \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} + \langle v,(1,0,0) \rangle \begin{pmatrix} 0 \\ -1 \\ 0 \end{pmatrix}$$
 
-For any $v \in V$
+For any $v \in V$.
 
 
 Q2) Let $T \in \mathcal{L}(V)$ where $V = \mathbb F^3$

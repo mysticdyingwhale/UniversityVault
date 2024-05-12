@@ -56,6 +56,8 @@ page 2^{20}-1 [ ......, 2^{32} - 1]
 
 Both virtual and physical pages have numbers, so to be clear use terms like VPN and PPN. 
 
+
+A dirty page is a page that has been modified and must be rewritten to the disk.
 #### VM math
 
 A virtual address is 32-bits, which means that the virtual address space is $2^{32}$ bits = 4GB.
@@ -296,9 +298,115 @@ Page faults are very expensive.
 
 ## Page Replacement Policies
 
+Some entity holds a cache of entries and gets a cache miss. The entity now needs to decide which entry to throw away. How does it decide?
+
 
 FIFO: Eject the oldest page
 
 MIN (OPT): Eject the entry that won't be referenced for the longest time.
 
-LRU: 
+FIFO:
+
+	phys_slot    A B C A B D A D B C B
+	S1           A     h   D   h   C  
+	S2             B     h   A        
+	S3               C           B   h
+
+		7 swaps, 4 hits
+
+
+OPT:
+
+	phys_slot    A B C A B D A D B C B
+	S1           A     h     h     C  
+	S2             B     h       h   h
+	S3               C     D   h      
+
+		5 swaps, 6 hits
+
+
+LRU: Throw out the least recently used
+
+LRU:
+
+	phys_slot    A B C A B D A D B C B
+	S1           A     h     h     C  
+	S2             B     h       h   h
+	S3               C     D   h      
+
+		5 swaps, 6 hits
+
+
+But what if our reference string were ABCDABCDABCD?
+
+	phys_slot   A B C D A B C D A B C D 
+	 S1         A     D     C     B     
+	 S2           B     A     D     C   
+	 S3             C     B     A     D 
+
+	 12 swaps, 0 hits...
+
+Do these anomalies always happen?
+- No. With policies like LRU, contents of memory with X pages is subset of contents with X+1 pages
+
+#### Implementing LRU
+
+- Reasonable to do in application programs like web servers that cache pages
+	- Use a [[Stacks & Queues#Queue|queue]] to track least recently accessed and use a [[Hash Tables|hash map]] to implement (k,v) lookup
+- Not so reasonable in an OS as it doubles memory traffic (after every reference you'd have to move some structure to the head of some list)
+- In hardware its way too much work to timestamp each reference and keep the list ordered
+
+
+
+We can approximate LRU with CLOCK:
+- Arrange the slots in a circle
+- The 'hand' sweeps around, clearing a bit
+- The bit is set when a page is accessed (USE bit/ACCESSED bit)
+- Evict a page if the hand points to it when the bit is clear
+- Approximates LRU because we're evicting pages that haven't been used in a while
+
+
+Generalising CLOCK:
+
+- N-th chance
+- Don't throw out a page until the hand has swept by N times
+- On page fault (need to evict a page), OS looks at where the hand is currently pointing, say some physical page p. 
+- Check the USE bit of p.
+	- 1-> clear bit and use clear counter
+	- 0-> if counter < N keep going, if counter == N replace the page, hasn't been used in a while
+- How to pick N
+	- Large is a better approximation to LRU
+	- Small is more efficient 
+
+
+Modifications:
+- Dirty pages are more expensive to evict
+	- Need to be written to disk first to preserve the new data
+- Give dirty bits an extra chance before replacing (OS knows which pages are dirty because of DIRTY/MODIFIED bit)
+- Common Approach
+	- N = 1 for clean pages
+	- N = 2 for dirty pages
+
+### Thrashing 
+
+Take an example: Program touches 50 pages equiprobably but only 40 physical frames. 
+
+**Thrashing:** Processes demand more memory for active use than the system has.
+
+3 Reasons:
+- Process has no temporal locality (principle that data being accessed now will probably be accessed soon)
+- Process has temporal locality but not enough memory
+- Individually all processes fit but there's not enough memory
+
+
+What do we do?
+
+- In the first two reasons, nothing can be done other than restructuring computation or buying memory 
+- In third case, shed and load
+	- Working set
+		- Only run a set of processes such that the union of their working sets fit in memory
+		- Working set: the pages a process has touched over some trailing window of time
+	- Page fault frequency
+		- Track the metric (# page faults / instructions executed)
+		- If that rises above a threshold and there is not enough memory on the system swap out the processes
+

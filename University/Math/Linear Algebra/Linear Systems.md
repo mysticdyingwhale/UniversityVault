@@ -110,7 +110,7 @@ We then write $$ \begin{pmatrix}1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} x_
 
 We'll seek to transform this system into one that is easier to solve.
 
-**Definition:** Two systems of linear equations are equivalent if they have the same solutions set $$\{s \in \mathbb{F}^n | As = b\}$$
+**Definition:** Two systems of linear equations are equivalent if they have the same solutions set $$\{x \in V | Ax = b\}$$
 **Theorem:** Let $Ax = b$ be a system of $m$ linear equations in $n$ unknowns ($A \in \mathbb{F}^{m \times n}$). Let $C \in \mathbb{F}^{m \times m}$ be invertible. The system $(CA)x = Cb$ is equivalent to $Ax = b$
 
 **Proof:** Let $K$ be the solution set of $Ax = b$, $\tilde K$ the solutions set of $(CA)x = Cb$. We'll seek to show that $K \subseteq \tilde K$ and $\tilde K \subseteq  K$
@@ -166,7 +166,49 @@ $$\left(
 2. The first non-zero entry in each row is the only non-zero entry in its column
 3. The first non-zero entry in each row is 1 and it occurs in a column to the right of the first non-zero entry in the preceding row
 
-**Claim:** Gaussian Elimination generates a matrix in RREF
+
+### Homogeneity
+
+**Definition:** A system $Ax = b$ of $m$ linear equations in $n$ unknowns is said to be homogeneous if $b = 0$. 
+
+Otherwise the system is said to be inhomogeneous.
+
+#### Homogeneous Systems
+
+**Theorem:** Let $Ax = 0$ be a homogeneous system of $m$ linear equations in $n$ unknowns over a field $\mathbb F$. Let $K$ denote the set of all solutions to $Ax = 0$. 
+
+Then $K = \text{null }L_A$. Hence, $K$ is a subspace of $\mathbb F^n$ of dimension $n - \text{rank }L_A = n -\text{rank }A$. Note that $L_A$ denotes the linear transformation represented by the matrix $A$
+
+**Proof:** Clearly $K = \{s \in \mathbb F ^n \space | As = 0\} = \text{null }L_A$. Second part follows from dimension theorem.
 
 
-**Theorem:** Let $Ax = 0$ where $A \in \mathbb{F}^{m \times n}$. 
+**Corollary:** If $m < n$, the system $Ax= 0$ has a non-zero solution.
+
+**Proof:** Suppose $m < n$. Then $\text{rank }A = \text{rank }L_A \leq m$. Hence
+$$\text{dim }K = n - \text{rank }L_A \geq n-m > 0$$
+where $K = \text{null }L_A$. Since $\text{dim }K > 0, K \neq \{0\}$. Thus there exists a non-zero vector $s \in K$ such that $s$ is a non-zero solution to $Ax=0$
+
+**Example:** Consider the system $x_1-2x_2+x_3 = 0$ of one equation in three unknowns. If $A = (1-21)$ is the coefficient matrix then $\text{rank }A =1$. 
+
+Hence if $K$ is the solution set, then by dimension theorem $\text{dim }K = 3-1 = 2$. Note that $(2,1,0)$ and $(-1,0,1)$ are linearly independent vectors in $K$. Thus they constitute a basis for $K$ so that $K = \text{span}\{(2,1,0),(-1,0,1)\}$
+
+#### Inhomogeneous Systems
+
+**Theorem:** Let $K$ be the solution set of a system of linear equations $Ax=b$. Let $K_H$ be the solution set corresponding to the homogeneous system $Ax=0$. 
+
+Then for any solution $s$ to $Ax=b$ $$K = \{s\} + K_H = \{s+k \space | \space k \in K_H\}$$
+**Proof:** Let $s$ be any solution to $Ax=b$. We must show that $K = \{s\} + K_H$. If $w \in K$, then $Aw =b$. Hence $$A(w-s) = Aw-As= b-b = 0$$
+So $w-s \in K_H$. Thus there exists $k \in K_H$ such that $w-s =k$. 
+
+It follows that $w = s+k \in \{s\}+K_H$ and therefore $K \subseteq \{s\}+K_H$.
+
+Conversely, suppose that $w \in \{s\}+K_H$. Then $w = s+k$ for some $k \in K_H$. But then $Aw = A(s+k) = As + Ak = b+0 = b$ so $w \in K$. Therefore $\{s\} + K_H \subseteq K$ and thus $K =\{s\}+K_H.$
+
+
+In other words, for an inhomogeneous system we can always add a vector in the null space to a solution and get another valid solution. 
+
+This implies that we do not have unique solutions if the null space is non-trivial. We can thus show the following:
+
+**Theorem:** Let $Ax=b$ be a system of linear equations in $n$ unknowns. If $A$ is invertible then the system has exactly one solution, namely $A^{-1}b$. 
+
+Conversely, if the system has exactly one solution then $A$ is invertible.
