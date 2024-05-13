@@ -44,12 +44,9 @@ Context switching has a cost:
 - CPU time in kernel (save and restore registers, switch address spaces)
 - Indirect costs (TLB shootdowns, processor cache, OS caches)
 
-
-
 ### Scheduling Disciplines
 
 - Assume first that the process/threads do no I/O (unrealistic, we relax it later)
-
 
 ##### FCFS (first come first served)/FIFO
 - Run job until its done
@@ -214,8 +211,6 @@ It does so through a simple counting-based technique known as virtual runtime (`
 In the most basic case, each process’s `vruntime` increases at the same rate, in proportion with physical (real) time. 
 
 When a scheduling decision occurs, CFS will pick the process with the lowest `vruntime` to run next.
-
-
 
 ### Scheduling Lessons
 

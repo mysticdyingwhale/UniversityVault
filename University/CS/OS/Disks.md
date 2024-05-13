@@ -37,7 +37,7 @@ Seeking entire disk is less expensive due to amortization than seeking a segment
 
 #### Common numbers
 
-- Capacity: Terrabytes
+- Capacity: Terabytes
 - Platters: 8
 - Number of cylinders: 10 thousands or more
 - Sectors per track: ~1000
@@ -50,9 +50,57 @@ Seeking entire disk is less expensive due to amortization than seeking a segment
 
 A modern disk drive is non-volatile storage consisting of a large number of sectors (512-byte blocks), each of which can be read or written.
 
-Sectors are numbered from 0 to n-1 for n sectors, so it helps to view the disk as an array of sectors, where 0 to n-1 is the address space.
+The disk maps logical sector numbers to physical sectors. 
+
+Sectors are numbered from 0 to n-1 for n sectors, so it helps to view the disk as an array of sectors, where 0 to n-1 is the address space. 
 
 The disk does some cool things under the hood (invisible to OS):
 - Zoning
+	- puts more sectors on longer tracks
 - Skewing
+	-  sector 0 position varies by track
 - Sparing
+	- flawed sectors remapped elsewhere
+
+### Performance Example
+
+Spindle Speed: 12,000 RPM
+Avg. Seek Time: 12ms
+Transfer Rate: 128 MB/s
+Sector: 512 bytes
+
+Example Questions:
+1. What is the throughput if doing 500 sector reads spread randomly over the disk and serviced in FIFO order?
+2. Same q, but sequential reads
+
+Answers:
+1. Throughput = $\frac{\text{bytes}}{\text{time}} = \frac{500 \times 512 \text{ bytes}}{500 \text{ random reads}}$
+
+
+We get rotational delay by:
+$\frac{\text{minutes}}{12000 \text{rotations}} \times \frac{60s}{\text{min}} \times \frac 12 = \frac{60s}{24000 \text{half-rotations}} = \frac{1s}{400 \text{half-rotations}} = 2.5\frac{ms}{\text{half-rotation}}$ 
+
+We get transfer time by:
+$512 \text{bytes} \times \frac{1s}{128MB} \times 512 \text{bytes} = 4ms$
+
+Seek time given as 12ms
+
+$1 \text{ read} = \text{rotation delay + seek time + transfer time} = 2.5 \text{ms} + 12  \text{ms} + 4  \text{ms}$
+
+Throughput = $\frac{\text{bytes}}{\text{time}} = \frac{500 \times 512 \text{ bytes}}{(14.5+4)500} = \frac{512B}{14.5ms} = 35 kbps$
+
+
+2. Throughput = $\frac{\text{bytes}}{\text{time}} = \frac{500 \times 512 \text{ bytes}}{1 \text{ sequential read}}$
+
+Avg rotational delay is the same
+
+Seek time given as 12ms
+
+
+We get transfer time by:
+$512 \text{bytes} \times \frac{1s}{128MB} \times 500 \times 512 \text{bytes} = 2ms$
+
+
+Throughput = $\frac{\text{bytes}}{\text{time}} = \frac{500 \times 512 \text{ bytes}}{16.5ms} = 15mbps$
+
+

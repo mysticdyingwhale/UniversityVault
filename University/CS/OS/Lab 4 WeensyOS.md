@@ -2,8 +2,6 @@
 #cs 
 
 
-
-
 ### Context Switches in WeensyOS
 
 - on interrupt, hardware saves "trapframe":

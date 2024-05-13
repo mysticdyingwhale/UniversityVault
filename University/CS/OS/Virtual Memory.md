@@ -80,7 +80,6 @@ Think of it like:
 - There is in the sky a 2^36 sized array that maps the virtual address to a physical page
 - table\[36-bit virtual page number] = 20-bit physical page number
 
-
 A page table entry contains:
 - 40 bits representing the physical address of the page or the next page table
 - Some bits that contain flags and optimization metadata
@@ -130,8 +129,7 @@ Each entry in the L2 page table corresponds to 1 GB of virtual address space
 
 Each entry in the L3 page table corresponds to 2 MB of virtual address space
 
-Each entry in the L2 page table corresponds to 1 page (4 KB) of virtual address space
-
+Each entry in the L4 page table corresponds to 1 page (4 KB) of virtual address space
 
 So the L4 page table is responsible for translating 2 MB of virtual memory.
 
@@ -270,7 +268,6 @@ Disadvantage:
 	- The kernel is out of memory
 	- The page that it selects to write out is dirty
 
-
 Other uses:
 - Store memory pages across the network! (Distributed Shared Memory)
 	- On page fault, the page fault handler retrieves the page from another machine
@@ -299,7 +296,6 @@ Page faults are very expensive.
 ## Page Replacement Policies
 
 Some entity holds a cache of entries and gets a cache miss. The entity now needs to decide which entry to throw away. How does it decide?
-
 
 FIFO: Eject the oldest page
 
