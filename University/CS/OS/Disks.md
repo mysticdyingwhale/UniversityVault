@@ -54,7 +54,7 @@ The disk maps logical sector numbers to physical sectors.
 
 Sectors are numbered from 0 to n-1 for n sectors, so it helps to view the disk as an array of sectors, where 0 to n-1 is the address space. 
 
-The disk does some cool things under the hood (invisible to OS):
+The disk does some things under the hood (invisible to OS):
 - Zoning
 	- puts more sectors on longer tracks
 - Skewing

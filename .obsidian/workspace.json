@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/CS/OS/File Systems.md",
+                "file": "University/CS/C++/Smart Pointers.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/CS/OS/File Systems.md",
+                "file": "University/CS/C++/Smart Pointers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/CS/OS/File Systems.md",
+                "file": "University/CS/C++/Smart Pointers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/CS/OS/File Systems.md"
+                "file": "University/CS/C++/Smart Pointers.md"
               }
             }
           },
@@ -160,23 +160,32 @@
   },
   "active": "cd291822e808a469",
   "lastOpenFiles": [
+    "University/CS/C++/Pointers.md",
+    "University/CS/C++/Basics of C++.md",
+    "University/CS/C++/Classes.md",
+    "University/CS/C++/File IO.md",
+    "University/CS/C++/Function Pointers.md",
+    "University/CS/C++/Inheritance.md",
+    "University/CS/C++/Functors.md",
+    "University/CS/C++/Lambda Functions.md",
+    "University/CS/C++/Smart Pointers.md",
+    "University/CS/C++/STL.md",
+    "University/CS/C++/Templates.md",
+    "University/CS/OS/Security.md",
+    "University/CS/OS/Shell.md",
     "University/CS/OS/Virtual Memory.md",
     "University/CS/OS/Disks.md",
-    "University/CS/OS/IO.md",
+    "University/CS/OS/Therac-25.md",
     "University/CS/OS/File Systems.md",
+    "University/CS/OS/Scheduling.md",
+    "University/CS/OS/Putting It All Together.md",
+    "University/CS/OS/Processes.md",
+    "University/CS/OS/IO.md",
+    "University/CS/OS/Lab 4 WeensyOS.md",
+    "University/CS/OS/Context-Switching, User-level Threading.md",
     "University/CS/OS/Lab 3 Multithreaded Programming.md",
     "University/CS/OS/Lab 5 FS.md",
-    "University/CS/OS/Processes.md",
-    "University/CS/OS/Scheduling.md",
-    "University/CS/OS/Security.md",
     "University/CS/OS/Concurrency.md",
-    "University/CS/OS/Shell.md",
-    "University/CS/OS/Context-Switching, User-level Threading.md",
-    "University/CS/OS/Putting It All Together.md",
-    "University/CS/OS/Therac-25.md",
-    "University/CS/OS/Lab 2 LS.md",
-    "University/CS/OS/Lab 4 WeensyOS.md",
-    "Untitled.md",
     "University/PastedImages/Pasted image 20240512175823.png",
     "University/PastedImages/Pasted image 20240512121932.png",
     "University/PastedImages/Pasted image 20240512120459.png",
@@ -185,15 +194,6 @@
     "University/PastedImages/Pasted image 20240511174758.png",
     "University/PastedImages/Pasted image 20240511174416.png",
     "University/PastedImages/Pasted image 20240511174409.png",
-    "University/CS/Data Structures and Algorithms 1134/Maps.md",
-    "University/CS/Data Structures and Algorithms 1134/Hash Tables.md",
-    "University/CS/OS/Therac 25.md",
-    "University/Math/Linear Algebra/Review.md",
-    "University/Math/Linear Algebra/Rec 6.md",
-    "University/Math/Linear Algebra/Rec 5.md",
-    "University/Math/Linear Algebra/Rec 2.md",
-    "University/Math/Linear Algebra/Isometries, Unitary Operators.md",
-    "University/Math/Linear Algebra/Invertibility, Isomorphisms.md",
     "University/PastedImages/Pasted image 20211219113115.png",
     "University/PastedImages/Pasted image 20211219113115.png.crdownload",
     "University/PastedImages/Pasted image 20211219164809.png",

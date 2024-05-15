@@ -260,8 +260,6 @@ What makes the problem worse is:
 	- meaning that the OS delays writing back modified disk blocks
 - non-ordered disk writes
 	- meaning that the modified disk blocks can go to the disk in an unspecified order. 
-
-
 We will cover three approaches to crash recovery in file systems
 ### Ad-hoc
 
