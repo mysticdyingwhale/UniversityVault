@@ -1,6 +1,5 @@
-#cs
-
 # Sorting Algorithms
+#cs
 
 
 ## **Selection** Sort

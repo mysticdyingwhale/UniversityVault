@@ -1,6 +1,6 @@
-#cs 
-
 # Static VS Dynamic Languages
+
+#cs 
 
 ## Basic Comparison
 

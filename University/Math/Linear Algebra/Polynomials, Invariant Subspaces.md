@@ -156,7 +156,7 @@ Then $p(T) = 3I - 4T+T^2 = 0$
 
 **Proof:** Let $p$ be the minimal polynomial of $T$.
 
-a) Suppose $\lambda \in \mathbb{F}$ such that $p(\lambda)=0$. Then $$p(z) = (z-\lambda)q(z)$$ where $q$ is a monic poly with coefficients $\in \mathbb{F}$.
+ (1) Suppose $\lambda \in \mathbb{F}$ such that $p(\lambda)=0$. Then $$p(z) = (z-\lambda)q(z)$$ where $q$ is a monic poly with coefficients $\in \mathbb{F}$.
 
 Since $p(T) = 0$, $$0 = p(T) = (T - \lambda I)(q(T)v)$$
 for all $v \in V$. Since $\text{deg }q < \text{deg }p$, there exists at least one $v \in V$ such that $q(T)v \neq 0$. 
@@ -172,11 +172,11 @@ Then, $p(T)v = C_0v + C_1Tv+...+T^nv = (C_0+C_1\lambda + ...+\lambda^n)v = p(\la
 
 Since $p$ is the minimal poly  $p(\lambda) = 0$, so $\lambda$ is a root of $p$
 
-b) Follows from a and fundamental theorem of algebra
+(2) Follows from (1) and the fundamental theorem of algebra.
 
 
 
-**Theorem:** Let $V$ be fin-dim, $T \in \mathcal{L}(V)$, and $q \in P(\mathbb{F})$. Then $q(T)=0$ iff $q$ is a polynomial multiple of the minimal poly of $T$.
+**Theorem:** Let $V$ be fin-dim, $T \in \mathcal{L}(V)$, and $q \in P(\mathbb{F})$. Then $q(T)=0 \iff q$ is a polynomial multiple of the minimal poly of $T$.
 
 **Proof:** ($\implies$) Suppose $q(T)=0$, and suppose that $p$ is the minimal polynomial of $T$ such that $p(T) =0$.  
 

@@ -1,3 +1,4 @@
+# Function Pointers
 #cs 
 
 A function pointer, put simply, is just a pointer to a function. It can be used when a set of code is to be kept unchanged, but may require different functions to be called within it.

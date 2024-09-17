@@ -108,7 +108,7 @@ Since $\text{dim }(\mathbb{F}^{m,n})=mn < \infty$ and $\mathcal{M}$ is one-to-on
 Think of matrix multiplication as forming linear combinations of columns or rows of $A$.
 
 - Column Rank of $A = \text{dim span (cols of A)}$ 
-- Row Rank of $A \text{dim span(rows of A)}$  
+- Row Rank of $A =\text{dim span(rows of A)}$  
 
 Turns out, col rank = row rank so just say rank.
 

@@ -1,3 +1,4 @@
+# Pointers
 #cs 
 
 A pointer is a derived data type that stores the address of other variables. We can access and manipulate the data stored in that memory location using pointers. 

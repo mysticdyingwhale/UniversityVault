@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/Math/Linear Algebra/trsan.md",
+                "file": "University/CS/C++/Smart Pointers.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/Math/Linear Algebra/trsan.md",
+                "file": "University/CS/C++/Smart Pointers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/Math/Linear Algebra/trsan.md",
+                "file": "University/CS/C++/Smart Pointers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/Math/Linear Algebra/trsan.md"
+                "file": "University/CS/C++/Smart Pointers.md"
               }
             }
           },
@@ -160,54 +160,54 @@
   },
   "active": "cd291822e808a469",
   "lastOpenFiles": [
-    "University/Math/Linear Algebra/Inner Product Operations.md",
-    "University/Math/Linear Algebra/trsan.md",
-    "University/Math/Linear Algebra/Orthonormality.md",
-    "University/Math/Linear Algebra/Inner Products.md",
-    "University/Math/Linear Algebra/UT, Diagonal Matrices.md",
-    "University/Math/Linear Algebra/Polynomials, Invariant Subspaces.md",
-    "University/Math/Linear Algebra/Dimension, Basis.md",
-    "University/Math/Linear Algebra/Invertibility, Isomorphisms.md",
-    "University/Math/Linear Algebra/L. Combinations, L. Independence.md",
-    "University/Math/Linear Algebra/Linear Maps, Range, Null Space.md",
-    "University/Math/Linear Algebra/Matrices.md",
-    "University/Math/Linear Algebra/Linear Independence.md",
-    "University/Math/Linear Algebra/Duality.md",
-    "University/Math/Linear Algebra/Rec 5.md",
-    "University/Math/Linear Algebra/Vector Space.md",
-    "University/Math/Linear Algebra/temp.md",
-    "University/Math/Linear Algebra/Rec 2.md",
-    "Untitled.md",
-    "University/Math/Linear Algebra/Invariant Subspaces.md",
-    "University/CS/OS/Virtual Memory.md",
-    "University/Math/Linear Algebra/Orthonormal Bases.md",
-    "University/Math/Linear Algebra/hw7 temp transfer.md",
-    "University/PastedImages/Pasted image 20240327002126.png",
-    "University/CS/OS/Processes.md",
-    "University/CS/OS/Scheduling.md",
+    "University/CS/C++/Pointers.md",
+    "University/CS/C++/Basics of C++.md",
+    "University/CS/C++/Classes.md",
+    "University/CS/C++/File IO.md",
+    "University/CS/C++/Function Pointers.md",
+    "University/CS/C++/Inheritance.md",
+    "University/CS/C++/Functors.md",
+    "University/CS/C++/Lambda Functions.md",
+    "University/CS/C++/Smart Pointers.md",
+    "University/CS/C++/STL.md",
+    "University/CS/C++/Templates.md",
+    "University/CS/OS/Security.md",
     "University/CS/OS/Shell.md",
+    "University/CS/OS/Virtual Memory.md",
+    "University/CS/OS/Disks.md",
     "University/CS/OS/Therac-25.md",
-    "University/PastedImages/Pasted image 20240312170947.png",
-    "University/PastedImages/Pasted image 20240312020655.png",
-    "University/PastedImages/Pasted image 20240312015925.png",
-    "University/PastedImages/Pasted image 20240312015923.png",
-    "University/PastedImages/Pasted image 20240312015912.png",
-    "University/PastedImages/Pasted image 20240312015750.png",
-    "University/PastedImages/Pasted image 20240312015516.png",
-    "University/PastedImages/Pasted image 20240304164753.png",
+    "University/CS/OS/File Systems.md",
+    "University/CS/OS/Scheduling.md",
+    "University/CS/OS/Putting It All Together.md",
+    "University/CS/OS/Processes.md",
+    "University/CS/OS/IO.md",
+    "University/CS/OS/Lab 4 WeensyOS.md",
+    "University/CS/OS/Context-Switching, User-level Threading.md",
+    "University/CS/OS/Lab 3 Multithreaded Programming.md",
+    "University/CS/OS/Lab 5 FS.md",
+    "University/CS/OS/Concurrency.md",
+    "University/PastedImages/Pasted image 20240512175823.png",
+    "University/PastedImages/Pasted image 20240512121932.png",
+    "University/PastedImages/Pasted image 20240512120459.png",
+    "University/PastedImages/Pasted image 20240511202718.png",
+    "University/PastedImages/Pasted image 20240511202703.png",
+    "University/PastedImages/Pasted image 20240511174758.png",
+    "University/PastedImages/Pasted image 20240511174416.png",
+    "University/PastedImages/Pasted image 20240511174409.png",
+    "University/PastedImages/Pasted image 20211219113115.png",
+    "University/PastedImages/Pasted image 20211219113115.png.crdownload",
+    "University/PastedImages/Pasted image 20211219164809.png",
+    "University/PastedImages/Pasted image 20211219164809.png.crdownload",
+    "University/PastedImages/Pasted image 20211219164822.png.crdownload",
+    "University/PastedImages/Pasted image 20211219164700.png.crdownload",
+    "University/PastedImages/Pasted image 20211219125235.png.crdownload",
+    "University/Math/Linear Algebra/Untitled",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
-    "University/PastedImages/Pasted image 20240205120746.png",
     "University/Linguistics/Phonological Analysis",
     "University/CS/OS",
     "University/Math/Linear Algebra",
-    "University/PastedImages/Pasted image 20211219152334.png.crdownload",
-    "University/PastedImages/Pasted image 20211219152320.png.crdownload",
-    "University/PastedImages/Pasted image 20211219152148.png.crdownload",
-    "University/PastedImages/Pasted image 20211219135705.png.crdownload",
-    "University/PastedImages/Pasted image 20211219155913.png.crdownload",
-    "University/PastedImages/Pasted image 20211219155859.png.crdownload",
-    "University/PastedImages/Pasted image 20211219155532.png.crdownload"
+    "University/PastedImages/Pasted image 20211219152334.png.crdownload"
   ]
 }

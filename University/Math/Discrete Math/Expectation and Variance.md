@@ -1,3 +1,4 @@
+# Expectation and Variance
 #math 
 
 ### Random Variables

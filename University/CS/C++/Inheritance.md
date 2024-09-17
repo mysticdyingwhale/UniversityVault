@@ -1,3 +1,6 @@
+# Inheritance
+#cs 
+
 
 Inheritance is a key feature in OOP that allows you to create new [[Classes]] (derived classes) based off of existing classes (base classes). It allows for code reuse and to establish class relations.
 

@@ -1,6 +1,6 @@
+# The Map ADT
 #cs 
 
-# The Map ADT
 
 The Map ADT stores multiple (key, value) pairs.
 
