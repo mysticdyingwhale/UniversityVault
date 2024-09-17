@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/CS/OS/Security.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4f1b1c0a6272488a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University/Linguistics/Semantics/Implicature.md",
+                "file": "Job/Corelink/Docs Improvements.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/Linguistics/Semantics/Implicature.md",
+                "file": "Job/Corelink/Docs Improvements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/Linguistics/Semantics/Implicature.md",
+                "file": "Job/Corelink/Docs Improvements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/Linguistics/Semantics/Implicature.md"
+                "file": "Job/Corelink/Docs Improvements.md"
               }
             }
           },
@@ -192,8 +180,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f6c93d5ea9922fa9",
+  "active": "320143df4b7808d5",
   "lastOpenFiles": [
+    "Job/Corelink/Corelink Basics.md",
+    "University/CS/OS/Security.md",
+    "Job/Corelink/Docs Improvements.md",
+    "University/CS/OS/Scheduling.md",
+    "Job/Corelink",
+    "Job",
+    "University/CS/OS/Therac-25.md",
+    "University/CS/OS/Virtual Memory.md",
     "University/Math/Linear Algebra/Duality.md",
     "University/Math/Linear Algebra/Dimension, Basis.md",
     "University/Linguistics/Semantics/Implicature.md",
@@ -202,27 +198,21 @@
     "University/CS/Computer Graphics/Images.md",
     "University/CS/Computer Graphics/Math.md",
     "University/Math/Linear Algebra/Stuff covered in highschool.md",
-    "University/CS/OS/Virtual Memory.md",
     "University/Linguistics/Semantics",
     "University/Linguistics/AAVE",
     "University/CS/Computer Graphics",
-    "University/CS/OS/Scheduling.md",
     "University/CS/OS/IO.md",
     "University/CS/OS/Processes.md",
     "University/CS/OS/Disks.md",
     "University/CS/OS/Context-Switching, User-level Threading.md",
     "University/CS/OS/Concurrency.md",
     "University/CS/OS/File Systems.md",
-    "University/CS/OS/Therac-25.md",
     "University/CS/OS/Shell.md",
-    "University/CS/OS/Security.md",
     "University/CS/OS/Putting It All Together.md",
     "University/CS/Data Structures and Algorithms 1134/Recursion.md",
     "University/CS/Data Structures and Algorithms 1134/Rooted Binary Trees.md",
     "University/Math/Linear Algebra/Linear Systems.md",
     "University/Math/Linear Algebra/Isometries, Unitary Operators.md",
-    "University/CS/C++/Useful Concepts.md",
-    "University/CS/C++/Multithreading.md",
     "University/PastedImages/Pasted image 20240512121932.png",
     "University/PastedImages/Pasted image 20240512175823.png",
     "University/PastedImages/Pasted image 20211219113115.png",
@@ -238,10 +228,8 @@
     "University/PastedImages/Pasted image 20211219164822.png.crdownload",
     "University/PastedImages/Pasted image 20211219164700.png.crdownload",
     "University/PastedImages/Pasted image 20211219125235.png.crdownload",
-    "University/Math/Linear Algebra/Untitled",
     "Untitled.canvas",
     "Untitled 1.canvas",
-    "Untitled 2.canvas",
-    "University/Linguistics/Phonological Analysis"
+    "Untitled 2.canvas"
   ]
 }
