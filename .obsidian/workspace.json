@@ -13,13 +13,42 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "University/CS/C++/Smart Pointers.md",
+=======
+                "file": "University/CS/OS/Virtual Memory.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "320143df4b7808d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University/CS/OS/Security.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4f1b1c0a6272488a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University/Linguistics/Semantics/Implicature.md",
+>>>>>>> c7e099a1749bf28315280eb2bbb5de8af6f3f6d5
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +114,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "University/CS/C++/Smart Pointers.md",
+=======
+                "file": "University/Linguistics/Semantics/Implicature.md",
+>>>>>>> c7e099a1749bf28315280eb2bbb5de8af6f3f6d5
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +135,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "University/CS/C++/Smart Pointers.md",
+=======
+                "file": "University/Linguistics/Semantics/Implicature.md",
+>>>>>>> c7e099a1749bf28315280eb2bbb5de8af6f3f6d5
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,11 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "University/CS/C++/Smart Pointers.md"
+=======
+                "file": "University/Linguistics/Semantics/Implicature.md"
+>>>>>>> c7e099a1749bf28315280eb2bbb5de8af6f3f6d5
               }
             }
           },
@@ -140,12 +181,21 @@
                 "searchQuery": ""
               }
             }
+          },
+          {
+            "id": "f6c93d5ea9922fa9",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 262.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,8 +208,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cd291822e808a469",
+  "active": "f6c93d5ea9922fa9",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "University/CS/C++/Pointers.md",
     "University/CS/C++/Basics of C++.md",
     "University/CS/C++/Classes.md",
@@ -187,16 +238,52 @@
     "University/CS/OS/Lab 5 FS.md",
     "University/CS/OS/Concurrency.md",
     "University/PastedImages/Pasted image 20240512175823.png",
+=======
+    "University/Math/Linear Algebra/Duality.md",
+    "University/Math/Linear Algebra/Dimension, Basis.md",
+    "University/Linguistics/Semantics/Implicature.md",
+    "University/Linguistics/Semantics/Ambiguity.md",
+    "University/CS/Computer Graphics/Graphics Pipeline.md",
+    "University/CS/Computer Graphics/Images.md",
+    "University/CS/Computer Graphics/Math.md",
+    "University/Math/Linear Algebra/Stuff covered in highschool.md",
+    "University/CS/OS/Virtual Memory.md",
+    "University/Linguistics/Semantics",
+    "University/Linguistics/AAVE",
+    "University/CS/Computer Graphics",
+    "University/CS/OS/Scheduling.md",
+    "University/CS/OS/IO.md",
+    "University/CS/OS/Processes.md",
+    "University/CS/OS/Disks.md",
+    "University/CS/OS/Context-Switching, User-level Threading.md",
+    "University/CS/OS/Concurrency.md",
+    "University/CS/OS/File Systems.md",
+    "University/CS/OS/Therac-25.md",
+    "University/CS/OS/Shell.md",
+    "University/CS/OS/Security.md",
+    "University/CS/OS/Putting It All Together.md",
+    "University/CS/Data Structures and Algorithms 1134/Recursion.md",
+    "University/CS/Data Structures and Algorithms 1134/Rooted Binary Trees.md",
+    "University/Math/Linear Algebra/Linear Systems.md",
+    "University/Math/Linear Algebra/Isometries, Unitary Operators.md",
+    "University/CS/C++/Useful Concepts.md",
+    "University/CS/C++/Multithreading.md",
+>>>>>>> c7e099a1749bf28315280eb2bbb5de8af6f3f6d5
     "University/PastedImages/Pasted image 20240512121932.png",
+    "University/PastedImages/Pasted image 20240512175823.png",
+    "University/PastedImages/Pasted image 20211219113115.png",
+    "University/PastedImages/Pasted image 20240525173426.png",
     "University/PastedImages/Pasted image 20240512120459.png",
     "University/PastedImages/Pasted image 20240511202718.png",
     "University/PastedImages/Pasted image 20240511202703.png",
     "University/PastedImages/Pasted image 20240511174758.png",
     "University/PastedImages/Pasted image 20240511174416.png",
     "University/PastedImages/Pasted image 20240511174409.png",
+<<<<<<< HEAD
     "University/PastedImages/Pasted image 20211219113115.png",
+=======
+>>>>>>> c7e099a1749bf28315280eb2bbb5de8af6f3f6d5
     "University/PastedImages/Pasted image 20211219113115.png.crdownload",
-    "University/PastedImages/Pasted image 20211219164809.png",
     "University/PastedImages/Pasted image 20211219164809.png.crdownload",
     "University/PastedImages/Pasted image 20211219164822.png.crdownload",
     "University/PastedImages/Pasted image 20211219164700.png.crdownload",
@@ -205,9 +292,6 @@
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
-    "University/Linguistics/Phonological Analysis",
-    "University/CS/OS",
-    "University/Math/Linear Algebra",
-    "University/PastedImages/Pasted image 20211219152334.png.crdownload"
+    "University/Linguistics/Phonological Analysis"
   ]
 }
