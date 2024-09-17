@@ -4,7 +4,9 @@
 
 
 
-Suppose $U,W$ fin dim subspaces of $V$. Prove $P_u P_w = 0$ iff $\forall \space u \in U,\forall \space w \in W, \langle u,w \rangle =0$ 
+Suppose $U,W$ fin dim subspaces of $V$. 
+
+Prove $P_u P_w = 0$ iff $\forall \space u \in U,\forall \space w \in W, \langle u,w \rangle =0$ 
 
 
 $(\implies)$ Let $w \in W$. Then $P_u P_w w = P_u w = 0$ 
@@ -14,11 +16,13 @@ This implies that $w \in U^\perp$, which implies that for all $w \in W, u \in U,
 
 $(\impliedby)$ $\langle u,w \rangle =0$ implies that $w \in U^\perp$, implying that $W \subseteq U^\perp$. 
 
-Take some $v \in V$ such that $P_uP_w v = P_u(P_w v)$. 
+Take any $v \in V$ such that $P_uP_w v = P_u(P_w v)$. 
 
 This gives us $P_u \tilde{w}$  where $\tilde w \in W$. 
 
-Since $W \subseteq U^\perp$, $P_u \tilde w =0$.
+Since $W \subseteq U^\perp$, $\tilde w \in U^\perp$ so $P_u \tilde w =0$ 
+
+ Therefore $P_uP_w = 0$ .
 
 
 
@@ -44,7 +48,7 @@ If $v \in \text{range }P$ then for some $w \in V$ $Pw = v, P^2w = Pv, Pw = Pv = 
 
 $Pw = v, P^2w = v, P(Pw) = v, P(v) = v$
 
-So $0 = v = Pv$ therefore $V = \text{range }P \oplus \text{null }P$
+So $0 = v = Pv$ therefore $\text{null }P \cap \text{range }P = \{0\}$ and $V = \text{range }P \oplus \text{null }P$
 
 
 
