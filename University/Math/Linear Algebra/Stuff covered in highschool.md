@@ -1,5 +1,5 @@
 # Vectors
-#maths #physics 
+#math 
  
 
 A vector is an element of a vector space which contains two elements, both size and direction.
