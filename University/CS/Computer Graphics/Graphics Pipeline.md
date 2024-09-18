@@ -17,5 +17,18 @@ Framebuffer:
 
 ### Object-Order Rendering
 
+- Draw objects one-by-one onto screen
+	- Find each pixel objects have effects on
+	- Rasterize
+	- Rasterization-based systems are also called scanline renderers
+- Any graphics system has one or more types of primitive object that it can handle directly (triangles, etc..)
+- More complex objects are then converted into these primitives
+
+
+Sequence of Operations for Graphics Pipeline:
+
+- Starts with objects
+- ...
+- Ends by pixel update in image
 
 ## Rasterization
