@@ -16,7 +16,6 @@ It dictates that if a class needs to explicitly define any of the following five
 
 The rule of five ensures that resources are being managed correctly and consistently, preventing resource leaks, double deletions, and other issues relating to resource management.
 
-
 ### Destructor
 
 

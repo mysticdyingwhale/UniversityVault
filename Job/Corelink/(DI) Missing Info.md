@@ -1,4 +1,6 @@
-# Docs Improvements
+# Docs Missing Info
+DI (Docs Improvements)
+
 
 Docs need to be updated:
 
@@ -26,6 +28,7 @@ You will need to install Libwebsockets and a TLS Library (OpenSSL recommended)
 	- Missing Corelink build directory
 	- Missing corelink.lib
 	- For linker and include directories just use the `x64-windows` installed directory
+		- convenience is important
 
 - Add a common error guide
 	- DLL errors
@@ -75,4 +78,7 @@ set(CORELINK_RAPID_JSON_CPP_PATH C:\\path\\to\\corelink-client\\external-depende
 
 
 NOTE: the cpp specific docs are in the docs folder of the cpp client
+
+
+
 

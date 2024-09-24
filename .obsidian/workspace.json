@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "e7d861874e6a07d8",
+        "id": "66927d4782006b03",
         "type": "tabs",
         "children": [
           {
@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Job/Corelink/installation.md",
+                "file": "Job/Corelink/(Docs) installation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9f84871f654c2cda",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Job/Corelink/(Docs) Getting Started.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "707ceb587347920c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Job/Corelink/(DI) Docs Structure.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Job/Corelink/installation.md",
+                "file": "Job/Corelink/(Docs) Getting Started.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Job/Corelink/installation.md",
+                "file": "Job/Corelink/(Docs) Getting Started.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Job/Corelink/installation.md"
+                "file": "Job/Corelink/(Docs) Getting Started.md"
               }
             }
           }
@@ -159,9 +184,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce1c61b49d038b6f",
+  "active": "9f84871f654c2cda",
   "lastOpenFiles": [
-    "Job/Corelink/Docs Improvements.md",
-    "Job/Corelink/installation.md"
+    "Job/Corelink/(DI) Docs Structure.md",
+    "Job/Corelink/(Docs) Getting Started.md",
+    "Job/Corelink/(Docs) installation.md",
+    "Job/Corelink/(DI) Missing Info.md",
+    "Job/Corelink/(Personal) Corelink Basics.md",
+    "University/CS/C++/Concurrency & Multithreading.md",
+    "University/CS/C++/Basics of C++.md",
+    "University/CS/C++/Classes.md",
+    "University/CS/C++/Useful Concepts.md",
+    "University/CS/C++/Templates.md",
+    "University/CS/C++/Pointers.md",
+    "University/CS/C++/Move Semantics, Rule of Five.md",
+    "Job/Corelink/getting started.md"
   ]
 }
