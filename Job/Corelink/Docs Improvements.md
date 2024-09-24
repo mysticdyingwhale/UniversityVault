@@ -13,17 +13,23 @@ Docs need to be updated:
 #include <corelink_all.hpp>
 ```
 
+You will need to install Libwebsockets and a TLS Library (OpenSSL recommended)
+- For Windows, use [vcpkg](https://vcpkg.io/en/) 
+- For OSX, use [Homebew](https://brew.sh/)
+- For Linux, many options exist depending on your distribution.
 
 - Provide links for `vcpkg` and how to install `lws` and `openssl` with it
 
 - Link examples repo in examples page 
   
 - VS screenshots not accurate
-	- Missing CoreLink build directory
+	- Missing Corelink build directory
 	- Missing corelink.lib
+	- For linker and include directories just use the `x64-windows` installed directory
 
 - Add a common error guide
 	- DLL errors
+	- Debugging->Environment-> `PATH=%PATH%;C:\path\to\vcpkg\installed\x64-windows\bin`
 
 - Additional information on the general docs site. 
 
