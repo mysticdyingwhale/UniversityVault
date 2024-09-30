@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Job/Corelink/(Docs) Getting Started.md",
+                "file": "Job/Corelink/(DI) Docs Structure.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8ee20909ed6ba6c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Unreal Engine.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Job/Corelink/(Docs) Getting Started.md",
+                "file": "Unreal Engine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Job/Corelink/(Docs) Getting Started.md",
+                "file": "Unreal Engine.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Job/Corelink/(Docs) Getting Started.md"
+                "file": "Unreal Engine.md"
               }
             }
           }
@@ -184,13 +196,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9f84871f654c2cda",
+  "active": "8ee20909ed6ba6c9",
   "lastOpenFiles": [
     "Job/Corelink/(DI) Docs Structure.md",
-    "Job/Corelink/(Docs) Getting Started.md",
-    "Job/Corelink/(Docs) installation.md",
+    "Unreal Engine.md",
+    "Nahar",
     "Job/Corelink/(DI) Missing Info.md",
+    "Job/Corelink/(Docs) installation.md",
+    "Job/Corelink/(Docs) Getting Started.md",
     "Job/Corelink/(Personal) Corelink Basics.md",
+    "University/CS/C++/File IO.md",
+    "University/Linguistics/AAVE/African American Language System.md",
+    "University/Linguistics/AAVE/Language Difference.md",
+    "University/CS/C++/STL.md",
+    "University/PastedImages/Pasted image 20240917103417.png",
     "University/CS/C++/Concurrency & Multithreading.md",
     "University/CS/C++/Basics of C++.md",
     "University/CS/C++/Classes.md",
