@@ -29,6 +29,12 @@
 - Eye cannot separate subpixels
 	- Perceives a mix of RGB
 
+
+### Demosaicing
+
+- Color-filter array / mosaic
+- Allow each pixel to see only red, green, or blue
+- Demosaicing: Process of reconstructing a full color image from the incomplete color samples output from an image sensor
 #### Raster Displays (Bitmap, Pixmap)
 - Bitmap:
 	- Intensity for each pixel depends on the size of frame buffer
@@ -54,3 +60,12 @@
 	- Foreground colour: $c_f$, background colour: $c_b$
 	- $c = \propto c_f + (1 - \propto)c_b$
 
+
+
+### Gamma 
+
+- Characteristic of monitors
+- Gamma correction is used to encode/decode luminance values in video or still image systems
+- Displayed Intensity = (Maximum Intensity)$\alpha ^{\gamma}$ 
+- $\alpha$ = input pixel value from 0 to 1
+- $\gamma$ = gamma value

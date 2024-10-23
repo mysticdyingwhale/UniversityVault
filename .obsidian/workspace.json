@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nahar/Unreal Engine.md",
+                "file": "University/CS/Computer Graphics/Graphics Pipeline.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nahar/Unreal Engine.md",
+                "file": "University/CS/Computer Graphics/Graphics Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Nahar/Unreal Engine.md",
+                "file": "University/CS/Computer Graphics/Graphics Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nahar/Unreal Engine.md"
+                "file": "University/CS/Computer Graphics/Graphics Pipeline.md"
               }
             }
           }
@@ -161,26 +161,41 @@
   },
   "active": "8ee20909ed6ba6c9",
   "lastOpenFiles": [
-    "Job/Corelink/(DI) Missing Info.md",
-    "Job/Corelink/(DI) Docs Structure.md",
-    "Nahar/Unreal Engine.md",
+    "Pasted image 20241023183648.png",
+    "Pasted image 20241023182019.png",
+    "Pasted image 20241023135701.png",
+    "Pasted image 20241023133315.png",
+    "Pasted image 20241023133313.png",
+    "University/CS/Computer Graphics/Math.md",
+    "University/CS/Computer Graphics/Images.md",
+    "University/CS/Computer Graphics/Lighting, Shading.md",
+    "University/CS/Computer Graphics/Graphics Pipeline.md",
+    "Pasted image 20241023125502.png",
+    "Pasted image 20241023125455.png",
+    "Pasted image 20241023125440.png",
+    "Job/Corelink/Networking Concepts.md",
     "Job/Corelink/(Personal) Corelink Basics.md",
-    "University/CS/Computer Graphics/Raytracing.md",
+    "University/Linguistics/Semantics/Negative Polarity.md",
+    "Job/Corelink/(DI) Docs Structure.md",
+    "Job/Corelink/(DI) Missing Info.md",
     "Job/Corelink/(Docs) installation.md",
+    "University/CS/Computer Graphics/Texture Mapping.md",
+    "University/CS/Computer Graphics/Ray Tracing.md",
+    "University/CS/Computer Graphics/Radiometry and Color.md",
+    "University/CS/Computer Graphics/Shaders.md",
+    "University/CS/Computer Graphics/Transformations.md",
+    "University/PastedImages/Pasted image 20241023114637.png",
+    "University/CS/CSO/Floating Point Representation.md",
+    "University/CS/CSO/Fixed Point Representation.md",
+    "University/CS/CSO/Binary.md",
+    "University/CS/CSO/Bitwise Shift Operators.md",
+    "Nahar/Unreal Engine.md",
+    "University/CS/Computer Graphics/Raytracing.md",
     "Job/Corelink/(Docs) Getting Started.md",
     "Nahar",
     "University/CS/C++/File IO.md",
     "University/Linguistics/AAVE/African American Language System.md",
     "University/Linguistics/AAVE/Language Difference.md",
-    "University/CS/C++/STL.md",
-    "University/PastedImages/Pasted image 20240917103417.png",
-    "University/CS/C++/Concurrency & Multithreading.md",
-    "University/CS/C++/Basics of C++.md",
-    "University/CS/C++/Classes.md",
-    "University/CS/C++/Useful Concepts.md",
-    "University/CS/C++/Templates.md",
-    "University/CS/C++/Pointers.md",
-    "University/CS/C++/Move Semantics, Rule of Five.md",
-    "Job/Corelink/getting started.md"
+    "University/PastedImages/Pasted image 20240917103417.png"
   ]
 }
